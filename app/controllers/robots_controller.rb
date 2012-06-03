@@ -12,8 +12,8 @@ class RobotsController < ApplicationController
       session[:user] = request.session_options[:id]
       ProgramR::History.init
     elsif $last_user != session[:user]
-      if File.exist?("tmp/my_sessions/#{session[:user]}")
-        ProgramR::History.loading "tmp/my_sessions/#{session[:user]}"
+      if File.exist?("lib/programr/lib/session/#{session[:user]}")
+        ProgramR::History.loading "lib/programr/lib/session/#{session[:user]}"
       end
     else
       p 'welcome back'
@@ -27,7 +27,7 @@ class RobotsController < ApplicationController
       @reply = $robot.get_reaction(receive).gsub(/\#.*$/, '')
     end
 
-    ProgramR::History.saving "tmp/my_sessions/#{session[:user]}" 
+    ProgramR::History.saving "lib/programr/lib/session/#{session[:user]}" 
     Robot.create({
       :username=>ProgramR::Environment.get_readOnlyTags['name'], 
       :receive=>receive,
