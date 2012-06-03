@@ -8,7 +8,7 @@ namespace :robot do
       print '*****Input your password:'
       password=STDIN.gets.chomp
       unless username.blank? || password.blank?
-        Admin.create(:username=>username, :password=>password)
+        p Admin.create(:username=>username, :password=>password)
         break
       else
         puts '*****username or password can\'t be blank.*****'
