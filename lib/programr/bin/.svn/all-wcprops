@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/svn/!svn/ver/1/trunk/bin
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/1/trunk/bin/test
+END
+programR
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/1/trunk/bin/programR
+END

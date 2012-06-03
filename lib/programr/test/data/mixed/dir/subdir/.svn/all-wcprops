@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1/trunk/test/data/mixed/dir/subdir
+END
+in_sub_dir.aiml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1/trunk/test/data/mixed/dir/subdir/in_sub_dir.aiml
+END

@@ -1,0 +1,22 @@
+<div class='container' style=''>
+  <form class='well form-horizontal' action='/robots/chat' style='width:1050px;' method='' data-remote=true>
+    <div class='control-group'>
+      <div class='controls'>
+        <div class='input-xlarge' id='chat-box' name='chat-box'  cols='80' rows='30' style='width:560px; height:480px; padding:20px;border:1px solid #ccc;border-radius:3px;background:#fff;overflow:auto;'>
+          <p class='time'><span style='font-weight:bold;'>robot&nbsp;&nbsp;</span><%= Time.now.strftime('%Y-%m-%d %H:%M:%S') %></p>
+          <p class='words'>&nbsp;&nbsp;hi,there. </p>
+        </div>
+      </div>
+    </div>
+    <div class='control-group'>
+      <div class='controls'>
+        <div class='input-prepend'>
+          <span class='add-on' style='height:25px;line-height:27px;width:25px;'>
+            <i class='icon-comment'></i>
+          </span>
+          <input type='text' id='receive' name='receive' class='input-xlarge' style='width:560px;height:25px;margin-left:-3px;'>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aiml version="1.0">
+
+<!-- Free software (c) 2001 you AI Foundation -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License -->
+<!-- as published by the Free Software Foundation. -->
+
+<meta name="author" content="zgm"/>
+<meta name="language" content="en"/>
+
+
+<category>
+	<pattern>SB</pattern>
+	<template>
+		fuck u 凸
+	</template>
+</category>
+
+<category>
+	<pattern>ZGM</pattern>
+	<template>
+		yes, i am
+	</template>
+</category>
+
+<category>
+	<pattern>NI MA</pattern>
+	<template>
+		fuck
+	</template>
+</category>
+
+<category>
+	<pattern>HELLO WORLD</pattern>
+	<template>
+		hi, coder !
+	</template>
+</category>
+
+<category>
+<pattern>LI GANG</pattern>
+<template>
+Your father ？
+</template>
+</category>
+
+<category>
+<pattern>NIHAO</pattern>
+<template>
+	<srai>hello</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>NIHAO</pattern>
+<template>
+hello
+</template>
+</category>
+
+<category>
+<pattern>NIHAO</pattern>
+<template>
+hello
+</template>
+</category>
+
+<category>
+<pattern>NIHAOA</pattern>
+<template>
+<srai>hello</srai>
+</template>
+</category>
+
+<category>
+<pattern>CHENMEIMEI</pattern>
+<template>
+hi
+</template>
+</category>
+
+<category>
+<pattern>MINGMING</pattern>
+<template>
+is me
+</template>
+</category>
+
+<category>
+<pattern>GUANGGUANG</pattern>
+<template>
+guanguang
+</template>
+</category>
+
+<category>
+<pattern>GUANGGUANG</pattern>
+<template>
+guanguang
+</template>
+</category>
+
+<category>
+<pattern>XIAOMEIMEI</pattern>
+<template>
+xiaomihu
+</template>
+</category>
+
+<category>
+<pattern>GUANGGUANG</pattern>
+<template>
+mingming
+</template>
+</category>
+
+<category>
+<pattern>GUANGGUANG</pattern>
+<template>
+mingming
+</template>
+</category>
+
+<category>
+<pattern>GUANGGUANG</pattern>
+<template>
+mingming
+</template>
+</category>
+
+<category>
+<pattern>XIAOMEIMEI</pattern>
+<template>
+haha
+</template>
+</category>
+
+<category>
+<pattern>ASDASD</pattern>
+<template>
+asdasd
+</template>
+</category>
+
+<category>
+<pattern>ASDASD</pattern>
+<template>
+asdasd
+</template>
+</category>
+
+<category>
+<pattern>ASDASD</pattern>
+<template>
+asdasd
+</template>
+</category>
+
+<category>
+<pattern>ASASDASDASDASD</pattern>
+<template>
+asdasd
+</template>
+</category>
+
+<category>
+<pattern>ASDA</pattern>
+<template>
+asd
+</template>
+</category>
+
+<category>
+<pattern>ASD</pattern>
+<template>
+asdasd
+</template>
+</category>
+
+<category>
+<pattern>GUANGGUANG</pattern>
+<template>
+guangguang
+</template>
+</category>
+
+</aiml>

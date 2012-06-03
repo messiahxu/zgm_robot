@@ -1,0 +1,32 @@
+<div class='container-fluid'>
+  <%= render 'nav_list' %>
+  <div class='span9'>
+    <div style='text-align:center;height:40px;'>
+      <%= will_paginate @history, :class=>''%>
+    </div>
+    <table class='table' style='width:96%;'>
+      <tr>
+        <th>id</th>
+        <th style='width:130px;'>time</th>
+        <th>name</th>
+        <th style='width:260px;'>receive</th>
+        <th style='width:200px;'>reply</th>
+        <th style='width:50px;'>edit</th>
+      </tr>
+      <% @history.each do |h| %>
+        <tr>
+          <td><%= h.id %></td>
+          <td><%= h.created_at.strftime "%Y-%m-%d %H:%M:%S"%></td>
+          <td><%= h.username %></td>
+          <td><%= h.receive %></td>
+          <td><%= h.reply %></td>
+          <td><a href="/admin/robots/delete/<%=h.id%>" data-remote=true class='history-delete'><i class='icon-trash' ></i>delete</a></td>
+        </tr>
+      <% end %>
+    </table>
+    <div style='text-align:center;height:40px;'>
+      <%= will_paginate @history, :class=>''%>
+    </div>
+  </div>
+</div>
+</div>

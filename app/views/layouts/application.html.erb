@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ZgmRobot</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body data-offset='50' data-target='.subnav' date-spy='scroll'>
+    <div class='navbar'>
+      <div class='navbar-inner'>
+        <div class='container'>
+          <a class='brand' href='/'>
+            Robot
+          </a>
+          <div class='nav-collapse'>
+            <ul class='nav pull-right'>
+              <% if session[:admin].blank? %>
+                <li><a href='/admin/login'><i class='icon-user icon-white'></i>&nbsp;login</a></li>
+              <% else %>
+                <li><a href='/admin/logout'><i class='icon-user icon-white'></i>&nbsp;logout</a></li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div style='padding:20px;width:1100px;'>
+        <%=raw show_flash %>
+      </div>
+      <%= yield %>
+    </div>
+  </body>
+</html>

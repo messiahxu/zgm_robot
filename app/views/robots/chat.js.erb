@@ -1,0 +1,4 @@
+var html = " <p class='time'><span style='font-weight:bold;'>robot</span>&nbsp;&nbsp;&nbsp;<%= Time.now.strftime('%Y-%m-%d %H:%M:%S') %><p class='words'>&nbsp;&nbsp;<%= @reply.gsub(/\#.*$/, '') %></p> ";
+$('#chat-box').append(html);
+$('#chat-box')[0].scrollTop = 10000;
+$('#receive').attr('value','');

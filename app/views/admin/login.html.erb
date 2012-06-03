@@ -1,0 +1,38 @@
+<style>
+  input{
+    width:240px;
+    height:25px;
+    margin-left:-3px;
+  }
+</style>
+<%= form_tag '/admin/login', :method=>'post', :class=>'well form-horizontal',:style=>'width:1050px;' do%>
+  <h3 style='margin-left:100px;'>Login</h3>
+  <br/>
+  <div class='control-group'>
+    <label class='control-label'></label>
+    <div class='controls'>
+      <div class='input-prepend'>
+        <span class='add-on' style='width:25px;height:25px;line-height:25px;'>
+          <i class='icon-user'></i>
+        </span>
+      <input type='text'  name='username'  placeholder='input your username'>
+    </div>
+    </div>
+  </div>
+  <div class='control-group'>
+    <label class='control-label'></label>
+    <div class='controls'>
+      <div class='input-prepend'>
+        <span class='add-on' style='width:25px;height:25px;line-height:25px;'>
+          <i class='icon-lock'></i>
+        </span>
+        <input type='password' name='password' placeholder='input your password'>
+      </div>
+    </div>
+  </div>
+
+  <div class='form-actions'>
+    <button class='btn btn-primary' type='submit' style='width:285px;height:35px;'>Sign in</button>
+  </div>
+
+<% end %>

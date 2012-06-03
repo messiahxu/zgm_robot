@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/svn/!svn/ver/7/trunk/lib
+END
+cli.rb
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/1/trunk/lib/cli.rb
+END
+program_r.rb
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/1/trunk/lib/program_r.rb
+END
+aiml-programr.rb
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/7/trunk/lib/aiml-programr.rb
+END

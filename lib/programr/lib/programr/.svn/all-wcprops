@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/1/trunk/lib/programr
+END
+aiml_elements.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1/trunk/lib/programr/aiml_elements.rb
+END
+aiml_parser.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1/trunk/lib/programr/aiml_parser.rb
+END
+utils.rb
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1/trunk/lib/programr/utils.rb
+END
+history.rb
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1/trunk/lib/programr/history.rb
+END
+facade.rb
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1/trunk/lib/programr/facade.rb
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1/trunk/lib/programr/environment.rb
+END
+graph_master.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1/trunk/lib/programr/graph_master.rb
+END
