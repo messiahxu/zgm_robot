@@ -12,7 +12,7 @@ class RobotsController < ApplicationController
       session[:user] = request.session_options[:id]
       ProgramR::History.init
     elsif $last_user != session[:user]
-      if File.exist("tmp/my_sessions/#{session[:user]}")
+      if File.exist?("tmp/my_sessions/#{session[:user]}")
         ProgramR::History.loading "tmp/my_sessions/#{session[:user]}"
       end
     else
