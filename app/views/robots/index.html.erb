@@ -6,7 +6,7 @@
     font-size: 13px;
   }
 </style>
-<div class='container' style=''>
+<div class='container' style='margin-left:20px;'>
   <div class='input-xlarge' id='chat-box' name='chat-box'  cols='80' rows='30' style='width:560px; height:520px; padding:20px;border:1px solid #ccc;border-radius:3px;bakcground-image:url("/assets/grid-18px-masked.png");overflow:auto;'>
     <p class='time'><span style=''>robot&nbsp;&nbsp;</span><%= Time.now.strftime('%Y-%m-%d %H:%M:%S') %></p>
     <p class='words'>&nbsp;&nbsp;hi,there. </p>
@@ -19,6 +19,7 @@
     <input type='text' id='receive' name='receive' class='input-xlarge' style='width:557px;height:25px;margin-left:-3px;'>
     <span class='help-inline' style='color:#b94a48;'>*Talk to me or ask me, example:&nbsp;what is linux ?</span>
   </div>
+  <br/>
   <br/>
   <div class="modal hide" id="Modal">
     <div class="modal-header">
