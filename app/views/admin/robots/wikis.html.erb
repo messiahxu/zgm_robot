@@ -1,0 +1,52 @@
+<div class='container-fluid'>
+  <div class='row-fluid'>
+    <%= render 'nav_list' %>
+    <div class='span9'>
+      <ul class="nav nav-pills">
+        <li class="">
+        <a href='/admin/robots/index'>
+          chats
+        </a>
+        </li>
+        <li class='active'>
+        <a href='#'>
+          wikis
+        </a>
+        </li>
+      </ul>
+      <div style='text-align:center;height:40px;'>
+        <%= will_paginate @wikis, :class=>''%>
+      </div>
+      <div style='width:96%'>
+        <a href='/admin/robots/clear_wiki' style='float:right;color:red;' data-confirm='are you sure?'>
+          <i class='icon-trash'>
+          </i>
+          clear&nbsp;&nbsp;&nbsp;&nbsp;
+        </a>
+      </div>
+      <br/>
+      <br/>
+      <table class='table' style='width:96%;'>
+        <tr>
+          <th>id</th>
+          <th style='width:130px;'>time</th>
+          <th style='width:230px;'>receive</th>
+          <th style='width:260px;'>reply</th>
+          <th style='width:50px;'>edit</th>
+        </tr>
+        <% @wikis.each do |w| %>
+          <tr>
+            <td><%= w.id %></td>
+            <td><%= w.created_at.strftime "%Y-%m-%d %H:%M:%S"%></td>
+            <td><%= w.receive %></td>
+            <td><%= w.reply[0..100].html_safe %></td>
+            <td><a href="/admin/robots/delete_wiki/<%=w.id%>" data-remote=true class='history-delete'><i class='icon-trash' ></i>delete</a></td>
+          </tr>
+        <% end %>
+      </table>
+      <div style='text-align:center;height:40px;'>
+        <%= will_paginate @wikis, :class=>''%>
+      </div>
+    </div>
+  </div>
+</div>

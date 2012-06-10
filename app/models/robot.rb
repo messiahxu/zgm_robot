@@ -1,6 +1,9 @@
 class Robot < ActiveRecord::Base
   attr_accessible :receive, :reply, :username
 
+  NullReply = 'You gotta say something.'
+  ChineseReply = 'Sorry I can\'t speak Chinese.'
+
   class << self
     def dump
       File.open('lib/programr/lib/cache/init.cache','w') do |file|
@@ -25,6 +28,36 @@ class Robot < ActiveRecord::Base
       end
       $robot.parser.parse text
     end
-  end
 
+    def reply receive
+      reply = $robot.get_reaction receive
+      if receive.blank?
+        reply = NullReply
+      elsif receive =~ /[\u4e00-\u9fa5]/
+        reply = ChineseReply
+      elsif Crawler.is_wiki_question?(receive).present?
+        if reply.blank?
+          if reply.blank?
+            reply = get_reply_from_wiki receive
+          end
+        end
+        if reply.blank?
+          reply = $robot_last.get_reaction receive
+        end
+      else
+        reply = $robot.get_reaction receive
+        if reply.blank?
+          reply = $robot_last.get_reaction receive
+        end
+      end
+      return reply
+    end
+
+    def get_reply_from_wiki receive
+      wiki_word= Crawler.get_wiki_word(receive)
+
+      reply = Crawler.find_in_wiki wiki_word
+    end
+
+  end
 end

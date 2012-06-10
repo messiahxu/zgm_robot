@@ -40,150 +40,234 @@
 </category>
 
 <category>
-<pattern>LI GANG</pattern>
+	<pattern>LI GANG</pattern>
+	<template>
+		Your father ？
+	</template>
+</category>
+
+<category>
+	<pattern>NIHAO</pattern>
+	<template>
+		<srai>hello</srai>
+	</template>
+</category>
+
+
+<category>
+	<pattern>NIHAO</pattern>
+	<template>
+		hello
+	</template>
+</category>
+
+<category>
+	<pattern>NIHAO</pattern>
+	<template>
+		hello
+	</template>
+</category>
+
+<category>
+	<pattern>NIHAOA</pattern>
+	<template>
+		<srai>hello</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>CHENMEIMEI</pattern>
+	<template>
+		hi
+	</template>
+</category>
+
+<category>
+	<pattern>MINGMING</pattern>
+	<template>
+		is me
+	</template>
+</category>
+
+<category>
+	<pattern>GUANGGUANG</pattern>
+	<template>
+		guanguang
+	</template>
+</category>
+
+<category>
+	<pattern>GUANGGUANG</pattern>
+	<template>
+		guanguang
+	</template>
+</category>
+
+<category>
+	<pattern>XIAOMEIMEI</pattern>
+	<template>
+		xiaomihu
+	</template>
+</category>
+
+<category>
+	<pattern>GUANGGUANG</pattern>
+	<template>
+		mingming
+	</template>
+</category>
+
+<category>
+	<pattern>GUANGGUANG</pattern>
+	<template>
+		mingming
+	</template>
+</category>
+
+<category>
+	<pattern>GUANGGUANG</pattern>
+	<template>
+		mingming
+	</template>
+</category>
+
+<category>
+	<pattern>XIAOMEIMEI</pattern>
+	<template>
+		haha
+	</template>
+</category>
+
+<category>
+	<pattern>ASDASD</pattern>
+	<template>
+		asdasd
+	</template>
+</category>
+
+<category>
+	<pattern>ASDASD</pattern>
+	<template>
+		asdasd
+	</template>
+</category>
+
+<category>
+	<pattern>ASDASD</pattern>
+	<template>
+		asdasd
+	</template>
+</category>
+
+<category>
+	<pattern>ASASDASDASDASD</pattern>
+	<template>
+		asdasd
+	</template>
+</category>
+
+<category>
+	<pattern>ASDA</pattern>
+	<template>
+		asd
+	</template>
+</category>
+
+<category>
+	<pattern>ASD</pattern>
+	<template>
+		asdasd
+	</template>
+</category>
+
+<category>
+	<pattern>GUANGGUANG</pattern>
+	<template>
+		guangguang
+	</template>
+</category>
+
+<category>
+	<pattern>HELLO</pattern>
+	<template>
+		hi
+	</template>
+</category>
+
+<category>
+	<pattern>HAHA *</pattern>
+	<template>
+		<srai>haha</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>HAHA*</pattern>
+	<template>
+		<srai>haha</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>HAHA!</pattern>
+	<template>
+		<srai>haha</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>WHO MADE YOU *</pattern>
+	<template>
+		i was created by zgm!
+	</template>
+</category>
+
+<category>
+	<pattern>WHO MADE YOU</pattern>
+	<template>
+		i was created by zgm!
+	</template>
+</category>
+
+<category>
+	<pattern>WHO IS YOUR OWNER</pattern>
+	<template>
+		<srai>who made you</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>WHO IS YOUR OWNER *</pattern>
+	<template>
+		<srai>who made you</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>WHO IS YOUR FATHER</pattern>
+	<template>
+		<srai>who made you</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>WHO IS YOUR FATHER *</pattern>
+	<template>
+		<srai>who made you</srai>
+	</template>
+</category>
+
+<category>
+<pattern>WHAT'S YOUR NAME?</pattern>
 <template>
-Your father ？
+<srai>what is your name</srai>
 </template>
 </category>
 
 <category>
-<pattern>NIHAO</pattern>
+<pattern>WHAT'S YOUR NAME *</pattern>
 <template>
-	<srai>hello</srai>
-</template>
-</category>
-
-
-<category>
-<pattern>NIHAO</pattern>
-<template>
-hello
-</template>
-</category>
-
-<category>
-<pattern>NIHAO</pattern>
-<template>
-hello
-</template>
-</category>
-
-<category>
-<pattern>NIHAOA</pattern>
-<template>
-<srai>hello</srai>
-</template>
-</category>
-
-<category>
-<pattern>CHENMEIMEI</pattern>
-<template>
-hi
-</template>
-</category>
-
-<category>
-<pattern>MINGMING</pattern>
-<template>
-is me
-</template>
-</category>
-
-<category>
-<pattern>GUANGGUANG</pattern>
-<template>
-guanguang
-</template>
-</category>
-
-<category>
-<pattern>GUANGGUANG</pattern>
-<template>
-guanguang
-</template>
-</category>
-
-<category>
-<pattern>XIAOMEIMEI</pattern>
-<template>
-xiaomihu
-</template>
-</category>
-
-<category>
-<pattern>GUANGGUANG</pattern>
-<template>
-mingming
-</template>
-</category>
-
-<category>
-<pattern>GUANGGUANG</pattern>
-<template>
-mingming
-</template>
-</category>
-
-<category>
-<pattern>GUANGGUANG</pattern>
-<template>
-mingming
-</template>
-</category>
-
-<category>
-<pattern>XIAOMEIMEI</pattern>
-<template>
-haha
-</template>
-</category>
-
-<category>
-<pattern>ASDASD</pattern>
-<template>
-asdasd
-</template>
-</category>
-
-<category>
-<pattern>ASDASD</pattern>
-<template>
-asdasd
-</template>
-</category>
-
-<category>
-<pattern>ASDASD</pattern>
-<template>
-asdasd
-</template>
-</category>
-
-<category>
-<pattern>ASASDASDASDASD</pattern>
-<template>
-asdasd
-</template>
-</category>
-
-<category>
-<pattern>ASDA</pattern>
-<template>
-asd
-</template>
-</category>
-
-<category>
-<pattern>ASD</pattern>
-<template>
-asdasd
-</template>
-</category>
-
-<category>
-<pattern>GUANGGUANG</pattern>
-<template>
-guangguang
+<srai>what is your name</srai>
 </template>
 </category>
 

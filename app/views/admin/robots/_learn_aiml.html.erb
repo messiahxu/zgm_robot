@@ -1,0 +1,13 @@
+<%= form_tag '/admin/robots/learn_aiml', :method=>'post', :class=>'well form-horizontal', :multipart=>true do %>
+  <h3>Learn aiml file </h3>
+  <br/>
+  <div class='control-group'>
+    <label class='control-label'>Aiml:</label>
+    <div class='controls'>
+      <%= file_field_tag 'aiml', :class=>'input-file' %>
+    </div>
+  </div>
+  <div class='form-actions'>
+    <button class='btn btn-primary' style='height:35px;width:280px;' type='submit'>Learn</button>
+  </div>
+<% end %>

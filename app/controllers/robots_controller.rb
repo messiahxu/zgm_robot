@@ -6,8 +6,21 @@ class RobotsController < ApplicationController
   end
 
   def chat
-    receive = params[:receive]
+    @receive = params[:receive].gsub(/[^\)a-zA-Z0-9]$/,'')
+    change_session_or_not
+    $last_user = session[:user]
+    ProgramR::History.saving "lib/programr/lib/session/#{session[:user]}" 
+    @reply = Robot.reply(@receive).gsub(/\#.*$/, '')
+    Robot.create({
+      :username=>ProgramR::Environment.get_readOnlyTags['name'], 
+      :receive=>@receive,
+      :reply=>@reply[0..100]
+    })
+  end
 
+
+  private
+  def change_session_or_not
     if session[:user].blank?
       session[:user] = request.session_options[:id]
       ProgramR::History.init
@@ -15,24 +28,7 @@ class RobotsController < ApplicationController
       if File.exist?("lib/programr/lib/session/#{session[:user]}")
         ProgramR::History.loading "lib/programr/lib/session/#{session[:user]}"
       end
-    else
-      p 'welcome back'
-    end
-    $last_user = session[:user]
-    if receive.blank?
-      @reply = NullReply
-    elsif receive =~ /[\u4e00-\u9fa5]/
-      @reply = ChineseReply
-    else
-      @reply = $robot.get_reaction(receive).gsub(/\#.*$/, '')
     end
 
-    ProgramR::History.saving "lib/programr/lib/session/#{session[:user]}" 
-    Robot.create({
-      :username=>ProgramR::Environment.get_readOnlyTags['name'], 
-      :receive=>receive,
-      :reply=>@reply
-    })
   end
-
 end

@@ -8,7 +8,7 @@ module ApplicationHelper
         elsif key ==:error
         ':(&nbsp;&nbsp;'
         else
-          ''
+          'Warning: &nbsp;&nbsp;'
         end +
         flash[key].to_s + "</div>" unless flash[key].blank?
     end.join

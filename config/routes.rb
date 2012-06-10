@@ -1,13 +1,22 @@
 ZgmRobot::Application.routes.draw do
   namespace :admin do
+    get '/' => 'robots#index'
     get '/robots/index'
     get '/robots/delete/:id' => 'robots#delete'
     get '/robots/learn'
+    post '/robots/learn_aiml' => 'robots#learn_aiml'
     post '/robots/learn_words' => 'robots#learn_words'
+    get '/robots/refresh' => 'robots#refresh'
+    get '/robots/clear' => 'robots#clear'
+    get '/robots/wikis' => 'robots#wikis'
+    get '/robots/delete_wiki/:id' => 'robots#delete_wiki'
+    get '/robots/clear_wikis' => 'robots#clear_wikis'
   end
   get "/admin/login"
   post "/admin/login" => 'admin#authenticate'
-  get "admin/logout"
+  get "/admin/logout"
+  get '/admin/setting' 
+  post '/admin/change_password'
 
   match '/robots/index' => 'robots#index'
   match '/robots/chat' => 'robots#chat'

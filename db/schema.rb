@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120602094436) do
+ActiveRecord::Schema.define(:version => 20120610060412) do
 
   create_table "admins", :force => true do |t|
     t.string   "username"
@@ -22,10 +22,19 @@ ActiveRecord::Schema.define(:version => 20120602094436) do
 
   create_table "robots", :force => true do |t|
     t.string   "receive"
-    t.string   "reply"
+    t.text     "reply"
     t.string   "username"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "wikis", :force => true do |t|
+    t.string   "receive"
+    t.text     "reply"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "wikis", ["receive"], :name => "index_wikis_on_receive", :unique => true
 
 end

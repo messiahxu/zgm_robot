@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ZgmRobot</title>
+    <title>zgm's Robot</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   </head>
-  <body data-offset='50' data-target='.subnav' date-spy='scroll'>
+  <body data-offset='50' data-target='.subnav' date-spy='scroll' style='background-image:url("/assets/grid-18px-masked.png")'>
     <div class='navbar'>
       <div class='navbar-inner'>
         <div class='container'>
-          <a class='brand' href='/'>
-            Robot
+          <a class='brand' href='/' style=''>
+            zgm's Robot
           </a>
           <div class='nav-collapse'>
             <ul class='nav pull-right'>
               <% if session[:admin].blank? %>
-                <li><a href='/admin/login'><i class='icon-user icon-white'></i>&nbsp;login</a></li>
+                <li><a href='/admin/login'><i class='icon-user icon-white'></i>&nbsp;sign in</a></li>
               <% else %>
-                <li><a href='/admin/logout'><i class='icon-user icon-white'></i>&nbsp;logout</a></li>
+                <div class="btn-group">
+                  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class='icon-user'></i> <%= session[:admin]%>
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href='/admin/logout'><i class='icon-share-alt'></i>&nbsp;logout</a></li>
+                    <li><a href='/admin/setting'><i class='icon-wrench'></i>&nbsp;setting</a></li>
+                  </ul>
+                </div>
               <% end %>
             </ul>
           </div>

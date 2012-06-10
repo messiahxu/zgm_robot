@@ -16,7 +16,23 @@ class AdminController < ApplicationController
       session[:admin] = username  
       redirect_to '/admin/robots/index'
     end
+  end
 
+  def change_password
+    old_password = params[:old_password]
+    password = params[:password]
+    password_confirmation = params[:password_confirmation]
+    @admin = Admin.find_by_username(session[:admin])
+    if @admin.try(:authenticate,old_password).blank?
+      flash[:error] = 'password is wrong'
+    else
+      if @admin.update_attributes(:password=>password, :password_confirmation=>password_confirmation)
+        flash[:success] = 'password change success'
+      else
+        flash[:error] = 'password change failed'
+      end
+    end
+    redirect_to :back
   end
 
   def logout
@@ -25,5 +41,8 @@ class AdminController < ApplicationController
     end
     flash[:success] = 'logout success.'
     redirect_to '/'
+  end
+
+  def setting
   end
 end
