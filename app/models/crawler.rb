@@ -2,11 +2,11 @@ class Crawler
   TimeoutReply = 'Sorry, try it later please.'
   class << self
     def is_wiki_question?(receive)
-      pre_word = receive.scan(/(what\'s\s*a\s*)|(what\s*is\s*a\s*)|(what\'s\s*the\s*)|(what\s*is\s*the\s*)|(what\s*is\s*)|(what\s*\'s\s*)|(who\s*is\s*)|(who\s*\'s\s*)/)
+      pre_word = receive.scan(/(what\'s\s+a\s+)|(what\s*is\s+a\s+)|(what\'s\s+the\s+)|(what\s+is\s+the\s+)|(what\s+is\s+)|(what\s+\'s\s+)|(who\s+is\s+)|(who\s+\'s\s+)/)
     end
 
     def get_wiki_word(receive)
-      pre_word = receive.scan(/(what\'s\s*a\s*)|(what\s*is\s*a\s*)|(what\'s\s*the\s*)|(what\s*is\s*the\s*)|(what\s*is\s*)|(what\s*\'s\s*)|(who\s*is\s*)|(who\s*\'s\s*)/)
+      pre_word = receive.scan(/(what\'s\s+a\s+)|(what\s+is\s+a\s+)|(what\'s\s+the\s+)|(what\s+is\s+the\s+)|(what\s+is\s+)|(what\s+\'s\s+)|(who\s+is\s+)|(who\s+\'s\s+)/)
       pre_word = pre_word.flatten.compact.join
       receive.gsub(pre_word, '').capitalize
     end
