@@ -25,8 +25,10 @@ $(document).ready(function(){
       $('#chat-box')[0].scrollTop = 100000;
       $('#receive').attr('readonly', true); 
       $('#receive').attr('value', 'Give me 10 seconds, be patient...'); 
+      receive = receive.replace(/\+/g, "%2B")
+    alert(receive);
       $.ajax({
-        url:'/robots/chat?receive='+receive,
+        url:'/robots/chat?receive='+escape(receive),
         success:function(){
         }
       });

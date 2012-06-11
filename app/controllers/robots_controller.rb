@@ -6,7 +6,9 @@ class RobotsController < ApplicationController
   end
 
   def chat
-    @receive = params[:receive].gsub(/[^\)a-zA-Z0-9]$/,'')
+    p params[:receive]
+    @receive = params[:receive].gsub(/\s*\?\s*$/,'')
+    p @receive
     change_session_or_not
     $last_user = session[:user]
     ProgramR::History.saving "lib/programr/lib/session/#{session[:user]}" 
