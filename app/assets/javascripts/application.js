@@ -26,7 +26,6 @@ $(document).ready(function(){
       $('#receive').attr('readonly', true); 
       $('#receive').attr('value', 'Give me 10 seconds, be patient...'); 
       receive = receive.replace(/\+/g, "%2B")
-    alert(receive);
       $.ajax({
         url:'/robots/chat?receive='+escape(receive),
         success:function(){
