@@ -8,7 +8,7 @@ class Crawler
     def get_wiki_word(receive)
       pre_word = receive.scan(/(what\'s\s*a\s*)|(what\s*is\s*a\s*)|(what\'s\s*the\s*)|(what\s*is\s*the\s*)|(what\s*is\s*)|(what\s*\'s\s*)|(who\s*is\s*)|(who\s*\'s\s*)/)
       pre_word = pre_word.flatten.compact.join
-      receive.gsub(pre_word, '')
+      receive.gsub(pre_word, '').capitalize
     end
 
     def find_in_wiki receive
