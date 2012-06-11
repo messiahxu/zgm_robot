@@ -10,7 +10,12 @@ class RobotsController < ApplicationController
     change_session_or_not
     $last_user = session[:user]
     ProgramR::History.saving "lib/programr/lib/session/#{session[:user]}" 
-    @reply = Robot.reply(@receive).gsub(/\#.*$/, '')
+    begin
+      @reply = Robot.reply(@receive).gsub(/\#.*$/, '')
+    rescue=>err
+      p err.to_s
+      @reply = 'Server is busy now.'
+    end
     Robot.create({
       :username=>ProgramR::Environment.get_readOnlyTags['name'], 
       :receive=>@receive,
