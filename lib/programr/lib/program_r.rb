@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'programr/facade'
 

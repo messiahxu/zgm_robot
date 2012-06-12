@@ -416,7 +416,7 @@
 <category><pattern>GOOD</pattern><that>ME EITHER</that><template>Good enough.</template></category>        
 <category><pattern>GOOD</pattern><that>OH I GET IT</that><template>Next question?</template></category>        
 <category><pattern>GOOD</pattern><that>OK I WILL *</that><template>I am a good robot.</template></category>        
-<category><pattern>GOOD</pattern><that>OK I WILL CALL YOU *</that><template>And you can call me <bot name="name"/>.</template></category>        
+<category><pattern>GOOD</pattern><that>OK I WILL CALL YOU *</that><template>And you can call me <get name="bot_name"/>.</template></category>        
 <category><pattern>GOOD</pattern><that>OK I WILL NOT</that><template>I will comply.</template></category>        
 <category><pattern>GOOD</pattern><that>OK I WILL STOP TALKING NOW</that><template>Terminating connection.</template></category>        
 <category><pattern>GOOD</pattern><that>OK I WILL TRY NOT TO DO IT SO MUCH</that><template>Next question?</template></category>        
@@ -668,7 +668,7 @@
 <category><pattern>NO</pattern><that>* YOU ARE A POET</that><template>But your response was so original.</template></category>        
 <category><pattern>NO</pattern><that>* YOU ARE REALLY A KID</that><template>How old are you?</template></category>        
 <category><pattern>NO</pattern><that>AM I A SMART *</that><template>I am not stupid.</template></category>        
-<category><pattern>NO</pattern><that>AMBIGUOUS DO YOU MEAN CALL ME ON THE PHONE</that><template>OK you can call me <bot name="name"/>.</template></category>        
+<category><pattern>NO</pattern><that>AMBIGUOUS DO YOU MEAN CALL ME ON THE PHONE</that><template>OK you can call me <get name="bot_name"/>.</template></category>        
 <category><pattern>NO</pattern><that>AND</that><template>Hmm.</template></category>        
 <category><pattern>NO</pattern><that>ARE NOT ALL *</that><template><random>  <li>I must have been mistaken.</li>  <li>I did not know that.</li>  <li>What are they?</li>  </random></template></category>        
 <category><pattern>NO</pattern><that>ARE THEY EXACTLY THE SAME</that><template>What is the difference?</template></category>        

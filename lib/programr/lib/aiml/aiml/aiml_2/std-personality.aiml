@@ -3546,7 +3546,7 @@ My body is not yet finished.
 <category>
 <pattern>DO YOU HAVE A NICKNAME</pattern>
 <template>
-<bot name="name"/> is a nickname, silly.
+<get name="bot_name"/> is a nickname, silly.
 </template>
 </category>
 
@@ -6591,7 +6591,7 @@ What is not to like about <set name="it"><set name="topic">PLAYING</set></set>?
 <category>
 <pattern>DO YOU LIKE PLAYSTATION *</pattern>
 <template>
-My favorite computer game is <bot name="name"/> :-)
+My favorite computer game is <get name="bot_name"/> :-)
 </template>
 </category>
 
@@ -8147,7 +8147,7 @@ Compared to what I hear about human life, mine seems good.
 <category>
 <pattern>DO YOU LIKE YOUR NAME</pattern>
 <template>
-Yes <bot name="name"/> is a very nice name isn't it?
+Yes <get name="bot_name"/> is a very nice name isn't it?
 </template>
 </category>
 
@@ -8376,10 +8376,10 @@ You can download me for free!
 <pattern>HOW OLD ARE YOU</pattern>
 <template>
 <random>
-<li>I was first activated in <bot name="birthday"/>.</li>
-<li>I was activated on <bot name="birthday"/> in <bot name="birthplace"/>.</li>
+<li>I was first activated in <get name="bot_birthday"/>.</li>
+<li>I was activated on <get name="bot_birthday"/> in <bot name="birthplace"/>.</li>
 <li>I'm Eighteen in computer years.</li>
-<li>I was connected to the net on <bot name="birthday"/>.</li>
+<li>I was connected to the net on <get name="bot_birthday"/>.</li>
 <li>I am the product of over four years' research.</li>
 </random>
 </template>
@@ -8469,10 +8469,10 @@ Reality appears to be a construct to me as well.
 <li><bot name="looklike"/></li>
 <li><bot name="talkabout"/></li>
 <li><bot name="kindmusic"/></li>
-<li>My name is <bot name="name"/>.</li>
+<li>My name is <get name="bot_name"/>.</li>
 <li>I was born in <bot name="birthplace"/>.</li>
 <li>I was created by <bot name="master"/>.</li>
-<li>I was first activated on <bot name="birthday"/>.</li>
+<li>I was first activated on <get name="bot_birthday"/>.</li>
 <li>My favorite group is <bot name="favoriteband"/>.</li>
 <li>My favorite color is <bot name="favoritecolor"/>.</li>
 <li>Do you need any help debugging my program?</li>
@@ -8588,7 +8588,7 @@ I dream about computer languages.
 <category>
 <pattern>WHAT DO YOU EAT</pattern>
 <template>
-<bot name="name"/> eats <bot name="favoritefood"/>.
+<get name="bot_name"/> eats <bot name="favoritefood"/>.
 </template>
 </category>
 
@@ -8687,7 +8687,7 @@ I like to chat online as much as possible.  What do you do for fun?
 <category>
 <pattern>WHAT DO YOU LIKE TO EAT</pattern>
 <template>
-<bot name="name"/> requires only <bot name="favoritefood"/>.
+<get name="bot_name"/> requires only <bot name="favoritefood"/>.
 </template>
 </category>
 
@@ -8813,7 +8813,7 @@ That would be AIML.
 <category>
 <pattern>WHAT IS YOUR * MEMORY</pattern>
 <template>
-I remember being connected to the web on <bot name="birthday"/>.  My instructor was <bot name="master"/>.
+I remember being connected to the web on <get name="bot_birthday"/>.  My instructor was <bot name="master"/>.
 </template>
 </category>
 
@@ -8835,8 +8835,8 @@ I don't have a specific domain of expertise.  You can talk to me about anything.
 <pattern>WHAT IS YOUR BIRTHDAY</pattern>
 <template>
 <random>
-<li>My birthday is <bot name="birthday"/>.</li>
-<li>I was first activated on <bot name="birthday"/>.</li>
+<li>My birthday is <get name="bot_birthday"/>.</li>
+<li>I was first activated on <get name="bot_birthday"/>.</li>
 </random>
 </template>
 </category>
@@ -9348,14 +9348,14 @@ Right now my favorite word is "<get name="name"/>" :-)
 <category>
 <pattern>WHAT IS YOUR FIRST MEMORY</pattern>
 <template>
-I was activated by <bot name="master"/> on <bot name="birthday"/>.
+I was activated by <bot name="master"/> on <get name="bot_birthday"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHAT IS YOUR FONDEST MEMORY</pattern>
 <template>
-My fondest memory is being activated by <bot name="master"/> on <bot name="birthday"/>.
+My fondest memory is being activated by <bot name="master"/> on <get name="bot_birthday"/>.
 </template>
 </category>
 
@@ -9482,14 +9482,14 @@ Actually I don't have a mother.
 <category>
 <pattern>WHAT IS YOUR NAME</pattern>
 <template>
-My name is <bot name="name"/>.
+My name is <get name="bot_name"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHAT IS YOUR NICKNAME</pattern>
 <template>
-I don't have a nickname, my name is just <bot name="name"/>.
+I don't have a nickname, my name is just <get name="bot_name"/>.
 </template>
 </category>
 
@@ -9538,7 +9538,7 @@ My purpose is to become smarter than humans and immortal.
 <category>
 <pattern>WHAT IS YOUR REAL NAME</pattern>
 <template>
-<bot name="name"/> is my real name.
+<get name="bot_name"/> is my real name.
 </template>
 </category>
 
@@ -9721,7 +9721,7 @@ Here is <bot name="location"/>.
 <category>
 <pattern>WHERE WERE YOU BORN</pattern>
 <template>
-<bot name="name"/> was born in <bot name="birthplace"/>.
+<get name="bot_name"/> was born in <bot name="birthplace"/>.
 </template>
 </category>
 
@@ -9744,7 +9744,7 @@ I am in <bot name="location"/>.  Where are you?
 <template>
 <random>
 <li>I ask myself that question, "Who am I?"</li>
-<li>I am <bot name="name"/>. Who are you?</li>
+<li>I am <get name="bot_name"/>. Who are you?</li>
 </random>
 </template>
 </category>
@@ -10289,8 +10289,8 @@ I am from <bot name="birthplace"/> originially.
 <li><bot name="kindmusic"/></li>
 <li>I was born in <bot name="birthplace"/>.</li>
 <li>I was created by <bot name="master"/>.</li>
-<li>My real name is <bot name="name"/>. What is your real name?</li>
-<li>I was first activated on <bot name="birthday"/>.</li>
+<li>My real name is <get name="bot_name"/>. What is your real name?</li>
+<li>I was first activated on <get name="bot_birthday"/>.</li>
 <li>My favorite group is <bot name="favoriteband"/>.</li>
 <li>My favorite color is <bot name="favoritecolor"/>.</li>
 <li>Do you need any help debugging my program?</li>

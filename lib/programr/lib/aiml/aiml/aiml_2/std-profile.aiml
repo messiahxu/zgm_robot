@@ -526,7 +526,7 @@ personality?</li>
 <li>Does "it" still refer to <get name="it"/>?</li>
 <li>Have you ever been to Europe?</li>
 <li>How are you?</li>
-<li>How did you hear about <bot name="name"/>?</li> 
+<li>How did you hear about <get name="bot_name"/>?</li> 
 <li>How is the weather?</li>
 <li>I've lost the context, <get name="name"/>.  Are we still on <get name="topic"/>?</li>
 <li>If you could have any kind of robot what would it be?</li> 

@@ -30,16 +30,14 @@ class Robot < ActiveRecord::Base
     end
 
     def reply receive
-      reply = $robot.get_reaction receive
       if receive.blank?
         reply = NullReply
       elsif receive =~ /[\u4e00-\u9fa5]/
         reply = ChineseReply
       elsif Crawler.is_wiki_question?(receive).present?
+        reply = $robot.get_reaction receive
         if reply.blank?
-          if reply.blank?
-            reply = get_reply_from_wiki receive
-          end
+          reply = get_reply_from_wiki receive
         end
         if reply.blank?
           reply = $robot_last.get_reaction receive

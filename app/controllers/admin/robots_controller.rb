@@ -47,6 +47,7 @@ class Admin::RobotsController < ApplicationController
     file = params[:aiml]
     unless file.blank?
       begin
+        flash[:success] = 'learn success'
         $robot.parser.parse file.read
       rescue => err
         err

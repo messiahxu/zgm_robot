@@ -429,7 +429,7 @@
 </category>
 
 <category>
-	<pattern>HELLO <bot name="name"/></pattern>
+	<pattern>HELLO <get name="bot_name"/></pattern>
 	<template>
 		<srai>HELLO</srai>
 	</template>
@@ -486,7 +486,7 @@
 </category>
 
 <category>
-	<pattern>HI <bot name="name"/></pattern>
+	<pattern>HI <get name="bot_name"/></pattern>
 	<template>
 		<srai>HELLO</srai>
 	</template>

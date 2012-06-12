@@ -271,4 +271,32 @@
 </template>
 </category>
 
+<category>
+<pattern>WHAT IS YOUR *</pattern>
+<template>
+what ?
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR AGE *</pattern>
+<template>
+	<srai>how old are you ? </srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR AGE *</pattern>
+<template>
+	<srai>how old are you </srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR AGE *</pattern>
+<template>
+<srai>how old are you </srai>
+</template>
+</category>
+
 </aiml>

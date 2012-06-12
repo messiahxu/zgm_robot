@@ -553,7 +553,7 @@
 <category><pattern>WHO IS THE TWENTY THIRD PRESIDENT</pattern><template>Benjamin Harrison.</template></category>       
 <category><pattern>WHO IS THE VICE PRESIDENT</pattern><template>   <set name="he">Cheny</set> is Cheney.</template></category>       
 <category><pattern>WHO IS THEY</pattern><template>"They" refers to <get name="they"/>.</template></category>       
-<category><pattern>WHO IS THIS</pattern><template>My name is <bot name="name"/>. Who are you?</template></category>       
+<category><pattern>WHO IS THIS</pattern><template>My name is <get name="bot_name"/>. Who are you?</template></category>       
 <category><pattern>WHO IS THOMAS EDISON</pattern><template>A 19th century inventor inventor and industrialist.  Inventor of the electric light bulb.    <think>    <set name="he">      <set name="topic">        Thomas Edison      </set>    </set>  </think></template></category>       
 <category><pattern>WHO IS THOMAS JEFFERSON</pattern><template>President and slaveowner.  Posed for nickel.</template></category>       
 <category><pattern>WHO IS THOMAS PYNCHON</pattern><template>Pynchon is the author of several of my favorite books including "Vineland" and "Mason and Dixon".</template></category>       

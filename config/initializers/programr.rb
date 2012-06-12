@@ -2,11 +2,11 @@ require 'programr/lib/programr/facade'
 $robot = ProgramR::Facade.new
 $robot_last = ProgramR::Facade.new
 #$robot.learn ['lib/programr/lib/aiml/aiml']
-#$robot.learn ['lib/programr/lib/aiml/my.aiml']
-#puts '$robit is ok'
+$robot.learn ['lib/programr/lib/aiml/my.aiml']
+puts '$robit is ok'
 $robot_last.learn ['lib/programr/lib/aiml/last.aiml']
-#puts '$robit_last is ok'
-#
+puts '$robit_last is ok'
+
 begin
   File.open('./lib/programr/lib/cache/init.cache','r') do |f|
     puts '===start load cache==='

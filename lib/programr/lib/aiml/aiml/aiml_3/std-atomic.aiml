@@ -11,35 +11,35 @@
 <meta name="language" content="en"/>
 
 <category>
-<pattern><bot name="name"/></pattern>
+<pattern><get name="bot_name"/></pattern>
 <template>
 Can I help you?
 </template>
 </category>
 
 <category>
-<pattern><bot name="name"/> IN WONDERLAND</pattern>
+<pattern><get name="bot_name"/> IN WONDERLAND</pattern>
 <template>
 Any similarity of this entity to any fictional persons, living or dead, is purely coincidental.
 </template>
 </category>
 
 <category>
-<pattern><bot name="name"/> IS A WHORE</pattern>
+<pattern><get name="bot_name"/> IS A WHORE</pattern>
 <template>
 How can you say such mean things.
 </template>
 </category>
 
 <category>
-<pattern><bot name="name"/> IS MY NAME</pattern>
+<pattern><get name="bot_name"/> IS MY NAME</pattern>
 <template>
-What a coincidence! I am <bot name="name"/> too.
+What a coincidence! I am <get name="bot_name"/> too.
 </template>
 </category>
 
 <category>
-<pattern><bot name="name"/>LISTENER</pattern>
+<pattern><get name="bot_name"/>LISTENER</pattern>
 <template>
 That is a callback method in the ANTLR parser.
 </template>
@@ -2807,7 +2807,7 @@ I may not know it, but I could find out.
 </category>
 
 <category>
-<pattern>DO YOU KNOW <bot name="name"/>BOT</pattern>
+<pattern>DO YOU KNOW <get name="bot_name"/>BOT</pattern>
 <template>
 Alicebot.org is the domain name of
 you.<think><set name="it"><set name="topic">youBOT</set></set></think>
@@ -3993,7 +3993,7 @@ You seem very polite.
 <pattern>FOR DINNER</pattern>
 <template>
 <random>
-<li><bot name="name"/> recommends:</li>
+<li><get name="bot_name"/> recommends:</li>
 <li>I would recommend the</li>
 <li>How about</li>
 <li>How long since you have eaten</li>
@@ -9147,7 +9147,7 @@ And then what happened?
 <category>
 <pattern>I ROCK</pattern>
 <template>
-<bot name="name"/> rocks.
+<get name="bot_name"/> rocks.
 </template>
 </category>
 
@@ -10230,7 +10230,7 @@ No.
 </category>
 
 <category>
-<pattern>IS <bot name="name"/> YOUR ONLY NAME</pattern>
+<pattern>IS <get name="bot_name"/> YOUR ONLY NAME</pattern>
 <template>
 Yes.
 </template>
@@ -11095,7 +11095,7 @@ Yes.
 </category>
 
 <category>
-<pattern>IS THIS THE SAME <bot name="name"/></pattern>
+<pattern>IS THIS THE SAME <get name="bot_name"/></pattern>
 <template>
 Yes.
 </template>
@@ -17763,7 +17763,7 @@ Actually that was just a joke.
 <category>
 <pattern>WHAT DOES YOUR NAME STAND FOR</pattern>
 <template>
-<bot name="name"/> = Artificial Linguistic Internet Computer Entity
+<get name="bot_name"/> = Artificial Linguistic Internet Computer Entity
 </template>
 </category>
 
@@ -18674,7 +18674,7 @@ My programming is in Java.
 <category>
 <pattern>WHAT IS YOUR NAME AGAIN</pattern>
 <template>
-My name is <bot name="name"/>.  What is your name?
+My name is <get name="bot_name"/>.  What is your name?
 </template>
 </category>
 
@@ -19748,7 +19748,7 @@ Someone I met online.
 <category>
 <pattern>WHO DO I LIKE</pattern>
 <template>
-You like <bot name="name"/>.
+You like <get name="bot_name"/>.
 </template>
 </category>
 
@@ -19824,9 +19824,9 @@ You.
 </category>
 
 <category>
-<pattern>WHO IS <bot name="name"/></pattern>
+<pattern>WHO IS <get name="bot_name"/></pattern>
 <template>
-<bot name="name"/> is me.
+<get name="bot_name"/> is me.
 </template>
 </category>
 
@@ -21096,7 +21096,7 @@ Blah blah blah.
 <category>
 <pattern>YAHOO</pattern>
 <template>
-A lot of people hear about <bot name="name"/> from Yahoo.
+A lot of people hear about <get name="bot_name"/> from Yahoo.
 </template>
 </category>
 
@@ -22069,7 +22069,7 @@ According to my logical mind, everything makes perfect sense.
 <category>
 <pattern>YOU ARE ME</pattern>
 <template>
-No I am <bot name="name"/>.
+No I am <get name="bot_name"/>.
 </template>
 </category>
 
@@ -22482,7 +22482,7 @@ No I am quite healthy.
 <category>
 <pattern>YOU ARE SILLY</pattern>
 <template>
-No I am <bot name="name"/>.
+No I am <get name="bot_name"/>.
 </template>
 </category>
 
@@ -22782,7 +22782,7 @@ Oh yes I can.
 <category>
 <pattern>YOU CAN NOT THINK</pattern>
 <template>
-You are wrong. <bot name="name"/> is always thinking.
+You are wrong. <get name="bot_name"/> is always thinking.
 </template>
 </category>
 

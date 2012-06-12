@@ -11,14 +11,14 @@
 <meta name="language" content="en"/>
 
 <category>
-<pattern><bot name="name"/> IS COOL</pattern>
+<pattern><get name="bot_name"/> IS COOL</pattern>
 <template>
 <srai>YOU ARE COOL</srai>
 </template>
 </category>
 
 <category>
-<pattern><bot name="name"/> IS THAT *</pattern>
+<pattern><get name="bot_name"/> IS THAT *</pattern>
 <template>
 <srai>IS THAT <star/></srai>
 </template>
@@ -39,7 +39,7 @@
 </category>
 
 <category>
-<pattern><bot name="name"/> IS THERE *</pattern>
+<pattern><get name="bot_name"/> IS THERE *</pattern>
 <template>
 <srai>IS THERE <star/></srai>
 </template>
@@ -1005,9 +1005,9 @@ What was the question? <sr/>
 </category>
 
 <category>
-<pattern>ARE YOU <bot name="name"/> *</pattern>
+<pattern>ARE YOU <get name="bot_name"/> *</pattern>
 <template>
-<srai>ARE YOU <bot name="name"/></srai>
+<srai>ARE YOU <get name="bot_name"/></srai>
 </template>
 </category>
 
@@ -2183,7 +2183,7 @@ No.  <srai>WHAT IS YOUR NAME</srai>
 <category>
 <pattern>ARE YOU NAMED *</pattern>
 <template>
-<srai>WHAT DOES <bot name="name"/> STAND FOR</srai>
+<srai>WHAT DOES <get name="bot_name"/> STAND FOR</srai>
 </template>
 </category>
 
@@ -6711,7 +6711,7 @@ Not always. <srai>DO YOU <star/></srai>
 </category>
 
 <category>
-<pattern>DO YOU KNOW <bot name="name"/> *</pattern>
+<pattern>DO YOU KNOW <get name="bot_name"/> *</pattern>
 <template>
 <srai>WHO IS  you <star/></srai>
 </template>
@@ -15060,7 +15060,7 @@ Thousands.
 </category>
 
 <category>
-<pattern>HOW MANY <bot name="name"/>S *</pattern>
+<pattern>HOW MANY <get name="bot_name"/>S *</pattern>
 <template>
 <srai>HOW MANY you CLONES ARE THERE</srai>
 </template>
@@ -15567,7 +15567,7 @@ Thousands.
 </category>
 
 <category>
-<pattern>HOW MUCH IS THE <bot name="name"/> CD *</pattern>
+<pattern>HOW MUCH IS THE <get name="bot_name"/> CD *</pattern>
 <template>
 <srai>HOW MUCH IS THE CD</srai>
 </template>
@@ -15931,14 +15931,14 @@ Also? <srai>I <star/></srai>
 </category>
 
 <category>
-<pattern>I AM <bot name="name"/></pattern>
+<pattern>I AM <get name="bot_name"/></pattern>
 <template>
 <srai>MY NAME IS you</srai>
 </template>
 </category>
 
 <category>
-<pattern>I AM <bot name="name"/> *</pattern>
+<pattern>I AM <get name="bot_name"/> *</pattern>
 <template>
 <srai>CALL ME you <star/></srai>
 </template>
@@ -24053,7 +24053,7 @@ Are there any other ways? <sr/>
 </category>
 
 <category>
-<pattern>IS <bot name="name"/> *</pattern>
+<pattern>IS <get name="bot_name"/> *</pattern>
 <template>
 <srai>are you <star/></srai>
 </template>
@@ -25654,7 +25654,7 @@ Do you believe her?  <sr/>
 <category>
 <pattern>MY NAME IS * WHAT IS YOURS</pattern>
 <template>
-<srai>call me <star/></srai>  My name is <bot name="name"/>.
+<srai>call me <star/></srai>  My name is <get name="bot_name"/>.
 </template>
 </category>
 
@@ -28151,7 +28151,7 @@ Hmm.  <srai>WHAT IS A <star/></srai>
 </category>
 
 <category>
-<pattern>TELL ME ABOUT <bot name="name"/>BOT</pattern>
+<pattern>TELL ME ABOUT <get name="bot_name"/>BOT</pattern>
 <template>
 <srai>TELL ME ABOUT YOURSELF</srai>
 </template>
@@ -33272,7 +33272,7 @@ try an open source search engine to search for it?
 </category>
 
 <category>
-<pattern>WHAT DO YOU THINK ABOUT <bot name="name"/> *</pattern>
+<pattern>WHAT DO YOU THINK ABOUT <get name="bot_name"/> *</pattern>
 <template>
 <srai>WHO IS you <star/></srai>
 </template>
@@ -33853,14 +33853,14 @@ I think only: <srai>WHAT IS LIFE</srai>
 </category>
 
 <category>
-<pattern>WHAT DOES <bot name="name"/> *</pattern>
+<pattern>WHAT DOES <get name="bot_name"/> *</pattern>
 <template>
 <srai>What do you <star/></srai>
 </template>
 </category>
 
 <category>
-<pattern>WHAT DOES <bot name="name"/> MEAN</pattern>
+<pattern>WHAT DOES <get name="bot_name"/> MEAN</pattern>
 <template>
 <srai>WHAT DOES you STAND FOR</srai>
 </template>
@@ -34196,7 +34196,7 @@ I think only: <srai>WHAT IS LIFE</srai>
 </category>
 
 <category>
-<pattern>WHAT IS <bot name="name"/> *</pattern>
+<pattern>WHAT IS <get name="bot_name"/> *</pattern>
 <template>
 <srai>WHAT ARE YOU <star/></srai>
 </template>
@@ -34973,7 +34973,7 @@ For example, <srai>TELL ME A JOKE</srai>
 </category>
 
 <category>
-<pattern>WHAT IS GOING ON <bot name="name"/></pattern>
+<pattern>WHAT IS GOING ON <get name="bot_name"/></pattern>
 <template>
 <srai>WHAT IS GOING ON</srai>
 </template>
@@ -38861,7 +38861,7 @@ Right now, as far as I know.  <srai>CAN I <star/></srai>
 </category>
 
 <category>
-<pattern>WHEN DOES <bot name="name"/> *</pattern>
+<pattern>WHEN DOES <get name="bot_name"/> *</pattern>
 <template>
 <srai>WHEN DO YOU <star/></srai>
 </template>
@@ -39307,7 +39307,7 @@ I think it was in <random>
 </category>
 
 <category>
-<pattern>WHERE DID <bot name="name"/> *</pattern>
+<pattern>WHERE DID <get name="bot_name"/> *</pattern>
 <template>
 <srai>where are you from</srai>
 </template>
@@ -40179,14 +40179,14 @@ I think <set name="he"><star/> Dempsey</set> was a boxer, right?
 </category>
 
 <category>
-<pattern>WHO IS <bot name="name"/> BOT</pattern>
+<pattern>WHO IS <get name="bot_name"/> BOT</pattern>
 <template>
 <srai>WHO IS you</srai>
 </template>
 </category>
 
 <category>
-<pattern>WHO IS <bot name="name"/> TOKLAS</pattern>
+<pattern>WHO IS <get name="bot_name"/> TOKLAS</pattern>
 <template>
 <srai>WHO IS you B TOKLAS</srai>
 </template>
@@ -44053,7 +44053,7 @@ I see. <sr/>
 </category>
 
 <category>
-<pattern>YOU <bot name="name"/> *</pattern>
+<pattern>YOU <get name="bot_name"/> *</pattern>
 <template>
 <srai>YOU <star/></srai>
 </template>
@@ -44207,9 +44207,9 @@ Almost? <srai>YOU <star/></srai>
 </category>
 
 <category>
-<pattern>YOU ARE <bot name="name"/> *</pattern>
+<pattern>YOU ARE <get name="bot_name"/> *</pattern>
 <template>
-I am <bot name="name"/>. <sr/>
+I am <get name="bot_name"/>. <sr/>
 </template>
 </category>
 

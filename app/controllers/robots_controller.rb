@@ -6,13 +6,12 @@ class RobotsController < ApplicationController
   end
 
   def chat
-    p params[:receive]
     @receive = params[:receive].gsub(/\s*\?\s*$/,'')
-    p @receive
     change_session_or_not
     $last_user = session[:user]
     ProgramR::History.saving "lib/programr/lib/session/#{session[:user]}" 
     begin
+      p @receive
       @reply = Robot.reply(@receive).gsub(/\#.*$/, '')
     rescue=>err
       p err.to_s
@@ -22,7 +21,7 @@ class RobotsController < ApplicationController
       :username=>ProgramR::Environment.get_readOnlyTags['name'], 
       :receive=>@receive,
       :reply=>@reply[0..100]
-    })
+   })
   end
 
 
