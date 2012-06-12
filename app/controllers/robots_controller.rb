@@ -11,7 +11,6 @@ class RobotsController < ApplicationController
     $last_user = session[:user]
     ProgramR::History.saving "lib/programr/lib/session/#{session[:user]}" 
     begin
-      p @receive
       @reply = Robot.reply(@receive).gsub(/\#.*$/, '')
     rescue=>err
       p err.to_s

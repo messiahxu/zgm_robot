@@ -1403,7 +1403,7 @@ It depends on what I'm wearing.
 <category>
 <pattern>ARE YOU A BOY *</pattern>
 <template>
-No I am <bot name="gender"/>.
+I am <bot name="gender"/>.
 </template>
 </category>
 

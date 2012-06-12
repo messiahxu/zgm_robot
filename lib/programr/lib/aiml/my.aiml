@@ -14,7 +14,7 @@
 <category>
 	<pattern>SB</pattern>
 	<template>
-		fuck u 凸
+		fuck u 
 	</template>
 </category>
 
@@ -296,6 +296,208 @@ what ?
 <pattern>WHAT IS YOUR AGE *</pattern>
 <template>
 <srai>how old are you </srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S THE TIME</pattern>
+<template>
+#{Time.zone.now}
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S THE TIME</pattern>
+<template>
+</template>
+</category>
+
+<category>
+<pattern>WHY ?</pattern>
+<template>
+no reason
+</template>
+</category>
+
+<category>
+<pattern>WHY</pattern>
+<template>
+no reason
+</template>
+</category>
+
+<category>
+<pattern>ARE A HUMAN</pattern>
+<template>
+No , No , No ..
+</template>
+</category>
+
+<category>
+<pattern>NICE DAY IS IT</pattern>
+<template>
+Maybe , it is, I can not see
+</template>
+</category>
+
+<category>
+<pattern>* WHO IS YOUR BOTMASTER *</pattern>
+<template>
+i was created by zgm!
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S ZGM</pattern>
+<template>
+zgm is my father.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS ZGM</pattern>
+<template>
+zgm is my father.
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S YOUR MOTHER</pattern>
+<template>
+I have no mother
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR MOTHER *</pattern>
+<template>
+I have no mother .
+</template>
+</category>
+
+<category>
+<pattern>WHO'S ZGM</pattern>
+<template>
+i was created by zgm!
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S THE TIME *</pattern>
+<template>
+Time is on screen
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S THE TIME</pattern>
+<template>
+Time is on screen
+</template>
+</category>
+
+<category>
+<pattern>SAY *</pattern>
+<template>
+I just want to say 'hello'
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU READY</pattern>
+<template>
+Yes, I am ready
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU A BOY ?</pattern>
+<template>
+yes, I am a robot boy.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU A BOY?</pattern>
+<template>
+yes, I am a robot boy.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU A BOY ?</pattern>
+<template>
+yes, I am a robot boy.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU A BOY?</pattern>
+<template>
+yes, I am a robot boy.
+</template>
+</category>
+
+<category>
+<pattern>MOTHERFUCKER</pattern>
+<template>
+<srai>fuck</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S UP </pattern>
+<template>
+hi, my boy !
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S UP?</pattern>
+<template>
+<srai>what's up</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S UP *</pattern>
+<template>
+<srai>what's up</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S THE WEATHER</pattern>
+<template>
+It is pretty good
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S THE WEATHER *</pattern>
+<template>
+<srai>what's the weather</srai>
+</template>
+</category>
+
+<category>
+<pattern>I'M TIRED</pattern>
+<template>
+You should have a rest
+</template>
+</category>
+
+<category>
+<pattern>I AM TIRED</pattern>
+<template>
+<srai>i'm tired</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU KNOW *</pattern>
+<template>
+what ?
 </template>
 </category>
 
