@@ -19,9 +19,9 @@ class Crawler
         begin
           timeout(10) do |e|
             reply = find_in_wiki_func(receive)
-            while reply.blank?
-              reply = find_in_wiki_func(receive)
-            end
+#            while reply.blank?
+              #reply = find_in_wiki_func(receive)
+#            end
             unless Wiki.create(:receive=>receive, :reply=>reply)
               p 'save error'
             end

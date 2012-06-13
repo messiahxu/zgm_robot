@@ -47817,13 +47817,6 @@ Oh, of course! <srai>YOU WOULD <star/></srai>
 </category>
 
 <category>
-<pattern>YOUR * IS WHO</pattern>
-<template>
-<srai>WHO IS YOUR <star/></srai>
-</template>
-</category>
-
-<category>
 <pattern>YOUR AGE</pattern>
 <template>
 <srai>HOW OLD ARE YOU</srai>

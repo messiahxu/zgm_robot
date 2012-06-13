@@ -41,6 +41,7 @@ module ProgramR
       @history.updateStarMatches(starGreedy)
       res = ''
       unless reaction.nil?
+        p reaction
         reaction.each{|tocken| 
           if(tocken.class == Srai)
             tocken = get_reaction(tocken.pattern,false)

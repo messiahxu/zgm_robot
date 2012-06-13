@@ -495,9 +495,16 @@ You should have a rest
 </category>
 
 <category>
-<pattern>DO YOU KNOW *</pattern>
+<pattern>DO YOU KNOW  IOS6</pattern>
 <template>
-what ?
+I hear it some days ago
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT ZGM</pattern>
+<template>
+he is a good boy
 </template>
 </category>
 

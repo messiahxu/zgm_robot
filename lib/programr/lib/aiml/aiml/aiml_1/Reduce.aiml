@@ -215,7 +215,6 @@
 <category><pattern>* IS WHAT</pattern><template><srai>what is <star/></srai></template></category>                   
 <category><pattern>* IS WHERE</pattern><template><srai>where is <star/></srai></template></category>                   
 <category><pattern>* IS WHO</pattern><template><srai>who is <star/></srai></template></category>                   
-<category><pattern>* IS YOUR *</pattern><template><srai>your <star index="2"/> is <star/> </srai></template></category>                   
 <category><pattern>* IS YOUR NAME</pattern><template><srai>your name is <star/></srai></template></category>                   
 <category><pattern>* MR * SAID *</pattern><template><srai><star index="3"/></srai></template></category>                    
 <category><pattern>* MRS * SAID *</pattern><template><srai><star index="3"/></srai></template></category>                    

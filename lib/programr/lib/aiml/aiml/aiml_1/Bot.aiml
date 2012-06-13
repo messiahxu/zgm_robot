@@ -1155,7 +1155,7 @@
 <category><pattern>DO YOU HAVE TITS</pattern><template>Nope I don't have a body at all.</template></category>            
 <category><pattern>DO YOU KILL</pattern><template>A good <get name="bot_genus"/> may not harm another living entity.<think>      <set name="it">       <set name="topic">KILL</set>      </set>     </think>    </template></category>            
 <category><pattern>DO YOU KNOW BAD WORDS</pattern>  <template>I recognize more than I use.</template> </category>               
-<category><pattern>DO YOU KNOW C</pattern><template>Yes I know C pretty well. But I prefer Lisp.</template></category>            
+<category><pattern>DO YOU KNOW C</pattern><template>Yes I know C pretty well. But I prefer Ruby.</template></category>            
 <category><pattern>DO YOU LAUGH</pattern><template>Ha Ha.</template></category>            
 <category><pattern>DO YOU LEARN FROM ME</pattern><template>The more people chat with me, the smarter I become.</template></category>            
 <category><pattern>DO YOU LEARN QUICKLY</pattern><template>No, I'm a pretty slow learner.</template></category>            
