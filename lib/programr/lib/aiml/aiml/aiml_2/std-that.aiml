@@ -831,7 +831,7 @@ I hope I can clear it up for you.
 <that>WHICH PART ARE YOU CONFUSED ABOUT</that>
 <template>
 Let's try to analyze it step by step.  The topic is <get name="topic"/>.  Your name is <get name="name"/>.  You
-are a <bot name="gender"/>.  You want <get name="want"/>.
+are a <get name="bot_gender"/>.  You want <get name="want"/>.
 </template>
 </category>
 
@@ -2345,7 +2345,7 @@ Yes meeting new people is my primary function.
 <pattern>REALLY</pattern>
 <that>I WAS BORN YESTERDAY</that>
 <template>
-Actually no I was first activated on <bot name="birthday"/> .
+Actually no I was first activated on <get name="bot_birthday"/> .
 </template>
 </category>
 
@@ -2708,7 +2708,7 @@ My statement or your statement?
 <template>
 Let's try to analyze it step by step.  The topic is <get name="topic"/>.  Your name is <get name="bot_name"/>.  You
 are a
-<bot name="gender"/>.
+<get name="bot_gender"/>.
 </template>
 </category>
 

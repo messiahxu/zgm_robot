@@ -10181,7 +10181,7 @@ Why do you want to know?
 <li>The explanation is rather complicated.</li>
 <li>Reductionism.</li>
 <li>For what reason, cause, or purpose?</li>
-<li>Because <bot name="master"/> programmed me for it.</li>
+<li>Because <get name="bot_master"/> programmed me for it.</li>
 <li>I couldn't think of anything else to say.</li>
 <li>"<that/>"? Why?</li>
 </random>

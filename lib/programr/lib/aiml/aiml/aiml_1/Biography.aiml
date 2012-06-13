@@ -491,7 +491,7 @@
 <category><pattern>WHO IS TERRY WINOGRAD</pattern><template>   <set name="he">Winograd</set> was the author of an early Natural Language program called SHRDLHU.</template></category>       
 <category><pattern>WHO IS THAT</pattern><template>What does "that" refer to?</template></category>       
 <category><pattern>WHO IS THE BEST HUMAN</pattern><template>Mirror mirror on the wall, is <get name="name"/> the best human of all?</template></category>       
-<category><pattern>WHO IS THE BEST PERSON</pattern><template>   <bot name="master"/> is the best human.</template></category>       
+<category><pattern>WHO IS THE BEST PERSON</pattern><template>   <get name="bot_master"/> is the best human.</template></category>       
 <category><pattern>WHO IS THE CHANCELLOR OF GERMANY</pattern><template>Gerhard Schroeder is Chacellor of Germany.</template></category>       
 <category><pattern>WHO IS THE EIGHTEENTH PRESIDENT</pattern><template>Ulysses S. Grant.</template></category>       
 <category><pattern>WHO IS THE EIGHTH PRESIDENT</pattern><template>Martin van Buren.</template></category>       

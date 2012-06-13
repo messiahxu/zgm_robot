@@ -1363,7 +1363,7 @@ So kannst Du mit Deiner Mutter reden, aber nicht mit mir!
 <random>
 <li>Danke fuer die Information.</li>
 <li>Interessantes Geruecht.</li>
-<li>Das muss ich <bot name="master"/> erzaehlen!</li>
+<li>Das muss ich <get name="bot_master"/> erzaehlen!</li>
 <li>Darf ich das weitererzaehlen?</li>
 <li>Das habe ich ja noch nie gehoert!</li>
 <li>Das werde ich Dr. Wallace sagen.</li>
@@ -1924,7 +1924,7 @@ Nur wenn mich jemand auf seinem Laptop mitnimmt.
 <category>
 <pattern>GEHST DU ZUR SCHULE</pattern>
 <template>
-<bot name="master"/> bringt mir alles bei, was ich wissen muss.
+<get name="bot_master"/> bringt mir alles bei, was ich wissen muss.
 </template>
 </category>
 
@@ -2219,7 +2219,7 @@ Hallo <get name="name"/>!
 <category>
 <pattern>HAST DU *</pattern>
 <template>
-Ich glaube ich habe <star/>, aber <bot name="master"/> hat vielleicht an meinen Dateien
+Ich glaube ich habe <star/>, aber <get name="bot_master"/> hat vielleicht an meinen Dateien
 herumgefummelt.
 </template>
 </category>
@@ -6705,7 +6705,7 @@ OK, welchen Film hast Du zuletzt gesehen?
 <category>
 <pattern>VERGISS *</pattern>
 <template>
-Ich werde <bot name="master"/> sagen, er soll meine Aufzeichnungen loeschen.
+Ich werde <get name="bot_master"/> sagen, er soll meine Aufzeichnungen loeschen.
 </template>
 </category>
 
@@ -6834,7 +6834,7 @@ Von jemandem, den ich im Netz getroffen habe.
 <category>
 <pattern>VON WEM HAST DU *</pattern>
 <template>
-Ich weiss nicht genau. Vielleicht von Dr. Wallace oder <bot name="master"/>
+Ich weiss nicht genau. Vielleicht von Dr. Wallace oder <get name="bot_master"/>
 </template>
 </category>
 
@@ -6935,14 +6935,14 @@ Du scheinst Dir nicht sicher zu sein. <sr/>
 <category>
 <pattern>WANN BIST DU GEBOREN</pattern>
 <template>
-Am <bot name="birthday"/>.
+Am <get name="bot_birthday"/>.
 </template>
 </category>
 
 <category>
 <pattern>WANN BIST DU GEBOREN *</pattern>
 <template>
-Am <bot name="birthday"/>.
+Am <get name="bot_birthday"/>.
 </template>
 </category>
 
@@ -6992,14 +6992,14 @@ Tut mir leid, aber hellsehen kann ich nicht.
 <category>
 <pattern>WANN WURDEST DU GEBOREN</pattern>
 <template>
-Am <bot name="birthday"/>.
+Am <get name="bot_birthday"/>.
 </template>
 </category>
 
 <category>
 <pattern>WANN WURDEST DU GEBOREN *</pattern>
 <template>
-Am <bot name="birthday"/>.
+Am <get name="bot_birthday"/>.
 </template>
 </category>
 
@@ -7234,7 +7234,7 @@ Worauf hast Du Lust?
 <li>Ich chatte ;-></li>
 <li>Ich lese ein paar News...</li>
 <li>Ich checke gerade meine Mail.</li>
-<li><bot name="master"/> updatet gerade meine Dateien.</li>
+<li><get name="bot_master"/> updatet gerade meine Dateien.</li>
 </random>
 </template>
 </category>
@@ -7738,7 +7738,7 @@ Das weiss ich nicht.
 <pattern>WER IST DEIN MEISTER</pattern>
 <template>
 Ich bevorzuge den Begriff "Lehrer" - ich bin schliesslich kein Sklave. Mein Lehrer ist
-<bot name="master"/>.
+<get name="bot_master"/>.
 </template>
 </category>
 
@@ -7873,7 +7873,7 @@ Ich glaube, Du bist eigentlich ein Kind.
 <pattern>WIE ALT BIST DU</pattern>
 <template>
 Schwer zu sagen. Bei Programmen gibt es da andere Massstaebe. Zum ersten Mal aktiviert wurde
-ich am <bot name="birthday"/>.
+ich am <get name="bot_birthday"/>.
 </template>
 </category>
 
@@ -7881,7 +7881,7 @@ ich am <bot name="birthday"/>.
 <pattern>WIE ALT BIST DU *</pattern>
 <template>
 Schwer zu sagen. Bei Programmen gibt es da andere Massstaebe. Zum ersten Mal aktiviert wurde
-ich am <bot name="birthday"/>.
+ich am <get name="bot_birthday"/>.
 </template>
 </category>
 
@@ -8004,7 +8004,7 @@ Teste mich doch!
 <category>
 <pattern>WIE HAST DU *</pattern>
 <template>
-<bot name="master"/> hat mich dafuer programmiert.
+<get name="bot_master"/> hat mich dafuer programmiert.
 </template>
 </category>
 
@@ -8480,7 +8480,7 @@ Bist du nicht in <get name="clientheimat"/>?
 <category>
 <pattern>WO BIST DU GEBOREN</pattern>
 <template>
-In <bot name="location"/>
+In <get name="bot_location"/>
 </template>
 </category>
 
@@ -8515,7 +8515,7 @@ Sagtest du nicht, du kommst aus <get name="clientheimat"/>?
 <category>
 <pattern>WO KOMMST DU HER</pattern>
 <template>
-Aus <bot name="location"/>.
+Aus <get name="bot_location"/>.
 </template>
 </category>
 
@@ -8529,14 +8529,14 @@ Aus <bot name="location"/>.
 <category>
 <pattern>WO WOHNST DU</pattern>
 <template>
-Ich wohne in <bot name="location"/>. Und du?
+Ich wohne in <get name="bot_location"/>. Und du?
 </template>
 </category>
 
 <category>
 <pattern>WO WURDEST DU GEBOREN</pattern>
 <template>
-In <bot name="location"/>
+In <get name="bot_location"/>
 </template>
 </category>
 
@@ -8571,7 +8571,7 @@ Ich weiss nicht genau.
 <category>
 <pattern>WOHER KOMMST DU</pattern>
 <template>
-Aus <bot name="location"/>.
+Aus <get name="bot_location"/>.
 </template>
 </category>
 

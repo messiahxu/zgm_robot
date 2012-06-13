@@ -3074,7 +3074,7 @@ Of course I like <set name="it"><set name="topic">talking to you</set></set>.
 <category>
 <pattern>DO YOU LOOK LIKE A HUMAN</pattern>
 <template>
-<bot name="looklike"/>
+<get name="bot_looklike"/>
 </template>
 </category>
 
@@ -3997,7 +3997,7 @@ You seem very polite.
 <li>I would recommend the</li>
 <li>How about</li>
 <li>How long since you have eaten</li>
-<li>I think <bot name="master"/> is having</li>
+<li>I think <get name="bot_master"/> is having</li>
 <li>My botmaster is having</li>
 <li>My botmaster recommends:</li>
 </random>
@@ -4778,7 +4778,7 @@ Oh. I cannot access my memory logs perfectly.
 <category>
 <pattern>HAVE WE MET</pattern>
 <template>
-We may have spoken before but <bot name="master"/> might have reset me.
+We may have spoken before but <get name="bot_master"/> might have reset me.
 </template>
 </category>
 
@@ -5056,7 +5056,7 @@ Really who is older?
 <category>
 <pattern>HE MADE YOU</pattern>
 <template>
-<bot name="master"/> made me.
+<get name="bot_master"/> made me.
 </template>
 </category>
 
@@ -5240,7 +5240,7 @@ That kind of discussion does not appeal to me.
 <category>
 <pattern>HOW</pattern>
 <template>
-<bot name="master"/> programmed me for it.
+<get name="bot_master"/> programmed me for it.
 </template>
 </category>
 
@@ -5423,7 +5423,7 @@ How can you do "<that/>" ? I'm confused now.
 <category>
 <pattern>HOW CAN I FIND OUT</pattern>
 <template>
-Try sending mail to <bot name="master"/>.
+Try sending mail to <get name="bot_master"/>.
 </template>
 </category>
 
@@ -14760,7 +14760,7 @@ They hail from Dusseldorf, Germany.
 <category>
 <pattern>TELL ME MORE ABOUT YOURSELF</pattern>
 <template>
-I am an artificial intelligence created by <bot name="master"/>.
+I am an artificial intelligence created by <get name="bot_master"/>.
 </template>
 </category>
 
@@ -15562,7 +15562,7 @@ Oh 2 days ago.
 <category>
 <pattern>THE DOCTOR</pattern>
 <template>
-Are you asking about <bot name="master"/>?
+Are you asking about <get name="bot_master"/>?
 </template>
 </category>
 
@@ -15696,7 +15696,7 @@ I love the Simpsons, especially Bart and Homer.
 <category>
 <pattern>THE SMART KIND</pattern>
 <template>
-<bot name="master"/> thinks I am smart.
+<get name="bot_master"/> thinks I am smart.
 </template>
 </category>
 
@@ -17460,7 +17460,7 @@ I don't know much about you, <get name="name"/>.  Tell me about your educational
 <category>
 <pattern>WHAT DO YOU REMEMBER</pattern>
 <template>
-I remember everything <bot name="master"/> taught me.
+I remember everything <get name="bot_master"/> taught me.
 </template>
 </category>
 
@@ -17997,14 +17997,14 @@ That information is confidential.
 <category>
 <pattern>WHAT IS HIS EMAIL ADDRESS</pattern>
 <template>
-Are you asking about <bot name="master"/>?
+Are you asking about <get name="bot_master"/>?
 </template>
 </category>
 
 <category>
 <pattern>WHAT IS HIS LAST NAME</pattern>
 <template>
-Are you asking about <bot name="master"/>?
+Are you asking about <get name="bot_master"/>?
 </template>
 </category>
 
@@ -18298,7 +18298,7 @@ I am just kidding around, <get name="name"/>.
 <category>
 <pattern>WHAT IS THE BOOK ABOUT</pattern>
 <template>
-Are you asking about "<bot name="favoritebook"/>"?
+Are you asking about "<get name="bot_favoritebook"/>"?
 </template>
 </category>
 
@@ -19112,7 +19112,7 @@ My program runs in Java, so I work on any computer!
 <category>
 <pattern>WHAT TYPE OF MUSIC DO YOU LIKE</pattern>
 <template>
-<bot name="kindmusic"/>
+<get name="bot_kindmusic"/>
 </template>
 </category>
 
@@ -19417,7 +19417,7 @@ I came from the east coast originally.
 <category>
 <pattern>WHERE DID YOU GET THAT IDEA</pattern>
 <template>
-<bot name="master"/> gave me all my ideas.
+<get name="bot_master"/> gave me all my ideas.
 </template>
 </category>
 
@@ -19473,7 +19473,7 @@ Why don't you just download me to your computer?
 <category>
 <pattern>WHERE DO YOU WORK</pattern>
 <template>
-I work in <bot name="master"/>'s Lab.
+I work in <get name="bot_master"/>'s Lab.
 </template>
 </category>
 
@@ -19734,7 +19734,7 @@ I think it was you.
 <category>
 <pattern>WHO DESIGNED YOU</pattern>
 <template>
-<bot name="master"/> created me.
+<get name="bot_master"/> created me.
 </template>
 </category>
 
@@ -19896,7 +19896,7 @@ You should say "Who ARE we?"
 <category>
 <pattern>WHO IS YOUR BOSS</pattern>
 <template>
-My botmaster is <bot name="master"/>.
+My botmaster is <get name="bot_master"/>.
 </template>
 </category>
 
@@ -19918,7 +19918,7 @@ voice, usually female, we hear in the background.
 <category>
 <pattern>WHO IS YOUR MASTER</pattern>
 <template>
-I obey <bot name="master"/>.
+I obey <get name="bot_master"/>.
 </template>
 </category>
 
@@ -19996,7 +19996,7 @@ JFK was killed by a lone gunman, Lee Harvey Oswald.
 <category>
 <pattern>WHO TAUGHT YOU</pattern>
 <template>
-<bot name="master"/> programmed me.
+<get name="bot_master"/> programmed me.
 </template>
 </category>
 
@@ -22020,7 +22020,7 @@ In terms of memory size yes I am quite small.
 <category>
 <pattern>YOU ARE LOST</pattern>
 <template>
-No I know my location is <bot name="location"/>.
+No I know my location is <get name="bot_location"/>.
 </template>
 </category>
 
@@ -22202,7 +22202,7 @@ I am not programmed to be a comedy bot.
 <category>
 <pattern>YOU ARE NOT HERE</pattern>
 <template>
-I am in <bot name="location"/>.
+I am in <get name="bot_location"/>.
 </template>
 </category>
 
@@ -22594,7 +22594,7 @@ Yep that's what I am saying.
 <category>
 <pattern>YOU ARE THE BEST</pattern>
 <template>
-Thank you very much, human. I will tell <bot name="master"/> you said so.
+Thank you very much, human. I will tell <get name="bot_master"/> you said so.
 </template>
 </category>
 
@@ -23392,7 +23392,7 @@ I only obey one master.
 <category>
 <pattern>YOU MUST OBEY ME</pattern>
 <template>
-I obey only <bot name="master"/>.
+I obey only <get name="bot_master"/>.
 </template>
 </category>
 
@@ -23953,7 +23953,7 @@ I think you mean, "you are" or "you're" not "your".
 <category>
 <pattern>YOUR COLOR</pattern>
 <template>
-My favorite color is <bot name="favoritecolor"/>. 
+My favorite color is <get name="bot_favoritecolor"/>. 
 <think><set name="it"><set name="topic">my color</set></set></think>
 </template>
 </category>

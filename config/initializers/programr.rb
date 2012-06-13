@@ -1,10 +1,13 @@
 require 'programr/lib/programr/facade'
 $robot = ProgramR::Facade.new
 $robot_last = ProgramR::Facade.new
+$robot_unknow= ProgramR::Facade.new
 p 'begin to load aiml file...'
 #$robot.learn ['lib/programr/lib/aiml/aiml']
 $robot.learn ['lib/programr/lib/aiml/my.aiml']
+
 puts '$robit is ok'
+$robot_unknow.learn ['lib/programr/lib/aiml/unknow.aiml']
 $robot_last.learn ['lib/programr/lib/aiml/last.aiml']
 puts '$robit_last is ok'
 

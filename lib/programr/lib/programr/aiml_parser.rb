@@ -9,6 +9,7 @@ module  ProgramR
 
         def parse(aiml)
             @parser = REXML::Parsers::SAX2Parser.new(aiml)
+            p aiml
             category         = nil
             openLabels       = []
             patternIsOpen    = false

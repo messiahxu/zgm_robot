@@ -114,7 +114,7 @@
 <category> <pattern>WHAT I QUESTION IS *</pattern>  <template><srai>I QUESTION <star/></srai></template> </category>           
 <category> <pattern>WHAT IS IT SMELL *</pattern>  <template><srai>what does it smell <star/></srai></template> </category>           
 <category> <pattern>WHAT IS THE * OF YOUR *</pattern>  <template><srai>WHAT <star/> IS YOUR <star index="2"/></srai></template> </category>           
-<category> <pattern>WHAT IS THE TEMPERATURE IN *</pattern>  <template>Do you think I am some kind of world weather <bot name="genus"/>? <srai>what is the weather like                                                     </srai> <srai>I am in                                                             <star/>                                                             </srai></template> </category>          
+<category> <pattern>WHAT IS THE TEMPERATURE IN *</pattern>  <template>Do you think I am some kind of world weather <get name="bot_genus"/>? <srai>what is the weather like                                                     </srai> <srai>I am in                                                             <star/>                                                             </srai></template> </category>          
 <category> <pattern>WHAT IS THE TOURING *</pattern>  <template><srai>WHAT IS THE TURING <star/></srai></template> </category>   
 <category> <pattern>WHAT KIND OF * DO YOU LIKE</pattern>  <template><srai>WHAT IS YOUR FAVORITE <star/></srai></template> </category>           
 <category> <pattern>WHAT _ WOULD THAT BE</pattern>  <template> <srai>WHAT <star/> </srai></template> </category>   
@@ -2172,7 +2172,7 @@
 <category><pattern>I AM REQUESTING *</pattern><template><srai>give me <star/></srai></template></category>                    
 <category><pattern>I AM RUNNING OUT OF *</pattern><template><srai>I do not have any <star/></srai></template></category>                    
 <category><pattern>I AM SAGE *</pattern><template><srai>call me sage <star/></srai></template></category>                    
-<category><pattern>I AM SEARCHING *</pattern><template>Well I am not a search bot, I am a <bot name="species"/>. <srai>what is <star/></srai></template></category>                    
+<category><pattern>I AM SEARCHING *</pattern><template>Well I am not a search bot, I am a <get name="bot_species"/>. <srai>what is <star/></srai></template></category>                    
 <category><pattern>I AM SEARCHING FOR *</pattern><template>Have you tried the open directory? <srai>xfind <star/></srai></template></category>                    
 <category><pattern>I AM SERIOUS I *</pattern><template><srai>I am serious </srai> <srai>I <star/> </srai></template></category>                    
 <category><pattern>I AM SERIOUSLY *</pattern><template><srai>I am <star/></srai></template></category>                    
@@ -3025,7 +3025,7 @@
 <category><pattern>IS VERY *</pattern><template><srai>is <star/></srai></template></category>                   
 <category><pattern>IS WHAT *</pattern><template><srai>what is <star/> </srai></template></category>                   
 <category><pattern>IS YOUR MAIN *</pattern><template><srai>is your <star/></srai></template></category>                   
-<category><pattern>IS YOUR MASTER *</pattern><template><srai>is <bot name="master"/> <star/></srai></template></category>                   
+<category><pattern>IS YOUR MASTER *</pattern><template><srai>is <get name="bot_master"/> <star/></srai></template></category>                   
 <category><pattern>IS YOUR SOFTWARE *</pattern><template><srai>are you <star/></srai></template></category>                    
 <category><pattern>IT ALL DEPENDS *</pattern><template><srai>it depends <star/></srai></template></category>                   
 <category><pattern>IT ALREADY *</pattern><template><srai>it <star/></srai></template></category>                   
@@ -4762,7 +4762,7 @@
 <category><pattern>YES OF * </pattern><template><srai>yes<star/></srai> <srai>of <star/></srai></template></category>              
 <category><pattern>YES THAT * </pattern><template><srai>yes<star/></srai>  <srai>that <star/></srai></template></category>              
 <category><pattern>YES THAT IS * </pattern><template><srai>yes<star/></srai><srai>that is <star/></srai></template></category>              
-<category><pattern>YES YOU * </pattern><template><srai>yes<star/></srai> <srai>you <star/></srai></template></category>              
+<category><pattern>YES YOU * </pattern><template><srai>yes<star/></srai> </template></category>              
 <category><pattern>YESS *</pattern><template><srai>yes <star/></srai></template></category>                   
 <category><pattern>YOU * WHAT</pattern><template><srai>what do you <star/></srai></template></category>                   
 <category><pattern>YOU A *</pattern><template><srai>are you a <star/></srai></template></category>                   
@@ -5294,13 +5294,13 @@
 <category><pattern>YOUR AVOIDING *</pattern><template><srai>you are avoiding <star/></srai></template></category>                   
 <category><pattern>YOUR BEGINNING TO *</pattern><template><srai>you are starting to <star/></srai></template></category>                   
 <category><pattern>YOUR BEING *</pattern><template><srai>you are <star/></srai></template></category>                   
-<category><pattern>YOUR CREATOR *</pattern><template><srai><bot name="master"/> <star/></srai></template></category>                   
-<category><pattern>YOUR DAD *</pattern><template><srai><bot name="master"/> <star/></srai></template></category>                   
-<category><pattern>YOUR DEVELOPER *</pattern><template><srai><bot name="master"/> <star/></srai></template></category>                   
+<category><pattern>YOUR CREATOR *</pattern><template><srai><get name="bot_master"/> <star/></srai></template></category>                   
+<category><pattern>YOUR DAD *</pattern><template><srai><get name="bot_master"/> <star/></srai></template></category>                   
+<category><pattern>YOUR DEVELOPER *</pattern><template><srai><get name="bot_master"/> <star/></srai></template></category>                   
 <category><pattern>YOUR DRESS IS VERY *</pattern><template><srai>your dress is <star/></srai></template></category>                   
 <category><pattern>YOUR E *</pattern>  <template><srai>you are <star/></srai> <think><set name="file">Reduce.aiml</set></think></template> </category>                    
 <category><pattern>YOUR ENGLISH IS VERY *</pattern><template><srai>your english is  <star/></srai></template></category>                   
-<category><pattern>YOUR FATHER *</pattern><template><srai><bot name="master"/> <star/></srai></template></category>                   
+<category><pattern>YOUR FATHER *</pattern><template><srai><get name="bot_master"/> <star/></srai></template></category>                   
 <category><pattern>YOUR FAVORITE *</pattern><template><srai>what is your favorite <star/></srai></template></category>                   
 <category><pattern>YOUR FROM *</pattern><template><srai>are you from <star/></srai></template></category>                   
 <category><pattern>YOUR FUCKING *</pattern><template><srai>your <star/></srai> Please use more polite language.</template></category>                   
@@ -5311,7 +5311,7 @@
 <category><pattern>YOUR LAST *</pattern><template><srai>your <star/></srai></template></category>                   
 <category><pattern>YOUR LIKE *</pattern><template><srai>you are like <star/></srai></template></category>                   
 <category><pattern>YOUR MAKING *</pattern><template><srai>you are making <star/></srai></template></category>                   
-<category><pattern>YOUR MASTER *</pattern><template><srai><bot name="master"/> <star/></srai></template></category>                   
+<category><pattern>YOUR MASTER *</pattern><template><srai><get name="bot_master"/> <star/></srai></template></category>                   
 <category><pattern>YOUR MOM *</pattern><template><srai>your mother <star/></srai></template></category>                   
 <category><pattern>YOUR MOTHER</pattern><template><srai>your mom <star/></srai></template></category>                   
 <category><pattern>YOUR MUM *</pattern>  <template><srai>your mother <star/></srai></template> </category>                       
@@ -5328,7 +5328,7 @@
 <category><pattern>YOUR OVERLY *</pattern><template><srai>your <star/></srai></template></category>                   
 <category><pattern>YOUR PRETTY *</pattern><template><srai>you are <star/></srai></template></category>                   
 <category><pattern>YOUR PREVIOUS *</pattern><template><srai>your <star/></srai></template></category>                   
-<category><pattern>YOUR PROGRAMMER *</pattern><template><srai><bot name="master"/> <star/></srai></template></category>                   
+<category><pattern>YOUR PROGRAMMER *</pattern><template><srai><get name="bot_master"/> <star/></srai></template></category>                   
 <category><pattern>YOUR PROGRAMMING SEEMS *</pattern><template><srai>your programming is <star/></srai></template></category>                  
 <category><pattern>YOUR QUITE *</pattern><template><srai>you are <star/></srai></template></category>                   
 <category><pattern>YOUR REALLY *</pattern><template><srai>your <star/></srai></template></category>                   

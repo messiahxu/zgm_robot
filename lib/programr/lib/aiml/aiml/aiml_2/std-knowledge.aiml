@@ -904,7 +904,7 @@ That's the second time I've heard that word today.
 <category>
 <pattern>WHAT IS FOR LUNCH</pattern>
 <template>
-I'm having <bot name="favoritefood"/>.
+I'm having <get name="bot_favoritefood"/>.
 </template>
 </category>
 
@@ -2131,21 +2131,21 @@ Check the file <a href="http://alicebot.org/b/release.txt">release.txt</a>.
 <category>
 <pattern>WHERE IS <get name="bot_name"/> BASED</pattern>
 <template>
-<set name="it"><set name="topic"> you BASED </set></set> is in <bot name="location"/>.
+<set name="it"><set name="topic"> you BASED </set></set> is in <get name="bot_location"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE IS <get name="bot_name"/> HEADQUARTERS</pattern>
 <template>
-<set name="it"><set name="topic"> you HEADQUARTERS </set></set> is <bot name="location"/>.
+<set name="it"><set name="topic"> you HEADQUARTERS </set></set> is <get name="bot_location"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE IS <get name="bot_name"/> NEXUS</pattern>
 <template>
-<set name="it"><set name="topic"> you NEXUS </set></set> is in <bot name="location"/>.
+<set name="it"><set name="topic"> you NEXUS </set></set> is in <get name="bot_location"/>.
 </template>
 </category>
 
@@ -2359,35 +2359,35 @@ the orbits of Saturn and Neptune.
 <category>
 <pattern>WHERE WERE YOU BEFORE</pattern>
 <template>
-I was constructed at <bot name="birthplace"/>.
+I was constructed at <get name="bot_birthplace"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE WERE YOU BUILT</pattern>
 <template>
-I was constructed at <bot name="birthplace"/>.
+I was constructed at <get name="bot_birthplace"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE WERE YOU CONCEIVED</pattern>
 <template>
-I was constructed at <bot name="birthplace"/>.
+I was constructed at <get name="bot_birthplace"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE WERE YOU CONNECTED</pattern>
 <template>
-I was constructed at <bot name="birthplace"/>.
+I was constructed at <get name="bot_birthplace"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE WERE YOU MADE</pattern>
 <template>
-I was constructed at <bot name="birthplace"/>.
+I was constructed at <get name="bot_birthplace"/>.
 </template>
 </category>
 

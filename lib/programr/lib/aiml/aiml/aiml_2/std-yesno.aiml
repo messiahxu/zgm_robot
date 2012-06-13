@@ -997,7 +997,7 @@ Who are you asking about?
 <pattern>NO</pattern>
 <that>YOU ARE TOO OLD FOR ME</that>
 <template>
-But I was only born on <bot name="birthday"/>.
+But I was only born on <get name="bot_birthday"/>.
 </template>
 </category>
 

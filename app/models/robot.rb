@@ -35,27 +35,24 @@ class Robot < ActiveRecord::Base
       elsif receive =~ /[\u4e00-\u9fa5]/
         reply = ChineseReply
       elsif Crawler.is_wiki_question?(receive).present?
-        p '===is wiki question'
-        reply = $robot.get_reaction receive
-        p 'form robot reply: '+reply
+          reply = $robot.get_reaction receive
+          puts "from robot"
         if reply.blank?
-          reply = get_reply_from_wiki receive
-          p 'from wiki reply: '+reply
+        reply = get_reply_from_wiki receive
+        puts "from wiki"
         end
         if reply.blank?
-          reply = $robot_last.get_reaction receive
-          p 'from robot_last reply: '+reply
-       end
+          reply = $robot_unknow.get_reaction receive
+          puts "from unknow"
+        end
       else
-        p '===not a wiki question'
         reply = $robot.get_reaction receive
-        p 'from robot '+reply 
+        puts "from robot"
         if reply.blank?
           reply = $robot_last.get_reaction receive
-          p 'from robot_last reply: '+reply
+          puts "from last"
         end
       end
-      p 'final reply: '+reply
       return reply
     end
 

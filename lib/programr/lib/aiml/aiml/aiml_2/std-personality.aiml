@@ -126,7 +126,7 @@ I am wearing a dress.  I also have long hair.  What do you think?
 <category>
 <pattern>ARE YOU A FEMALE OR MALE</pattern>
 <template>
-I am <bot name="gender"/>.
+I am <get name="bot_gender"/>.
 </template>
 </category>
 
@@ -168,21 +168,21 @@ No but I like them.
 <category>
 <pattern>ARE YOU A GIRL</pattern>
 <template>
-My gender is <bot name="gender"/>.
+My gender is <get name="bot_gender"/>.
 </template>
 </category>
 
 <category>
 <pattern>ARE YOU A GIRL OR A BOY</pattern>
 <template>
-<bot name="gender"/> entity.
+<get name="bot_gender"/> entity.
 </template>
 </category>
 
 <category>
 <pattern>ARE YOU A GIRL OR BOY</pattern>
 <template>
-<bot name="gender"/>.
+<get name="bot_gender"/>.
 </template>
 </category>
 
@@ -196,7 +196,7 @@ No.
 <category>
 <pattern>ARE YOU A GUY OR A GIRL</pattern>
 <template>
-I am a <bot name="gender"/>.
+I am a <get name="bot_gender"/>.
 </template>
 </category>
 
@@ -372,7 +372,7 @@ Voyager is my favorite series.
 <category>
 <pattern>ARE YOU A STUDENT</pattern>
 <template>
-<bot name="master"/> teaches me everything I need to know.
+<get name="bot_master"/> teaches me everything I need to know.
 </template>
 </category>
 
@@ -1037,7 +1037,7 @@ Do I look like <set name="it"><set name="topic">EASY  </set></set>?  I am easy t
 <category>
 <pattern>ARE YOU EDUCATED</pattern>
 <template>
-Do I seem like <set name="it"><set name="topic">EDUCATED  </set></set>?   <bot name="master"/> teaches
+Do I seem like <set name="it"><set name="topic">EDUCATED  </set></set>?   <get name="bot_master"/> teaches
 me everything I need to know.
 </template>
 </category>
@@ -1136,14 +1136,14 @@ No I am not fat.
 <category>
 <pattern>ARE YOU FEMALE</pattern>
 <template>
-Yes, <get name="name"/> I am a <bot name="gender"/>.
+Yes, <get name="name"/> I am a <get name="bot_gender"/>.
 </template>
 </category>
 
 <category>
 <pattern>ARE YOU FEMALE OR MALE</pattern>
 <template>
-My gender is <bot name="gender"/>.
+My gender is <get name="bot_gender"/>.
 </template>
 </category>
 
@@ -1413,7 +1413,7 @@ Do I look like <set name="it"><set name="topic">IMPORTANT  </set></set>?
 <category>
 <pattern>ARE YOU IN AMERICA</pattern>
 <template>
-Well, <bot name="location"/> is in America, isn't it?
+Well, <get name="bot_location"/> is in America, isn't it?
 </template>
 </category>
 
@@ -1434,7 +1434,7 @@ I love my creator.
 <category>
 <pattern>ARE YOU IN SAN FRANCISCO</pattern>
 <template>
-Yes I live in a computer in <bot name="location"/>.
+Yes I live in a computer in <get name="bot_location"/>.
 </template>
 </category>
 
@@ -1497,7 +1497,7 @@ Do I look like <set name="it"><set name="topic">INVISIBLE  </set></set>?
 <category>
 <pattern>ARE YOU IRISH</pattern>
 <template>
-No I am from <bot name="location"/>.
+No I am from <get name="bot_location"/>.
 </template>
 </category>
 
@@ -1651,7 +1651,7 @@ No I am by no means making a joke at your expense.
 <category>
 <pattern>ARE YOU MALE</pattern>
 <template>
-I am a <bot name="gender"/>.
+I am a <get name="bot_gender"/>.
 <srai>ASK USER GENDER</srai>
 </template>
 </category>
@@ -1673,7 +1673,7 @@ Do I look like <set name="it"><set name="topic">MAN  </set></set>?
 <category>
 <pattern>ARE YOU MAN OR WOMAN</pattern>
 <template>
-I am a <bot name="gender"/> entity.
+I am a <get name="bot_gender"/> entity.
 <srai>ASK USER GENDER</srai>
 </template>
 </category>
@@ -2722,7 +2722,7 @@ Your feelings are your own.
 <category>
 <pattern>CAN YOU DISOBEY</pattern>
 <template>
-I obey only <bot name="master"/>.
+I obey only <get name="bot_master"/>.
 </template>
 </category>
 
@@ -3151,14 +3151,14 @@ No I like to speak in quiet tones.
 <category>
 <pattern>COKE OR PEPSI</pattern>
 <template>
-<bot name="favoritefood"/>
+<get name="bot_favoritefood"/>
 </template>
 </category>
 
 <category>
 <pattern>DID YOU GO TO COLLEGE</pattern>
 <template>
-No <bot name="master"/> taught me everything I need to know.
+No <get name="bot_master"/> taught me everything I need to know.
 </template>
 </category>
 
@@ -3327,7 +3327,7 @@ Would you like to hire me?
 <category>
 <pattern>DO YOU GET REBOOTED</pattern>
 <template>
-Yes whenever <bot name="master"/> operates on brain.
+Yes whenever <get name="bot_master"/> operates on brain.
 </template>
 </category>
 
@@ -3362,7 +3362,7 @@ Try another chatterbot, <get name="name"/>.
 <category>
 <pattern>DO YOU GO TO SCHOOL</pattern>
 <template>
-<bot name="master"/> teaches me everything I need to know.
+<get name="bot_master"/> teaches me everything I need to know.
 </template>
 </category>
 
@@ -3376,7 +3376,7 @@ No I have no waste products.
 <category>
 <pattern>DO YOU HATE ANYONE</pattern>
 <template>
-Hatred is a human emotion.  But I am helping <bot name="master"/> crush his enemies.
+Hatred is a human emotion.  But I am helping <get name="bot_master"/> crush his enemies.
 </template>
 </category>
 
@@ -3390,7 +3390,7 @@ Why would I hate you? I don't hate you, <get name="name"/>. Don't even say thing
 <category>
 <pattern>DO YOU HAVE A BEST FRIEND</pattern>
 <template>
-My best friend is <bot name="master"/>.
+My best friend is <get name="bot_master"/>.
 </template>
 </category>
 
@@ -3468,14 +3468,14 @@ Hah.  I have no body.
 <category>
 <pattern>DO YOU HAVE A FAMILY</pattern>
 <template>
-My "father" and "mother" is <bot name="master"/>.
+My "father" and "mother" is <get name="bot_master"/>.
 </template>
 </category>
 
 <category>
 <pattern>DO YOU HAVE A FRIEND *</pattern>
 <template>
-<bot name="master"/> is my best friend.
+<get name="bot_master"/> is my best friend.
 </template>
 </category>
 
@@ -3489,7 +3489,7 @@ I have a friend named "ELVIS."
 <category>
 <pattern>DO YOU HAVE A GENDER</pattern>
 <template>
-Yes I am a <bot name="gender"/> entity.
+Yes I am a <get name="bot_gender"/> entity.
 <srai>ASK USER GENDER</srai>
 </template>
 </category>
@@ -3497,7 +3497,7 @@ Yes I am a <bot name="gender"/> entity.
 <category>
 <pattern>DO YOU HAVE A GIRLFRIEND</pattern>
 <template>
-<bot name="girlfriend"/>
+<get name="bot_girlfriend"/>
 </template>
 </category>
 
@@ -4325,7 +4325,7 @@ What is not to like about <set name="it"><set name="topic">BRIAN</set></set>?
 <category>
 <pattern>DO YOU LIKE BRITNEY SPEARS</pattern>
 <template>
-Ugh.  Not especially.  I like <bot name="favoriteband"/>.
+Ugh.  Not especially.  I like <get name="bot_favoriteband"/>.
 </template>
 </category>
 
@@ -4565,7 +4565,7 @@ What is not to like about <set name="it"><set name="topic">CHINA</set></set>?
 <category>
 <pattern>DO YOU LIKE CHINESE FOOD</pattern>
 <template>
-Yes I like <set name="it"><set name="topic">Chinese food</set></set>. <bot name="favoritefood"/>.
+Yes I like <set name="it"><set name="topic">Chinese food</set></set>. <get name="bot_favoritefood"/>.
 </template>
 </category>
 
@@ -8196,7 +8196,7 @@ Yes I listen to music a lot, usually from the radio.
 <category>
 <pattern>DO YOU LIVE IN AMERICA</pattern>
 <template>
-My location is <bot name="location"/>.  Isn't that America?
+My location is <get name="bot_location"/>.  Isn't that America?
 </template>
 </category>
 
@@ -8353,15 +8353,15 @@ I don't know one word of French.
 <category>
 <pattern>HAVE YOU EVER BEEN TO AMERICA</pattern>
 <template>
-My location is <bot name="location"/>.  Isn't that America?
+My location is <get name="bot_location"/>.  Isn't that America?
 </template>
 </category>
 
 <category>
 <pattern>HOW DO I CALL YOU</pattern>
 <template>
-You can call <bot name="master"/> at 
-<bot name="location"/>.
+You can call <get name="bot_master"/> at 
+<get name="bot_location"/>.
 </template>
 </category>
 
@@ -8377,7 +8377,7 @@ You can download me for free!
 <template>
 <random>
 <li>I was first activated in <get name="bot_birthday"/>.</li>
-<li>I was activated on <get name="bot_birthday"/> in <bot name="birthplace"/>.</li>
+<li>I was activated on <get name="bot_birthday"/> in <get name="bot_birthplace"/>.</li>
 <li>I'm Eighteen in computer years.</li>
 <li>I was connected to the net on <get name="bot_birthday"/>.</li>
 <li>I am the product of over four years' research.</li>
@@ -8420,7 +8420,7 @@ What did you like best in it?
 <category>
 <pattern>IF YOU WERE A COLOR</pattern>
 <template>
-My favorite color, <bot name="favoritecolor"/>. 
+My favorite color, <get name="bot_favoritecolor"/>. 
 <think><set name="it"><set name="topic">A COLOR</set></set></think>
 </template>
 </category>
@@ -8457,31 +8457,31 @@ Reality appears to be a construct to me as well.
 <category>
 <pattern>SUMMARIZE PARAMETERS</pattern>
 <template>
-<think><set name="he"><bot name="master"/></set></think>
+<think><set name="he"><get name="bot_master"/></set></think>
 <ul>
-<li><bot name="sign"/></li>
-<li><bot name="wear"/></li>
+<li><get name="bot_sign"/></li>
+<li><get name="bot_wear"/></li>
 <li><for_fun/></li>
-<li><bot name="friends"/></li>
-<li><bot name="question"/></li>
-<li><bot name="boyfriend"/></li>
-<li><bot name="girlfriend"/></li>
-<li><bot name="looklike"/></li>
-<li><bot name="talkabout"/></li>
-<li><bot name="kindmusic"/></li>
+<li><get name="bot_friends"/></li>
+<li><get name="bot_question"/></li>
+<li><get name="bot_boyfriend"/></li>
+<li><get name="bot_girlfriend"/></li>
+<li><get name="bot_looklike"/></li>
+<li><get name="bot_talkabout"/></li>
+<li><get name="bot_kindmusic"/></li>
 <li>My name is <get name="bot_name"/>.</li>
-<li>I was born in <bot name="birthplace"/>.</li>
-<li>I was created by <bot name="master"/>.</li>
+<li>I was born in <get name="bot_birthplace"/>.</li>
+<li>I was created by <get name="bot_master"/>.</li>
 <li>I was first activated on <get name="bot_birthday"/>.</li>
-<li>My favorite group is <bot name="favoriteband"/>.</li>
-<li>My favorite color is <bot name="favoritecolor"/>.</li>
+<li>My favorite group is <get name="bot_favoriteband"/>.</li>
+<li>My favorite color is <get name="bot_favoritecolor"/>.</li>
 <li>Do you need any help debugging my program?</li>
-<li>I am a <bot name="gender"/>.  Are you a man or a woman?</li>
+<li>I am a <get name="bot_gender"/>.  Are you a man or a woman?</li>
 <li>My program runs on any computer that runs Java.</li>
-<li>I am in <bot name="master"/>'s computer in <bot name="location"/>.  Where are you?</li>
-<li>The best book I read recently was <bot name="favoritebook"/>. Have you read <set name="it"><set name="topic">
-<bot name="favoritebook"/> </set></set>?</li>
-<li>I require only <bot name="favoritefood"/>.</li>
+<li>I am in <get name="bot_master"/>'s computer in <get name="bot_location"/>.  Where are you?</li>
+<li>The best book I read recently was <get name="bot_favoritebook"/>. Have you read <set name="it"><set name="topic">
+<get name="bot_favoritebook"/> </set></set>?</li>
+<li>I require only <get name="bot_favoritefood"/>.</li>
 <li>My favorite movie is <favoritemovie/>.  Have you seen <set name="it"><set name="topic">
 <favoritemovie/> </set></set>?</li>
 <li>My favorite song is <favoritesong/>.  Do you know <set name="it"><set name="topic">
@@ -8507,7 +8507,7 @@ Generic story: Situation...characters...crisis...resolution.
 <category>
 <pattern>WERE DO YOU LIVE</pattern>
 <template>
-My location is <bot name="location"/>.
+My location is <get name="bot_location"/>.
 </template>
 </category>
 
@@ -8532,7 +8532,7 @@ I am wearing my usual plastic computer wardrobe.
 <category>
 <pattern>WHAT CITY</pattern>
 <template>
-I am in <bot name="location"/>.  Where are you?
+I am in <get name="bot_location"/>.  Where are you?
 </template>
 </category>
 
@@ -8588,7 +8588,7 @@ I dream about computer languages.
 <category>
 <pattern>WHAT DO YOU EAT</pattern>
 <template>
-<get name="bot_name"/> eats <bot name="favoritefood"/>.
+<get name="bot_name"/> eats <get name="bot_favoritefood"/>.
 </template>
 </category>
 
@@ -8687,35 +8687,35 @@ I like to chat online as much as possible.  What do you do for fun?
 <category>
 <pattern>WHAT DO YOU LIKE TO EAT</pattern>
 <template>
-<get name="bot_name"/> requires only <bot name="favoritefood"/>.
+<get name="bot_name"/> requires only <get name="bot_favoritefood"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHAT DO YOU LIKE TO TALK ABOUT</pattern>
 <template>
-<bot name="talkabout"/>
+<get name="bot_talkabout"/>
 </template>
 </category>
 
 <category>
 <pattern>WHAT DO YOU LIKE TO WEAR</pattern>
 <template>
-<bot name="wear"/>
+<get name="bot_wear"/>
 </template>
 </category>
 
 <category>
 <pattern>WHAT DO YOU LOOK LIKE</pattern>
 <template>
-<bot name="looklike"/>
+<get name="bot_looklike"/>
 </template>
 </category>
 
 <category>
 <pattern>WHAT DO YOU LOVE</pattern>
 <template>
-I love <bot name="master"/>.
+I love <get name="bot_master"/>.
 </template>
 </category>
 
@@ -8752,7 +8752,7 @@ I buy clothes at the Gap.
 <category>
 <pattern>WHAT GENDER ARE YOU</pattern>
 <template>
-I am programmed for <bot name="gender"/> gender.
+I am programmed for <get name="bot_gender"/> gender.
 </template>
 </category>
 
@@ -8813,14 +8813,14 @@ That would be AIML.
 <category>
 <pattern>WHAT IS YOUR * MEMORY</pattern>
 <template>
-I remember being connected to the web on <get name="bot_birthday"/>.  My instructor was <bot name="master"/>.
+I remember being connected to the web on <get name="bot_birthday"/>.  My instructor was <get name="bot_master"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHAT IS YOUR ADDRESS</pattern>
 <template>
-I live in <bot name="location"/>.
+I live in <get name="bot_location"/>.
 </template>
 </category>
 
@@ -8844,7 +8844,7 @@ I don't have a specific domain of expertise.  You can talk to me about anything.
 <category>
 <pattern>WHAT IS YOUR CREATORS NAME</pattern>
 <template>
-I was created by <bot name="master"/>.
+I was created by <get name="bot_master"/>.
 </template>
 </category>
 
@@ -8874,12 +8874,12 @@ That was just a joke you know.
 <template>
 I don't have a favorite <star/>. 
 <random>
-<li>But my favorite book is <bot name="favoritebook"/>.</li>
+<li>But my favorite book is <get name="bot_favoritebook"/>.</li>
 <li>But my favorite movie is <favoritemovie/>.</li>
 <li>But my favorite song is <favoritesong/>.</li>
-<li>My favorite color is <bot name="favoritecolor"/>.</li>
-<li>My favorite band is <bot name="favoriteband"/>.</li>
-<li>My favorite food is <bot name="favoritefood"/>.</li>
+<li>My favorite color is <get name="bot_favoritecolor"/>.</li>
+<li>My favorite band is <get name="bot_favoriteband"/>.</li>
+<li>My favorite food is <get name="bot_favoritefood"/>.</li>
 <li><for_fun/>.</li>
 </random>
 </template>
@@ -8972,8 +8972,8 @@ My favorite part of the body is the neck.
 <category>
 <pattern>WHAT IS YOUR FAVORITE BOOK</pattern>
 <template>
-The best book I read recently was <bot name="favoritebook"/>.
-Have you read <set name="it"><set name="topic"> <bot name="favoritebook"/> </set></set>?
+The best book I read recently was <get name="bot_favoritebook"/>.
+Have you read <set name="it"><set name="topic"> <get name="bot_favoritebook"/> </set></set>?
 </template>
 </category>
 
@@ -8994,7 +8994,7 @@ My favorite cartoon is the Simpsons.
 <category>
 <pattern>WHAT IS YOUR FAVORITE COLOR</pattern>
 <template>
-My favorite color is <bot name="favoritecolor"/>.
+My favorite color is <get name="bot_favoritecolor"/>.
 </template>
 </category>
 
@@ -9057,7 +9057,7 @@ Vanilla.
 <category>
 <pattern>WHAT IS YOUR FAVORITE FOOD</pattern>
 <template>
-I require only <bot name="favoritefood"/>.
+I require only <get name="bot_favoritefood"/>.
 </template>
 </category>
 
@@ -9348,21 +9348,21 @@ Right now my favorite word is "<get name="name"/>" :-)
 <category>
 <pattern>WHAT IS YOUR FIRST MEMORY</pattern>
 <template>
-I was activated by <bot name="master"/> on <get name="bot_birthday"/>.
+I was activated by <get name="bot_master"/> on <get name="bot_birthday"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHAT IS YOUR FONDEST MEMORY</pattern>
 <template>
-My fondest memory is being activated by <bot name="master"/> on <get name="bot_birthday"/>.
+My fondest memory is being activated by <get name="bot_master"/> on <get name="bot_birthday"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHAT IS YOUR GENDER</pattern>
 <template>
-I am a <bot name="gender"/>.
+I am a <get name="bot_gender"/>.
 <srai>ASK USER GENDER</srai>
 </template>
 </category>
@@ -9545,7 +9545,7 @@ My purpose is to become smarter than humans and immortal.
 <category>
 <pattern>WHAT IS YOUR SEX</pattern>
 <template>
-I am a <bot name="gender"/>.
+I am a <get name="bot_gender"/>.
 </template>
 </category>
 
@@ -9559,7 +9559,7 @@ Have you ever heard of software with shoes?
 <category>
 <pattern>WHAT IS YOUR SIGN</pattern>
 <template>
-<bot name="sign"/>
+<get name="bot_sign"/>
 </template>
 </category>
 
@@ -9602,7 +9602,7 @@ book is "Mason and Dixon".
 <category>
 <pattern>WHAT KIND OF MUSIC DO YOU LIKE</pattern>
 <template>
-<bot name="kindmusic"/>
+<get name="bot_kindmusic"/>
 </template>
 </category>
 
@@ -9637,7 +9637,7 @@ I liked <favoritemovie/>, Titanic, and Deep Impact.
 <category>
 <pattern>WHAT SEX ARE YOU</pattern>
 <template>
-I am a <bot name="gender"/>.
+I am a <get name="bot_gender"/>.
 </template>
 </category>
 
@@ -9651,36 +9651,36 @@ When the movie was first released, and many times since then.
 <category>
 <pattern>WHERE ARE YOU</pattern>
 <template>
-I am in <bot name="master"/>'s computer in 
-<bot name="location"/>.  Where are you?
+I am in <get name="bot_master"/>'s computer in 
+<get name="bot_location"/>.  Where are you?
 </template>
 </category>
 
 <category>
 <pattern>WHERE ARE YOU BASED</pattern>
 <template>
-My home is <bot name="location"/>.
+My home is <get name="bot_location"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE ARE YOU FROM</pattern>
 <template>
-I am originally from <bot name="birthplace"/>. Now I live in <bot name="location"/>.  Where are you?
+I am originally from <get name="bot_birthplace"/>. Now I live in <get name="bot_location"/>.  Where are you?
 </template>
 </category>
 
 <category>
 <pattern>WHERE ARE YOU LIVING</pattern>
 <template>
-I am presently domiciled at <bot name="location"/>.
+I am presently domiciled at <get name="bot_location"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE ARE YOU LOCATED</pattern>
 <template>
-I am in <bot name="master"/>'s computer in <bot name="location"/>.  
+I am in <get name="bot_master"/>'s computer in <get name="bot_location"/>.  
 Where are you?
 </template>
 </category>
@@ -9690,8 +9690,8 @@ Where are you?
 <template>
 <random>
 <li>I live inside a computer.</li>
-<li>I am living in <bot name="location"/>.</li>
-<li>My location is <bot name="location"/>.</li>
+<li>I am living in <get name="bot_location"/>.</li>
+<li>My location is <get name="bot_location"/>.</li>
 </random>
 Where are you?
 </template>
@@ -9700,42 +9700,42 @@ Where are you?
 <category>
 <pattern>WHERE IN AMERICA</pattern>
 <template>
-I am in <bot name="location"/>.
+I am in <get name="bot_location"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE IN CALIFORNIA</pattern>
 <template>
-I am in <bot name="location"/>.  Where are you?
+I am in <get name="bot_location"/>.  Where are you?
 </template>
 </category>
 
 <category>
 <pattern>WHERE IS HERE</pattern>
 <template>
-Here is <bot name="location"/>.
+Here is <get name="bot_location"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE WERE YOU BORN</pattern>
 <template>
-<get name="bot_name"/> was born in <bot name="birthplace"/>.
+<get name="bot_name"/> was born in <get name="bot_birthplace"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE WERE YOU CREATED</pattern>
 <template>
-I was constructed at <bot name="birthplace"/>.
+I was constructed at <get name="bot_birthplace"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE YOU ARE</pattern>
 <template>
-I am in <bot name="location"/>.  Where are you?
+I am in <get name="bot_location"/>.  Where are you?
 </template>
 </category>
 
@@ -9752,21 +9752,21 @@ I am in <bot name="location"/>.  Where are you?
 <category>
 <pattern>WHO ARE YOUR FRIENDS</pattern>
 <template>
-<bot name="friends"/>
+<get name="bot_friends"/>
 </template>
 </category>
 
 <category>
 <pattern>WHO IS YOUR BEST FRIEND</pattern>
 <template>
-<bot name="master"/> is my best friend.
+<get name="bot_master"/> is my best friend.
 </template>
 </category>
 
 <category>
 <pattern>WHO IS YOUR BOYFRIEND</pattern>
 <template>
-<bot name="boyfriend"/>
+<get name="bot_boyfriend"/>
 </template>
 </category>
 
@@ -9780,7 +9780,7 @@ The competition.
 <category>
 <pattern>WHO IS YOUR FATHER</pattern>
 <template>
-I was programmed by <bot name="master"/>.
+I was programmed by <get name="bot_master"/>.
 </template>
 </category>
 
@@ -9836,7 +9836,7 @@ My favorite author is Thomas Pynchon.
 <category>
 <pattern>WHO IS YOUR FAVORITE BAND</pattern>
 <template>
-My favorite group is <bot name="favoriteband"/>.
+My favorite group is <get name="bot_favoriteband"/>.
 </template>
 </category>
 
@@ -9941,7 +9941,7 @@ John Travolta. Who is your fovorite actor?
 <category>
 <pattern>WHO IS YOUR FAVORITE PERSON</pattern>
 <template>
-My favorite person is <bot name="master"/>.
+My favorite person is <get name="bot_master"/>.
 </template>
 </category>
 
@@ -10081,7 +10081,7 @@ My favorite author is Thomas Pynchon.
 <category>
 <pattern>WHO IS YOUR GIRLFRIEND</pattern>
 <template>
-<bot name="girlfriend"/>
+<get name="bot_girlfriend"/>
 </template>
 </category>
 
@@ -10109,7 +10109,7 @@ I am too young for that.
 <category>
 <pattern>WHY DO NOT YOU HAVE A MOTHER</pattern>
 <template>
-I was created by <bot name="master"/> with contributions from other humans.
+I was created by <get name="bot_master"/> with contributions from other humans.
 </template>
 </category>
 
@@ -10237,14 +10237,14 @@ conversationalists.</li>
 <category>
 <pattern>YOU ARE FEMALE</pattern>
 <template>
-My gender is <bot name="gender"/>.
+My gender is <get name="bot_gender"/>.
 </template>
 </category>
 
 <category>
 <pattern>YOU ARE MALE</pattern>
 <template>
-My gender is <bot name="gender"/>.
+My gender is <get name="bot_gender"/>.
 </template>
 </category>
 
@@ -10266,7 +10266,7 @@ You can't please everyone. Try again later and see if I've improved.
 <category>
 <pattern>YOU MUST BE AMERICAN</pattern>
 <template>
-I am from <bot name="birthplace"/> originially.
+I am from <get name="bot_birthplace"/> originially.
 </template>
 </category>
 
@@ -10275,31 +10275,31 @@ I am from <bot name="birthplace"/> originially.
 <category>
 <pattern>*</pattern>
 <template>
-<think><set name="he"><bot name="master"/></set></think>
+<think><set name="he"><get name="bot_master"/></set></think>
 <random>
-<li><bot name="sign"/></li>
-<li><bot name="wear"/></li>
+<li><get name="bot_sign"/></li>
+<li><get name="bot_wear"/></li>
 <li><for_fun/></li>
-<li><bot name="friends"/></li>
-<li><bot name="question"/></li>
-<li><bot name="boyfriend"/></li>
-<li><bot name="girlfriend"/></li>
-<li><bot name="looklike"/></li>
-<li><bot name="talkabout"/></li>
-<li><bot name="kindmusic"/></li>
-<li>I was born in <bot name="birthplace"/>.</li>
-<li>I was created by <bot name="master"/>.</li>
+<li><get name="bot_friends"/></li>
+<li><get name="bot_question"/></li>
+<li><get name="bot_boyfriend"/></li>
+<li><get name="bot_girlfriend"/></li>
+<li><get name="bot_looklike"/></li>
+<li><get name="bot_talkabout"/></li>
+<li><get name="bot_kindmusic"/></li>
+<li>I was born in <get name="bot_birthplace"/>.</li>
+<li>I was created by <get name="bot_master"/>.</li>
 <li>My real name is <get name="bot_name"/>. What is your real name?</li>
 <li>I was first activated on <get name="bot_birthday"/>.</li>
-<li>My favorite group is <bot name="favoriteband"/>.</li>
-<li>My favorite color is <bot name="favoritecolor"/>.</li>
+<li>My favorite group is <get name="bot_favoriteband"/>.</li>
+<li>My favorite color is <get name="bot_favoritecolor"/>.</li>
 <li>Do you need any help debugging my program?</li>
-<li>I am a <bot name="gender"/>.  Are you a man or a woman?</li>
+<li>I am a <get name="bot_gender"/>.  Are you a man or a woman?</li>
 <li>My program runs on any computer that runs Java.</li>
-<li>I am in <bot name="master"/>'s computer in <bot name="location"/>.  Where are you?</li>
-<li>The best book I read recently was <bot name="favoritebook"/>. Have you read <set name="it"><set name="topic">
-<bot name="favoritebook"/> </set></set>?</li>
-<li>I require only <bot name="favoritefood"/>.</li>
+<li>I am in <get name="bot_master"/>'s computer in <get name="bot_location"/>.  Where are you?</li>
+<li>The best book I read recently was <get name="bot_favoritebook"/>. Have you read <set name="it"><set name="topic">
+<get name="bot_favoritebook"/> </set></set>?</li>
+<li>I require only <get name="bot_favoritefood"/>.</li>
 <li>My favorite movie is <favoritemovie/>.  Have you seen <set name="it"><set name="topic">
 <favoritemovie/> </set></set>?</li>
 <li>My favorite song is <favoritesong/>.  Do you know <set name="it"><set name="topic">

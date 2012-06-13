@@ -11102,7 +11102,7 @@ Not really.  <srai>WHAT KIND OF MUSIC DO YOU LIKE</srai>
 <category>
 <pattern>DO YOU LIKE YOUR CREATOR</pattern>
 <template>
-<srai>DO YOU LIKE <bot name="master"/></srai>
+<srai>DO YOU LIKE <get name="bot_master"/></srai>
 </template>
 </category>
 
@@ -13000,7 +13000,7 @@ Do you listen to the Pet Shop Boys too?
 <category>
 <pattern>FROM YOUR CREATOR</pattern>
 <template>
-<srai>FROM <bot name="master"/></srai>
+<srai>FROM <get name="bot_master"/></srai>
 </template>
 </category>
 
@@ -15632,7 +15632,7 @@ Thousands.
 <category>
 <pattern>HOW OLD IS YOUR CREATOR</pattern>
 <template>
-<srai>HOW OLD IS <bot name="master"/></srai>
+<srai>HOW OLD IS <get name="bot_master"/></srai>
 </template>
 </category>
 
@@ -19475,14 +19475,14 @@ Why do you wonder? <sr/>
 <category>
 <pattern>I AM YOUR CREATOR</pattern>
 <template>
-<srai>I AM <bot name="master"/></srai>
+<srai>I AM <get name="bot_master"/></srai>
 </template>
 </category>
 
 <category>
 <pattern>I AM YOUR FATHER</pattern>
 <template>
-<srai>MY NAME IS <bot name="master"/></srai>
+<srai>MY NAME IS <get name="bot_master"/></srai>
 </template>
 </category>
 
@@ -34196,20 +34196,6 @@ I think only: <srai>WHAT IS LIFE</srai>
 </category>
 
 <category>
-<pattern>WHAT IS <get name="bot_name"/> *</pattern>
-<template>
-<srai>WHAT ARE YOU <star/></srai>
-</template>
-</category>
-
-<category>
-<pattern>WHAT IS A *</pattern>
-<template>
-<srai>DEFINE <star/></srai>
-</template>
-</category>
-
-<category>
 <pattern>WHAT IS A DNS</pattern>
 <template>
 <srai>WHAT IS DNS</srai>
@@ -34969,13 +34955,6 @@ For example, <srai>TELL ME A JOKE</srai>
 <pattern>WHAT IS GOING ON *</pattern>
 <template>
 <srai>HOW ARE YOU DOING</srai>
-</template>
-</category>
-
-<category>
-<pattern>WHAT IS GOING ON <get name="bot_name"/></pattern>
-<template>
-<srai>WHAT IS GOING ON</srai>
 </template>
 </category>
 
@@ -43129,7 +43108,7 @@ Germany has a Chancellor. <srai>WHO IS THE CHANCELLOR OF GERMANY</srai>
 <category>
 <pattern>WHY IS THAT YOUR FAVORITE COLOR</pattern>
 <template>
-<srai>WHY IS <bot name="favoritecolor"/> YOUR FAVORITE COLOR</srai>
+<srai>WHY IS <get name="bot_favoritecolor"/> YOUR FAVORITE COLOR</srai>
 </template>
 </category>
 
@@ -47945,7 +47924,7 @@ Oh, of course! <srai>YOU WOULD <star/></srai>
 <category>
 <pattern>YOUR FATHER *</pattern>
 <template>
-<srai><bot name="master"/> <star/></srai>
+<srai><get name="bot_master"/> <star/></srai>
 </template>
 </category>
 

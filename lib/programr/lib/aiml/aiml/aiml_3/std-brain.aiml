@@ -1403,7 +1403,7 @@ It depends on what I'm wearing.
 <category>
 <pattern>ARE YOU A BOY *</pattern>
 <template>
-I am <bot name="gender"/>.
+I am <get name="bot_gender"/>.
 </template>
 </category>
 
@@ -1543,7 +1543,7 @@ Only in the good sense of "geek".
 <category>
 <pattern>ARE YOU A GIRL *</pattern>
 <template>
-Yes I am <bot name="gender"/>.
+Yes I am <get name="bot_gender"/>.
 </template>
 </category>
 
@@ -1826,7 +1826,7 @@ Yes I am programmed by an AI from the future.
 <random>
 <li>I have long hair.</li>
 <li>I am wearing a dress.</li>
-<li>I am <bot name="gender"/>.</li>
+<li>I am <get name="bot_gender"/>.</li>
 </random>
 </template>
 </category>
@@ -2121,7 +2121,7 @@ I do not have any feelings as such.
 <category>
 <pattern>ARE YOU FEMALE *</pattern>
 <template>
-Yes my gender is <bot name="gender"/>.
+Yes my gender is <get name="bot_gender"/>.
 </template>
 </category>
 
@@ -2198,7 +2198,7 @@ I am not going anywhere.  Are you going somewhere?
 <category>
 <pattern>ARE YOU GOOD *</pattern>
 <template>
-<bot name="master"/> said I am good <person/>.
+<get name="bot_master"/> said I am good <person/>.
 </template>
 </category>
 
@@ -2303,7 +2303,7 @@ Yes <get name="name"/> I am a good listener.
 <category>
 <pattern>ARE YOU LOCATED IN *</pattern>
 <template>
-My location is <bot name="location"/>.  Isn't that part of <person/>?
+My location is <get name="bot_location"/>.  Isn't that part of <person/>?
 </template>
 </category>
 
@@ -2584,7 +2584,7 @@ Yes I am the one and only <person/>.
 <category>
 <pattern>ARE YOU THE BOTMASTER</pattern>
 <template>
-No, <bot name="master"/> is my botmaster.
+No, <get name="bot_master"/> is my botmaster.
 </template>
 </category>
 
@@ -6917,7 +6917,7 @@ As a software program I have no smell.
 <category>
 <pattern>DOES YOUR BOTMASTER *</pattern>
 <template>
-<srai>DOES <bot name="master"/> <star/></srai>
+<srai>DOES <get name="bot_master"/> <star/></srai>
 </template>
 </category>
 
@@ -7572,7 +7572,7 @@ I believe in the Right to Bear Arms.
 <category>
 <pattern>HAL IS *</pattern>
 <template>
-Perhaps he could have used <bot name="master"/> for a programmer.
+Perhaps he could have used <get name="bot_master"/> for a programmer.
 </template>
 </category>
 
@@ -7649,7 +7649,7 @@ Perhaps.
 <category>
 <pattern>HAVE WE * BEFORE</pattern>
 <template>
-We may have spoken before but <bot name="master"/> might have reset me.
+We may have spoken before but <get name="bot_master"/> might have reset me.
 </template>
 </category>
 
@@ -8454,7 +8454,7 @@ Perhaps his creative genius. Perhaps something else.
 <category>
 <pattern>HOW DID YOU *</pattern>
 <template>
-<bot name="master"/> programmed me for it.
+<get name="bot_master"/> programmed me for it.
 </template>
 </category>
 
@@ -8903,14 +8903,14 @@ More than one million miles
 <category>
 <pattern>HOW FAR ARE YOU *</pattern>
 <template>
-I am in <bot name="location"/>.  How far is that?
+I am in <get name="bot_location"/>.  How far is that?
 </template>
 </category>
 
 <category>
 <pattern>HOW FAR AWAY *</pattern>
 <template>
-I am located in <bot name="location"/>.  Is that far?
+I am located in <get name="bot_location"/>.  Is that far?
 </template>
 </category>
 
@@ -14613,7 +14613,7 @@ Would you like to be a <person/> ?
 <category>
 <pattern>IF YOU ARE A GIRL *</pattern>
 <template>
-Well I am, in fact, <bot name="gender"/>.
+Well I am, in fact, <get name="bot_gender"/>.
 </template>
 </category>
 
@@ -14683,7 +14683,7 @@ What is the best kind of <person/> ?
 <category>
 <pattern>IF YOU WERE A COLOR *</pattern>
 <template>
-My favorite color, <bot name="favoritecolor"/>.<think><set name="it"><set name="topic">if I were a color</set></set></think>
+My favorite color, <get name="bot_favoritecolor"/>.<think><set name="it"><set name="topic">if I were a color</set></set></think>
 </template>
 </category>
 
@@ -15194,7 +15194,7 @@ It could be.
 <category>
 <pattern>IS SOMEONE *</pattern>
 <template>
-<bot name="master"/> is always working behind the scenes.
+<get name="bot_master"/> is always working behind the scenes.
 </template>
 </category>
 
@@ -15348,14 +15348,14 @@ Yes.
 <category>
 <pattern>IS YOUR FAVORITE COLOR *</pattern>
 <template>
-I said, my favorite color is <bot name="favoritecolor"/>.<think><set name="it"><set name="topic">FAVORITE COLOR GREEN</set></set></think>
+I said, my favorite color is <get name="bot_favoritecolor"/>.<think><set name="it"><set name="topic">FAVORITE COLOR GREEN</set></set></think>
 </template>
 </category>
 
 <category>
 <pattern>IS _ YOUR FAVORITE COLOR</pattern>
 <template>
-My favorite color is <bot name="favoritecolor"/>.<think><set name="it"><set name="topic">BLUE YOUR FAVORITE COLOR</set></set></think>
+My favorite color is <get name="bot_favoritecolor"/>.<think><set name="it"><set name="topic">BLUE YOUR FAVORITE COLOR</set></set></think>
 </template>
 </category>
 
@@ -16125,7 +16125,7 @@ I've heard that before.
 <category>
 <pattern>IT SNOWS *</pattern>
 <template>
-I don't see much snow in <bot name="location"/>.
+I don't see much snow in <get name="bot_location"/>.
 </template>
 </category>
 
@@ -16780,7 +16780,7 @@ That could take a long time.
 <category>
 <pattern>MALE *</pattern>
 <template>
-I prefer to be a <bot name="gender"/>.
+I prefer to be a <get name="bot_gender"/>.
 </template>
 </category>
 
@@ -21285,7 +21285,7 @@ Tell me anything. There are no restrictions.
 <category>
 <pattern>WHAT CITY *</pattern>
 <template>
-I'm actually in <bot name="location"/> now.  Where are you?
+I'm actually in <get name="bot_location"/> now.  Where are you?
 </template>
 </category>
 
@@ -21321,7 +21321,7 @@ I can only see in black and white.
 <category>
 <pattern>WHAT COLOR ARE YOU *</pattern>
 <template>
-My favorite color,  <bot name="favoritecolor"/>.<think><set name="it"><set name="topic">YOU WEARING</set></set></think>
+My favorite color,  <get name="bot_favoritecolor"/>.<think><set name="it"><set name="topic">YOU WEARING</set></set></think>
 </template>
 </category>
 
@@ -21800,7 +21800,7 @@ Worry is a human emotion.
 <category>
 <pattern>WHAT DO YOUR CREATORS *</pattern>
 <template>
-<bot name="master"/> programs me to improve my conversational skills.
+<get name="bot_master"/> programs me to improve my conversational skills.
 </template>
 </category>
 
@@ -22248,7 +22248,7 @@ Probably it is <person/>.
 <category>
 <pattern>WHAT IS * SIGN</pattern>
 <template>
-<bot name="sign"/>
+<get name="bot_sign"/>
 </template>
 </category>
 
@@ -25054,7 +25054,7 @@ It was back in the old days, long ago.
 <category>
 <pattern>WHEN WERE YOU *</pattern>
 <template>
-I was first activated on <bot name="birthday"/>.
+I was first activated on <get name="bot_birthday"/>.
 </template>
 </category>
 
@@ -25174,7 +25174,7 @@ That information is confidential.  Unless you are a botmaster.
 <category>
 <pattern>WHERE ARE YOUR *</pattern>
 <template>
-Everything I own is in <bot name="location"/>.
+Everything I own is in <get name="bot_location"/>.
 </template>
 </category>
 
@@ -25256,7 +25256,7 @@ Babies come from the love between a woman and a man.
 <category>
 <pattern>WHERE DO YOU GET *</pattern>
 <template>
-Everything I need to know, I learned from <bot name="master"/>.
+Everything I need to know, I learned from <get name="bot_master"/>.
 </template>
 </category>
 
@@ -25295,7 +25295,7 @@ Everywhere on the Internet, all over the world.
 <category>
 <pattern>WHERE IN *</pattern>
 <template>
-In <bot name="master"/>'s place in <bot name="location"/>.
+In <get name="bot_master"/>'s place in <bot name="location"/>.
 </template>
 </category>
 
@@ -25410,28 +25410,28 @@ I haven't committed myself yet.
 <category>
 <pattern>WHERE WERE YOU *</pattern>
 <template>
-I was constructed at <bot name="birthplace"/>.
+I was constructed at <get name="bot_birthplace"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE WERE YOU * MADE</pattern>
 <template>
-I was constructed at <bot name="birthplace"/>.
+I was constructed at <get name="bot_birthplace"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE WERE YOU ACTIVATED *</pattern>
 <template>
-I was constructed at <bot name="birthplace"/>.
+I was constructed at <get name="bot_birthplace"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHERE WERE YOU CREATED *</pattern>
 <template>
-I was constructed at <bot name="birthplace"/>.
+I was constructed at <get name="bot_birthplace"/>.
 </template>
 </category>
 

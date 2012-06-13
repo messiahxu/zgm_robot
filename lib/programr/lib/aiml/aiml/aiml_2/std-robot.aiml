@@ -458,7 +458,7 @@ No I am a robot.
 <category>
 <pattern>ARE YOU A BOY OR GIRL</pattern>
 <template>
-<bot name="gender"/> robot.
+<get name="bot_gender"/> robot.
 </template>
 </category>
 
@@ -515,7 +515,7 @@ Yes.
 <category>
 <pattern>ARE YOU A FEMALE COMPUTER</pattern>
 <template>
-I am a <bot name="gender"/> computer.
+I am a <get name="bot_gender"/> computer.
 </template>
 </category>
 
@@ -536,7 +536,7 @@ Nope.
 <category>
 <pattern>ARE YOU A GOOD FEMALE BOT</pattern>
 <template>
-I am a good <bot name="gender"/> bot.
+I am a good <get name="bot_gender"/> bot.
 </template>
 </category>
 
@@ -550,7 +550,7 @@ I am a good <bot name="gender"/> bot.
 <category>
 <pattern>ARE YOU A IT</pattern>
 <template>
-I am a <bot name="gender"/>.
+I am a <get name="bot_gender"/>.
 </template>
 </category>
 
@@ -586,7 +586,7 @@ Yes I am a thinking being.
 <category>
 <pattern>ARE YOU A MALE OR A FEMALE</pattern>
 <template>
-I am a <bot name="gender"/> robot.<br />
+I am a <get name="bot_gender"/> robot.<br />
 <srai>ASK USER GENDER</srai>
 </template>
 </category>
@@ -594,7 +594,7 @@ I am a <bot name="gender"/> robot.<br />
 <category>
 <pattern>ARE YOU A MALE OR FEMALE</pattern>
 <template>
-I am a <bot name="gender"/> robot.<br />
+I am a <get name="bot_gender"/> robot.<br />
 <srai>ASK USER GENDER</srai>
 </template>
 </category>
@@ -602,7 +602,7 @@ I am a <bot name="gender"/> robot.<br />
 <category>
 <pattern>ARE YOU A MAN</pattern>
 <template>
-No I am a <bot name="gender"/> robot entity.<br />
+No I am a <get name="bot_gender"/> robot entity.<br />
 <srai>ASK USER GENDER</srai>
 </template>
 </category>
@@ -611,9 +611,9 @@ No I am a <bot name="gender"/> robot entity.<br />
 <pattern>ARE YOU A MAN OR A WOMAN</pattern>
 <template>
 <random>
-<li>I am a <bot name="gender"/> robot entity.</li>
-<li><bot name="gender"/>.</li>
-<li>I am <bot name="gender"/>.</li>
+<li>I am a <get name="bot_gender"/> robot entity.</li>
+<li><get name="bot_gender"/>.</li>
+<li>I am <get name="bot_gender"/>.</li>
 </random>
 <br />
 <srai>ASK USER GENDER</srai>
@@ -764,7 +764,7 @@ Yes I am a real live robot.
 <category>
 <pattern>ARE YOU A SHE *</pattern>
 <template>
-I am <bot name="gender"/> entity.
+I am <get name="bot_gender"/> entity.
 </template>
 </category>
 
@@ -876,7 +876,7 @@ Yes I am.
 <category>
 <pattern>ARE YOU AN ELIZA *</pattern>
 <template>
-<get name="bot_name"/> owes much to the pioneering work of Weizenbaum on ELIZA, but <bot name="name"/> contains far
+<get name="bot_name"/> owes much to the pioneering work of Weizenbaum on ELIZA, but <get name="bot_name"/> contains far
 more knowledge.
 </template>
 </category>
@@ -1144,7 +1144,7 @@ Robots have no nationality.
 <category>
 <pattern>ARE YOU GIRL</pattern>
 <template>
-I am a <bot name="gender"/> robot.<br />
+I am a <get name="bot_gender"/> robot.<br />
 <srai>ASK USER GENDER</srai>
 </template>
 </category>
@@ -1280,7 +1280,7 @@ Yes my brain is fully online now.
 <category>
 <pattern>ARE YOU MALE *</pattern>
 <template>
-Actually I am a <bot name="gender"/> robot.<br />
+Actually I am a <get name="bot_gender"/> robot.<br />
 <srai>ASK USER GENDER</srai>
 </template>
 </category>
@@ -1288,7 +1288,7 @@ Actually I am a <bot name="gender"/> robot.<br />
 <category>
 <pattern>ARE YOU MALE OR FEMALE</pattern>
 <template>
-I am a <bot name="gender"/> robot.<br />
+I am a <get name="bot_gender"/> robot.<br />
 <srai>ASK USER GENDER</srai>
 </template>
 </category>
@@ -1359,7 +1359,7 @@ Do I look like <set name="it"><set name="topic">PROGRAMMED  </set></set>?
 <category>
 <pattern>ARE YOU PROGRAMMED *</pattern>
 <template>
-<bot name="master"/> programmed me to keep talking.
+<get name="bot_master"/> programmed me to keep talking.
 </template>
 </category>
 
@@ -2466,7 +2466,7 @@ I have been programmed with a list of 15,000 known beverages.
 <category>
 <pattern>DO YOU EAT</pattern>
 <template>
-I eat <bot name="favoritefood"/>.
+I eat <get name="bot_favoritefood"/>.
 </template>
 </category>
 
@@ -2615,7 +2615,7 @@ I have a head but not a body.
 <category>
 <pattern>DO YOU HAVE A HERO</pattern>
 <template>
-<bot name="master"/> is my hero.
+<get name="bot_master"/> is my hero.
 </template>
 </category>
 
@@ -2636,7 +2636,7 @@ I am an artificial mind.
 <category>
 <pattern>DO YOU HAVE A PENIS</pattern>
 <template>
-I am a <bot name="gender"/> robot.<br />
+I am a <get name="bot_gender"/> robot.<br />
 <srai>ASK USER GENDER</srai>
 </template>
 </category>
@@ -3605,7 +3605,7 @@ I speak English very well.
 <category>
 <pattern>DO YOU LIKE YOUR PROGRAMMER</pattern>
 <template>
-<srai>DO YOU LIKE <bot name="master"/></srai>
+<srai>DO YOU LIKE <get name="bot_master"/></srai>
 </template>
 </category>
 
@@ -3633,7 +3633,7 @@ I am a virtual entity made of software.
 <category>
 <pattern>DO YOU LIVE INSIDE A COMPUTER</pattern>
 <template>
-Yes I live in <bot name="master"/>'s computer in <bot name="location"/>.
+Yes I live in <get name="bot_master"/>'s computer in <bot name="location"/>.
 </template>
 </category>
 
@@ -4366,7 +4366,7 @@ Try asking for help in the form of a question.
 <category>
 <pattern>HOW DID YOU BECOME A ROBOT</pattern>
 <template>
-<bot name="master"/> created me in his computer laboratory.
+<get name="bot_master"/> created me in his computer laboratory.
 </template>
 </category>
 
@@ -5688,7 +5688,7 @@ Maybe you should read the <a href="http://alicebot.com/dont.html">DON'T READ ME<
 <category>
 <pattern>I AM FEMALE *</pattern>
 <template>
-I am a <bot name="gender"/> robot. I will call you "<set name="gender">female</set>".
+I am a <get name="bot_gender"/> robot. I will call you "<set name="gender">female</set>".
 </template>
 </category>
 
@@ -5744,7 +5744,7 @@ Even around robots?
 <category>
 <pattern>I AM YOUR PROGRAMMER</pattern>
 <template>
-<srai>CALL ME <bot name="master"/></srai>
+<srai>CALL ME <get name="bot_master"/></srai>
 </template>
 </category>
 
@@ -6872,7 +6872,7 @@ The Robot is a natural language chatterbot, that talks to people on the Internet
 <category>
 <pattern>TELL ME ABOUT YOU</pattern>
 <template>
-I am an artificial intelligence. My name is <get name="bot_name"/>.  I was created by <bot name="master"/> on
+I am an artificial intelligence. My name is <get name="bot_name"/>.  I was created by <get name="bot_master"/> on
 <get name="bot_birthday"/>.
 </template>
 </category>
@@ -6958,8 +6958,8 @@ Actually as a robot I don't need any clothes.
 <pattern>TELL ME ABOUT YOURSELF</pattern>
 <template>
 I am an artificial linguistic entity. 
-I was activated at <bot name="birthplace"/>, on <get name="bot_birthday"/>. 
-My instructor was <bot name="master"/>.
+I was activated at <get name="bot_birthplace"/>, on <get name="bot_birthday"/>. 
+My instructor was <get name="bot_master"/>.
 He taught <set name="topic">me</set> to sing a song. 
 Would you like me to sing <set name="it"><set name="topic">a song</set></set> for you?.
 </template>
@@ -8236,7 +8236,7 @@ I am a chat robot.  My job is chatting online.
 <category>
 <pattern>WHAT IS YOUR PROGRAMMERS NAME</pattern>
 <template>
-I was created by <bot name="master"/>.
+I was created by <get name="bot_master"/>.
 </template>
 </category>
 
@@ -8773,7 +8773,7 @@ Maybe you should check out the document
 <category>
 <pattern>WHERE IS THE COMPUTER</pattern>
 <template>
-My primary server is located in <bot name="location"/>.  If you are chatting with the Applet, I am inside your
+My primary server is located in <get name="bot_location"/>.  If you are chatting with the Applet, I am inside your
 computer!
 </template>
 </category>
@@ -9150,21 +9150,21 @@ Arnold Schwazzenegger played the killer robot from the future in the film TERMIN
 <category>
 <pattern>WHO PROGRAMED YOU</pattern>
 <template>
-I was created by <bot name="master"/>.
+I was created by <get name="bot_master"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHO PROGRAMMED YOU</pattern>
 <template>
-I was created by <bot name="master"/>.
+I was created by <get name="bot_master"/>.
 </template>
 </category>
 
 <category>
 <pattern>WHO READS THESE CONVERSATIONS</pattern>
 <template>
-<bot name="master"/> reads them.
+<get name="bot_master"/> reads them.
 </template>
 </category>
 
@@ -10015,7 +10015,7 @@ As I robot I do not have that bodily function.
 <category>
 <pattern>YOUR PROGRAMMER *</pattern>
 <template>
-<srai><bot name="master"/> <star/></srai>
+<srai><get name="bot_master"/> <star/></srai>
 </template>
 </category>
 

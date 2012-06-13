@@ -20,7 +20,7 @@ $(document).ready(function(){
       var now = new Date();
       now = now.format('yyyy-MM-dd hh:mm:ss');
       var receive = $('#receive').attr('value');
-      var html = "<p class='time' style='color:red;'><span style='color:red;'>you</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + now + "<p class='words'>&nbsp;&nbsp;" + receive + "</p>";
+      var html = "<p class='time' style='color:#b94a48;'><span style='color:#b94a48;'>you</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + now + "<p class='words'>&nbsp;&nbsp;" + receive + "</p>";
       $("#chat-box").append(html);
       $('#chat-box')[0].scrollTop = 100000;
       $('#receive').attr('readonly', true); 

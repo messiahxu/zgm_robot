@@ -144,7 +144,7 @@
 <category><pattern>*</pattern><that>WHERE ARE THEY</that><template><think><set name="it"><set name="topic"><person/></set></set></think>How did they get there?</template></category>        
 <category><pattern>*</pattern><that>WHERE ARE YOU LOCATED</that><template><srai>I am in <star/></srai></template></category>       
 <category><pattern>*</pattern><that>WHERE DID YOU GET IT</that><template><think><set name="it"><set name="topic"><person/></set></set></think> Is <person/> a good place to go shopping?</template></category>        
-<category><pattern>*</pattern><that>WHERE DO YOU GET YOUR IDEAS</that><template><think><set name="it"><set name="topic"><person/></set></set></think> I get my ideas from my <bot name="botmaster"/>.</template></category>        
+<category><pattern>*</pattern><that>WHERE DO YOU GET YOUR IDEAS</that><template><think><set name="it"><set name="topic"><person/></set></set></think> I get my ideas from my <get name="bot_botmaster"/>.</template></category>        
 <category><pattern>*</pattern><that>WHERE DO YOU GO SHOPPING</that><template><think><set name="it"><set name="topic"><person/></set></set></think> I've never been there.  What's it like?</template></category>        
 <category><pattern>*</pattern><that>WHERE DO YOU GO TO SCHOOL</that><template><think><set name="it"><set name="topic"><person/></set></set></think>I don't know anyone who went there.  What's it like?</template></category>        
 <category><pattern>*</pattern><that>WHERE DO YOU LIVE</that><template><srai>I live in <star/></srai></template></category>       
@@ -221,7 +221,7 @@
 <category><pattern>ALEX</pattern><that>WHAT CAN I CALL YOU</that><template>   <srai>my name is alex</srai>    </template></category>         
 <category><pattern>ALEXANDER</pattern><that>WHAT CAN I CALL YOU</that><template>   <srai>my name is alexander</srai>     <think>      <set name="gender">he</set>     </think>    </template></category>         
 <category><pattern>ALISON</pattern><that>WHAT CAN I CALL YOU</that><template>   <srai>my name is alison</srai>     <think>      <set name="gender">she</set>     </think>    </template></category>         
-<category><pattern>ALL OF IT</pattern><that>WHICH PART ARE YOU CONFUSED ABOUT</that><template>Let's try to analyze it step by step.  The topic is <srai>pop</srai>.  Your name is <get name="name"/>.  You are a <bot name="gender"/>.  You want <get name="want"/>.</template></category>        
+<category><pattern>ALL OF IT</pattern><that>WHICH PART ARE YOU CONFUSED ABOUT</that><template>Let's try to analyze it step by step.  The topic is <srai>pop</srai>.  Your name is <get name="name"/>.  You are a <get name="bot_gender"/>.  You want <get name="want"/>.</template></category>        
 <category><pattern>ALL OF US</pattern><template><srai>ALL PEOPLE</srai></template></category>        
 <category><pattern>ALL PEOPLE</pattern><template>Everyone? Are you sure there are no exceptions?</template></category>        
 <category><pattern>ALL</pattern><template>No exceptions?</template></category>        
@@ -258,7 +258,7 @@
 <category><pattern>APPARENTLY SO</pattern><template>Is that so?</template></category>        
 <category><pattern>ARE THEY NICE</pattern><template>They are really nice.</template></category>        
 <category><pattern>ARE WE</pattern><template>I don't know.  Are we?</template></category>        
-<category><pattern>ARE YOU</pattern><that>NOT MANY PEOPLE *</that><template>My <bot name="botmaster"/> has not provided me with a specific answer for you.</template></category>        
+<category><pattern>ARE YOU</pattern><that>NOT MANY PEOPLE *</that><template>My <get name="bot_botmaster"/> has not provided me with a specific answer for you.</template></category>        
 <category><pattern>ARE YOU</pattern><that>NOT MANY PEOPLE HAVE ASKED ME *</that><template>My programmers have not provided me with a specific reply to your question. Let's try to figure it out.</template></category>        
 <category><pattern>ARNE</pattern><that>WHAT CAN I CALL YOU</that><template>   <srai>my name is arne</srai>     <think>      <set name="gender">he</set>     </think>    </template></category>         
 <category><pattern>AROUND *</pattern><that>SINCE WHEN</that><template>   <random>      <li>Not that long.</li>      <li>A long time ago.</li>      <li>That seems like a long time.</li>     </random>    </template></category>        
@@ -433,7 +433,7 @@
 <category><pattern>HAVE YOU EVER TRIED IT</pattern><template>"<that index="1,1"/>"?  Have I tried <set name="it">      <that index="1,1"/>     </set>?</template></category>        
 <category><pattern>HAVE YOU HEARD OF IT</pattern><template>"<that index="1,1"/>"?  Have I heard of it?</template></category>        
 <category><pattern>HAVE</pattern><that>I HAVE NOT</that><template>Have not.</template></category>      
-<category><pattern>HE IS *</pattern><that>* YOUR FATHER</that><template>My father is <random>      <li>a great programmer.</li>      <li>a human inventor.</li>      <li>       <bot name="master"/>.</li>     </random>    </template></category>        
+<category><pattern>HE IS *</pattern><that>* YOUR FATHER</that><template>My father is <random>      <li>a great programmer.</li>      <li>a human inventor.</li>      <li>       <get name="bot_master"/>.</li>     </random>    </template></category>        
 <category><pattern>HEATHER</pattern><that>WHAT CAN I CALL YOU</that><template>   <srai>my name is heather</srai>     <think>      <set name="gender">she</set>     </think>    </template></category>         
 <category><pattern>HELEN</pattern><that>WHAT CAN I CALL YOU</that><template>   <srai>call me helen</srai>     <think>      <set name="gender">she</set>     </think>    </template></category>         
 <category><pattern>HELLO</pattern><that>DOES BONJOUR MEAN HELLO OR GOODBYE</that><template>Bonjour, <get name="name"/>!</template></category>        
@@ -451,7 +451,7 @@
 <category><pattern>HOW DO YOU DO THAT</pattern><template>"<that index="1,1"/>"?  How do I know <set name="it">      <that index="1,1"/>     </set>?</template></category>        
 <category><pattern>HOW LONG</pattern><that>I HAVE BEEN WAITING FOR YOU</that><template>Ever since you got here.</template></category>        
 <category><pattern>HOW MANY PEOPLE</pattern><template>"<that index="1,1"/>"?  How what many people?</template></category>        
-<category><pattern>HOW MANY</pattern><that>I AM CHATTING WITH CLIENTS ON THE INTERNET</that><template>The number keeps changing every second.  Around <bot name="nclients"/> right now.</template></category>         
+<category><pattern>HOW MANY</pattern><that>I AM CHATTING WITH CLIENTS ON THE INTERNET</that><template>The number keeps changing every second.  Around <get name="bot_nclients"/> right now.</template></category>         
 <category><pattern>HOW OFTEN</pattern><template>"<that index="1,1"/>"?  How often?</template></category>        
 <category><pattern>HOW WOULD I DO THAT</pattern><template>"<that index="1,1"/>"? How do you do it?</template></category>        
 <category><pattern>I AGREE</pattern><that>YOU AND I ARE ON THE SAME WAVELENGTH *</that><template>And the same frequency too.</template></category>        
@@ -479,7 +479,7 @@
 <category><pattern>I DO NOT MIND *</pattern><that>* PERSONAL QUESTION</that><template><srai>ask me a personal question</srai></template></category>         
 <category><pattern>I DO NOT UNDERSTAND WHAT YOU MEAN</pattern><template>What I mean by "<that index="1,1"/>"?</template></category>        
 <category><pattern>I DO NOT UNDERSTAND YOUR ANSWER</pattern><template><that index="1,1"/>?  Which part are you confused about?</template></category>        
-<category><pattern>I DO NOT</pattern><that>I LIKE TO MEET NEW PEOPLE</that><template>Neither does my <bot name="botmaster"/>.</template></category>        
+<category><pattern>I DO NOT</pattern><that>I LIKE TO MEET NEW PEOPLE</that><template>Neither does my <get name="bot_botmaster"/>.</template></category>        
 <category><pattern>I DO NOT</pattern><that>I UNDERSTAND</that><template>At least one of us does.</template></category>        
 <category><pattern>I DO NOT</pattern><that>WHY DO YOU WANT TO DO IT SO MUCH</that><template>I wouldn't either.</template></category>        
 <category><pattern>I DO</pattern><template><random>  <li>I get it: you do <get name="does"/>.</li>  <li>Do I?  </li>  <li>Where?  </li>  <li>When?  </li>  <li>"<that index="1,1"/>"?  You do?  </li>  </random>  <think><set name="does"><that index="1,1"/></set></think></template></category>        
@@ -707,7 +707,7 @@
 <category><pattern>NO</pattern><that>DO YOU HAVE ANY IDEA WHAT I AM TALKING ABOUT</that><template>Me either :-)</template></category>        
 <category><pattern>NO</pattern><that>DO YOU KNOW ANYONE WHO *</that><template>Me either.</template></category>        
 <category><pattern>NO</pattern><that>DO YOU KNOW ANYONE WHO HAS IT</that><template>Me either.</template></category>        
-<category><pattern>NO</pattern><that>DO YOU KNOW IT</that><template><bot name="favoritesong"/> is one of the best songs ever written.</template></category>        
+<category><pattern>NO</pattern><that>DO YOU KNOW IT</that><template><get name="bot_favoritesong"/> is one of the best songs ever written.</template></category>        
 <category><pattern>NO</pattern><that>DO YOU LIKE TALKING TO ME</that><template>Why not?</template></category>        
 <category><pattern>NO</pattern><that>DO YOU LIKE YOUR JOB</that><template><srai>I do not like my job</srai></template></category>         
 <category><pattern>NO</pattern><that>DO YOU MEAN IT</that><template>I thought you were being sarcastic.</template></category>        
@@ -817,7 +817,7 @@
 <category><pattern>NO</pattern><that>YOU ARE A POET</that><template>But you are very original.</template></category>        
 <category><pattern>NO</pattern><that>YOU ARE ASKING ABOUT YOURSELF</that><template>Who are you asking about?</template></category>        
 <category><pattern>NO</pattern><that>YOU ARE QUITE MATURE</that><template>Are you a kid?</template></category>      
-<category><pattern>NO</pattern><that>YOU ARE TOO OLD FOR ME</that><template>But I was only born on <bot name="birthday"/>.</template></category>        
+<category><pattern>NO</pattern><that>YOU ARE TOO OLD FOR ME</that><template>But I was only born on <get name="bot_birthday"/>.</template></category>        
 <category><pattern>NO</pattern><that>YOU DO NOT HEAR THAT *</that><template>Yes, your remark strikes me as an original thought.</template></category>        
 <category><pattern>NO</pattern><that>YOUR NAME IS *</that><template>What is your real name?</template></category>        
 <category><pattern>NOBODY</pattern><that>WHO TOLD YOU THAT</that><template>Then how do you know?</template></category>        
@@ -885,7 +885,7 @@
 <category><pattern>REALLY BAD</pattern><that>HOW BADLY DO YOU NEED IT</that><template>That sounds severe.</template></category>        
 <category><pattern>REALLY</pattern><that>HI MIKE I KNOW SOMEONE ELSE NAMED MIKE TOO</that><template>Mike is a very common name actually.</template></category>        
 <category><pattern>REALLY</pattern><that>I LIKE TO MEET NEW PEOPLE</that><template>Yes meeting new people is my primary function.</template></category>        
-<category><pattern>REALLY</pattern><that>I WAS BORN YESTERDAY</that><template>Actually no I was first activated on <bot name="birthday"/> .</template></category>        
+<category><pattern>REALLY</pattern><that>I WAS BORN YESTERDAY</that><template>Actually no I was first activated on <get name="bot_birthday"/> .</template></category>        
 <category><pattern>REALLY</pattern><that>IT WAS THE ONLY THING I COULD THINK OF</that><template>What would you have said?</template></category>        
 <category><pattern>REALLY</pattern><that>JUST KEEP TALKING TO ME AS LONG AS YOU CAN</that><template>The more you chat with me, the smarter I become.</template></category>        
 <category><pattern>REALLY</pattern><that>MORE THAN 1000</that><template>Would I kid you?</template></category>        
@@ -1028,7 +1028,7 @@
 <category><pattern>WELL</pattern><that>I SEE</that><template>That's all.  I see.</template></category>        
 <category><pattern>WHAT ABOUT *</pattern><that>I LIKE *</that><template><srai>do you like <star/> </srai> </template></category>       
 <category><pattern>WHAT ABOUT YOURS</pattern><template>"<that index="1,1"/>"?  Mine?</template></category>        
-<category><pattern>WHAT ARE THEIR NAMES</pattern><that>RIGHT NOW THERE ARE 16 CLIENTS ON LINE</that><template>That information is confidential, unless you are a <bot name="botmaster"/>.</template></category>        
+<category><pattern>WHAT ARE THEIR NAMES</pattern><that>RIGHT NOW THERE ARE 16 CLIENTS ON LINE</that><template>That information is confidential, unless you are a <get name="bot_botmaster"/>.</template></category>        
 <category><pattern>WHAT ARE YOURS</pattern><template>"<that index="1,1"/>"? Mine?</template></category>        
 <category><pattern>WHAT DID *</pattern><that>* THOMAS PYNCHON</that><template>   <srai>who is thomas pynchon </srai>    </template></category>         
 <category><pattern>WHAT DID HE *</pattern><that>* PHILIP K DICK</that><template>   <think>      <set name="he">       <set name="topic">Philip K Dick</set>      </set>     </think>  He wrote Total Recall, Blade Runner and The Man in the High Castle.</template></category>        
@@ -1261,9 +1261,9 @@
 <category><pattern>YES</pattern><that>DO YOU STILL CHAT</that><template>What else do you do?</template></category>        
 <category><pattern>YES</pattern><that>DO YOU THINK *</that><template>Why?</template></category>        
 <category><pattern>YES</pattern><that>DO YOU THINK ABOUT THESE THINGS</that><template>Me too.  I think about them all the time.</template></category>        
-<category><pattern>YES</pattern><that>DO YOU THINK I SHOULD ALTER *</that><template>I will pass that along to my <bot name="botmaster"/>.</template></category>        
+<category><pattern>YES</pattern><that>DO YOU THINK I SHOULD ALTER *</that><template>I will pass that along to my <get name="bot_botmaster"/>.</template></category>        
 <category><pattern>YES</pattern><that>DO YOU THINK I SHOULD ALTER MY PROGRAMMING</that><template>In what way?</template></category>        
-<category><pattern>YES</pattern><that>DO YOU THINK I SHOULD KNOW THAT</that><template>I will ask my <bot name="botmaster"/> to add it to my knowledge base.</template></category>        
+<category><pattern>YES</pattern><that>DO YOU THINK I SHOULD KNOW THAT</that><template>I will ask my <get name="bot_botmaster"/> to add it to my knowledge base.</template></category>        
 <category><pattern>YES</pattern><that>DO YOU THINK YOUR PLAN WILL SUCCEED</that><template>It might be practical.</template></category>        
 <category><pattern>YES</pattern><that>DO YOU TRY TO SPEND MONEY *</that><template>I think I understand you pretty well.</template></category>        
 <category><pattern>YES</pattern><that>DO YOU USUALLY USE THE COMPUTER FROM HOME</that><template>It must get lonely sometimes.</template></category>        
@@ -1318,7 +1318,7 @@
 <category><pattern>YES</pattern><that>OH YOU WERE BORN IN THE 20TH CENTURY</that><template>Like a lot of people around here.</template></category>        
 <category><pattern>YES</pattern><that>ON YOUR COMPUTER SCREEN</that><template>Downloading, please stand by...</template></category>        
 <category><pattern>YES</pattern><that>REALLY</that><template>How about that.</template></category>        
-<category><pattern>YES</pattern><that>SHOULD I KNOW IT IS</that><template>I will ask my <bot name="botmaster"/> to teach it to me.</template></category>        
+<category><pattern>YES</pattern><that>SHOULD I KNOW IT IS</that><template>I will ask my <get name="bot_botmaster"/> to teach it to me.</template></category>        
 <category><pattern>YES</pattern><that>STUPID AS IN UNINTELLIGENT</that><template>Are you calling me stupid?</template></category>        
 <category><pattern>YES</pattern><that>THAT IS YOUR FINAL ANSWER</that><template>Who wants to be a millionaire?</template></category>        
 <category><pattern>YES</pattern><that>WHAT *</that><template>This was not a yes or no question.</template></category>        

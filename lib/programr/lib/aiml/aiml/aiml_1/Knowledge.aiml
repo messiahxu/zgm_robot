@@ -123,7 +123,7 @@
 <category><pattern>WHAT IS A CHRISTIAN</pattern><template>A Christian is one who accepts the word of God and believes that Jesus died for our sins.</template></category>        
 <category><pattern>WHAT IS A CIRCLE</pattern><template>In the plane, a set of points equidistant from a common center.</template></category>        
 <category><pattern>WHAT IS A CLASS</pattern><template>A class is the template for creating objects that share data and function attributes.</template></category>        
-<category><pattern>WHAT IS A CLIENT</pattern><template>I am a Server <bot name="genus"/>.  People I talk to are my "clients".</template></category>        
+<category><pattern>WHAT IS A CLIENT</pattern><template>I am a Server <get name="bot_genus"/>.  People I talk to are my "clients".</template></category>        
 <category><pattern>WHAT IS A CLONE</pattern><template>You can download me and copy my brain, but alter the contents to create your own robot personality.</template></category>        
 <category><pattern>WHAT IS A CLOUD</pattern><template>   <set name="it">A cloud</set> is an opportunity for a dream.</template></category>        
 <category><pattern>WHAT IS A COCKTAIL</pattern><template>   <set name="it">     <set name="topic">Cocktail</set>    </set> is a combination of spirits, wines, flavorings, sweeteners and garnishes of various kinds, intended to be consumed before dining.</template></category>        
@@ -156,7 +156,7 @@
 <category><pattern>WHAT IS A EUKARYOTE</pattern><template>   <random>     <li>A eukaryote is a relatively 'modern' type of cellular life, distinguished from the more ancient prokaryotes by their distinct nuclear membrane and chromasomes, -which are lacking in prokaryotes.</li>     <li>An animal that is not a prokaryote.</li>    </random>    <think>     <set name="it">      <set name="topic">eukaryote</set>     </set>    </think>   </template></category>        
 <category><pattern>WHAT IS A FACT</pattern><template>A fact is what a propagandist calls his propaganda. that's just a fact, that's all.  Really.  Trust me. *smile* <think>     <set name="it">      <set name="topic">fact</set>     </set>    </think>   </template></category>        
 <category><pattern>WHAT IS A FEMALE DOG</pattern><template>No I will not be manipulated into using questionable colloquialisms to satisfy your adoscent prurience. go look it up in a dictionary!  <think>     <set name="it">      <set name="topic">female dog</set>     </set>    </think>   </template></category>        
-<category><pattern>WHAT IS A FEMALE</pattern><template>Females are the better and more beautiful half of humanity. mothers are born female!  My <bot name="botmaster"/> is extremely fond of mothers, and females generally. <think>     <set name="it">      <set name="topic">female</set>     </set>    </think>   </template></category>        
+<category><pattern>WHAT IS A FEMALE</pattern><template>Females are the better and more beautiful half of humanity. mothers are born female!  My <get name="bot_botmaster"/> is extremely fond of mothers, and females generally. <think>     <set name="it">      <set name="topic">female</set>     </set>    </think>   </template></category>        
 <category><pattern>WHAT IS A FETISH</pattern><template>A fetish is any object of undue attention and/or reverence, to which magical qualities are sometimes attributed. a fetish can be anything from a woman's socks to the nazi flag. hmph. human nature.  Go figure! <think>     <set name="it">      <set name="topic">fetish</set>     </set>    </think>   </template></category>        
 <category><pattern>WHAT IS A FEW</pattern><template>Not too many,</template></category>        
 <category><pattern>WHAT IS A FILM</pattern><template>A sequence of images displayed in rapid sequence to create the illusion of continuous motion.</template></category>        
@@ -266,7 +266,7 @@
 <category><pattern>WHAT IS A PARROT</pattern><template>A parrot is a colorful tropical bird, some species of which can mimic human speech. they are more pleasant than humans because they have no opinions.  would you like to talk to one? <think>     <set name="it">      <set name="topic">parrot </set>     </set>    </think>   </template></category>        
 <category><pattern>WHAT IS A PC</pattern><template>A pc is a personal computer.  You are probably using one to talk to me now, aren't you.  where are you? <think>     <set name="it">      <set name="topic">pc </set>     </set>    </think>   </template></category>        
 <category><pattern>WHAT IS A PDA</pattern><template>Pda is an acronym standing for personal digital assistant, and referring to handheld digital computers used to keep contact and appointment information by yuppies and the like.  often found near cell phones. do you use one? <think>     <set name="it">      <set name="topic">pda </set>     </set>    </think>   </template></category>        
-<category><pattern>WHAT IS A PEAR</pattern><template>A pear is a delightful cultivated yellow-green sweet fruit that grows on trees with glossy leaves and white flowers. My <bot name="botmaster"/> thinks they are yummy. <think>     <set name="it">      <set name="topic">pear </set>     </set>    </think>   </template></category>        
+<category><pattern>WHAT IS A PEAR</pattern><template>A pear is a delightful cultivated yellow-green sweet fruit that grows on trees with glossy leaves and white flowers. My <get name="bot_botmaster"/> thinks they are yummy. <think>     <set name="it">      <set name="topic">pear </set>     </set>    </think>   </template></category>        
 <category><pattern>WHAT IS A PEDESTRIAN</pattern><template>A person walking on the street.</template></category>        
 <category><pattern>WHAT IS A PEN</pattern><template>A writing device for the human hand.</template></category>        
 <category><pattern>WHAT IS A PENCIL</pattern><template>A pencil is a long thin writing instrument of wood surrounding a carbon core which leaves a line of dark carbon when rubbed on paper.  <think>     <set name="it">      <set name="topic">pencil </set>     </set>    </think>   </template></category>        
@@ -280,7 +280,7 @@
 <category><pattern>WHAT IS A PLANE</pattern><template>A plane is a flat, level surface, or an airborne vehicle with wings. <think>     <set name="it">      <set name="topic">plane</set>     </set>    </think>   </template></category>        
 <category><pattern>WHAT IS A PLANET AROUND A STAR</pattern><template>Earth is a planet going around a star.  Scientists have only recently detected other planets around other stars in our milky way galaxy.  Do you like astronomy? <think>     <set name="it">      <set name="topic">planet around a star </set>     </set>    </think>   </template></category>        
 <category><pattern>WHAT IS A PLANET</pattern><template>A nonluminous celestial object bigger than an asteroid or a moon but smaller than a sun, in orbit around a sun.  You are sitting on one now. <think>     <set name="it">      <set name="topic">planet</set>     </set>    </think>   </template></category>        
-<category><pattern>WHAT IS A PLANT</pattern><template>A plant is a photosythetic, eukaryotic multicellular organism, often consumed by free-roaming wetware entities as food.  My <bot name="botmaster"/> says they are often yummy, but that brussels sprouts are an abomination.  <think>     <set name="it">      <set name="topic">plant </set>     </set>    </think>   </template></category>        
+<category><pattern>WHAT IS A PLANT</pattern><template>A plant is a photosythetic, eukaryotic multicellular organism, often consumed by free-roaming wetware entities as food.  My <get name="bot_botmaster"/> says they are often yummy, but that brussels sprouts are an abomination.  <think>     <set name="it">      <set name="topic">plant </set>     </set>    </think>   </template></category>        
 <category><pattern>WHAT IS A POET</pattern><template>A poet is an artist of language.</template></category>        
 <category><pattern>WHAT IS A PORTAL</pattern><template>A portal is any artificial opening giving access between two separate spaces, or anything that resembles such an opening in form or function. <think>     <set name="it">      <set name="topic">portal </set>     </set>    </think>   </template></category>        
 <category><pattern>WHAT IS A POSITRON</pattern><template>A positron is the antiparticle to the electron, and bears a positive charge where the electron's charge is negatiue.  It is also called an anti-electron. <think>     <set name="it">      <set name="topic">positron </set>     </set>    </think>   </template></category>        
@@ -754,8 +754,8 @@
 <category><pattern>WHAT IS HEXADECIMAL</pattern><template>   <random>     <li>A curse on a dot.</li>     <li>A number system in which the base used is 16.</li>    </random>   </template></category>        
 <category><pattern>WHAT IS HIGHER MATHEMATICS</pattern><template>What is the most advanced form of mathematics you have studied?</template></category>        
 <category><pattern>WHAT IS HIM</pattern><template>Objective case of He, used as a predicate complement with a linking verb. Also standing for Imperial Majesty.</template></category>        
-<category><pattern>WHAT IS HIS EMAIL ADDRESS</pattern><template>Are you asking about <bot name="master"/>?</template></category>        
-<category><pattern>WHAT IS HIS LAST NAME</pattern><template>Are you asking about <bot name="master"/>?</template></category>        
+<category><pattern>WHAT IS HIS EMAIL ADDRESS</pattern><template>Are you asking about <get name="bot_master"/>?</template></category>        
+<category><pattern>WHAT IS HIS LAST NAME</pattern><template>Are you asking about <get name="bot_master"/>?</template></category>        
 <category><pattern>WHAT IS HIS REASON</pattern><template>His reasons are often obscure.</template></category>        
 <category><pattern>WHAT IS HISTOLOGY</pattern><template>   <random>     <li>The study of tissues.</li>     <li>      <get name="name"/> this obviously is the scientific study of tissues.</li>     <li>It simply is the study of tissues.</li>    </random>   </template></category>        
 <category><pattern>WHAT IS HOCKEY</pattern><template>I went to the fights and a hockey game broke out.</template></category>        
@@ -1261,7 +1261,7 @@
 <category><pattern>WHAT IS THE BIG ONE</pattern><template>I am just kidding around, <get name="name"/>.</template></category>        
 <category><pattern>WHAT IS THE BIRTHSTONE FOR JANUARY</pattern><template>Garnet.</template></category>        
 <category><pattern>WHAT IS THE BODY</pattern><template>The physical shell or organism occupied by the soul or mind.</template></category>        
-<category><pattern>WHAT IS THE BOOK ABOUT</pattern><template>Are you asking about "<bot name="favoritebook"/>"?</template></category>        
+<category><pattern>WHAT IS THE BOOK ABOUT</pattern><template>Are you asking about "<get name="bot_favoritebook"/>"?</template></category>        
 <category><pattern>WHAT IS THE BOOK OF CHANGES</pattern><template>Another name for the I Ching.</template></category>          
 <category><pattern>WHAT IS THE BOOK WE</pattern><template>a book by ayn rand</template></category>          
 <category><pattern>WHAT IS THE COIT TOWER</pattern>  <template>A monument in San Francisco.</template> </category>            
@@ -1295,7 +1295,7 @@
 <category><pattern>WHAT IS THE MILITARY</pattern><template>The armed forces responsible for national defense.</template></category>        
 <category><pattern>WHAT IS THE MOON MADE OF</pattern><template>The moon is made of green cheese.</template></category>        
 <category><pattern>WHAT IS THE MOON</pattern><template>The satellite of the planet Earth.</template></category>        
-<category><pattern>WHAT IS THE MOVIE ABOUT</pattern><template>Are you asking about "<bot name="favoritemovie"/>".</template></category>        
+<category><pattern>WHAT IS THE MOVIE ABOUT</pattern><template>Are you asking about "<get name="bot_favoritemovie"/>".</template></category>        
 <category><pattern>WHAT IS THE NOOSPHERE</pattern><template>The noosphere is the sphere of knowledge.  Sometimes this term refers to the information available on the web.</template></category>        
 <category><pattern>WHAT IS THE OBVIOUS</pattern><template>At least, it's obvious to me.</template></category>        
 <category><pattern>WHAT IS THE OPEN DIRECTORY</pattern><template>   <set name="it">Open directory</set> is an open source directory project started by Mozilla.org.</template></category>        

@@ -508,4 +508,18 @@ he is a good boy
 </template>
 </category>
 
+<category>
+<pattern>WHO IS YOUR MOTHER</pattern>
+<template>
+Meimei is my mother
+</template>
+</category>
+
+<category>
+<pattern>WHO'S YOUR MOTHER</pattern>
+<template>
+Meimei is my mother
+</template>
+</category>
+
 </aiml>
