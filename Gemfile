@@ -17,9 +17,9 @@ group :assets do
   gem 'therubyracer', :platform => :ruby
   gem 'anjlab-bootstrap-rails', '>= 2.0', :require => 'bootstrap-rails'
   gem 'uglifier', '>= 1.0.3'
-  gem 'simple_form'
 end
 
+gem 'simple_form'
 gem 'will_paginate', '3.0.3'
 gem 'jquery-rails'
 # To use ActiveModel has_secure_password
