@@ -5,3 +5,5 @@ grid-18px-masked.png: grid-18px-masked-1f14c1bee32a3e419b4b49adfba11682.png
 rails.png: rails-be8732dac73d845ac5b142c8fb5f9fb0.png
 application.js: application-38c89b4f1de4b7cfa47b124cac5e587d.js
 application.css: application-783d673667ffe3b7ccf5b5a17eb622b3.css
+exception_logger/application.js: exception_logger/application-acb2c14fe9e0db346b5c6c2d035ce917.js
+exception_logger/application.css: exception_logger/application-a4d6b7f67a7cac66b9f4c87ab343d5e0.css
