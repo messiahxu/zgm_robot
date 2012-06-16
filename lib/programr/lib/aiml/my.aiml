@@ -544,4 +544,18 @@ Meimei is my mother
 </template>
 </category>
 
+<category>
+<pattern>YOU *</pattern>
+<template>
+<srai>you are *</srai>
+</template>
+</category>
+
+<category>
+<pattern>YOU *</pattern>
+<template>
+<srai>you are <star/></srai>
+</template>
+</category>
+
 </aiml>
