@@ -37,4 +37,4 @@ gem 'jquery-rails'
 # To use debuggee
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'mechanize'
-gem "exception_logger", :require => "exception_logger"
+gem "exception_logger", :require => "exception_logger", :git => "git://github.com/zhouguangming/exception_logger"
