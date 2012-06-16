@@ -1,23 +1,16 @@
 require 'programr/lib/programr/facade'
 $robot = ProgramR::Facade.new
 $robot_last = ProgramR::Facade.new
-$robot_unknow= ProgramR::Facade.new
-p 'begin to load aiml file...'
 #$robot.learn ['lib/programr/lib/aiml/aiml']
 $robot.learn ['lib/programr/lib/aiml/my.aiml']
-
-puts '$robit is ok'
-$robot_unknow.learn ['lib/programr/lib/aiml/unknow.aiml']
 $robot_last.learn ['lib/programr/lib/aiml/last.aiml']
-puts '$robit_last is ok'
-
 begin
   File.open('./lib/programr/lib/cache/init.cache','r') do |f|
     puts '===start load cache==='
     cache = Marshal.load(f.read)
     print('[')
     10.times do |n|
-      sleep(0.1)
+      sleep(0.01)
       print('###')
     end
     print(']  100%'+"\n")

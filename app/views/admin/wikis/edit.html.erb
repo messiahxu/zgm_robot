@@ -1,0 +1,23 @@
+<style>
+  input{
+    width:500px;
+  }
+  textarea{
+    width:500px;
+    height:300px;
+  }
+  .well{
+    width:1050px;
+  }
+</style>
+<%= simple_form_for @wiki, :url=>admin_wiki_path(@wiki), :method=>'put',:html=>{:class=>'form-horizontal well'} do |f| %>
+  <div style='margin-left:90px;'>
+    <h2>Edit Wiki</h2>
+  </div>
+  <br/>
+  <%= f.input :receive, :label=>'receive:' %>
+  <%= f.input :reply, :label=>'reply:' %>
+  <div class='form-actions'>
+    <%= f.submit :submit, :class=>'btn-primary' %>
+  </div>
+<% end %>

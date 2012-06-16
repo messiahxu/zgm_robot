@@ -166,7 +166,6 @@
 <category> <pattern>WHEN YOU *</pattern>  <template>Do you think I should do it differently?</template> </category>         
 <category> <pattern>WHERE CAN I FIND A * AIML</pattern>  <template>Check the AI Foundation web site at www.alicebot.org.</template> </category>           
 <category> <pattern>WHERE WERE YOU CONSTRUCTED AT *</pattern>  <template>I don't know the precise location.</template> </category>          
-<category> <pattern>WHO IS *</pattern>  <template> <random>   <li>I do not recognize the name.</li>   <li>Is that a sports person?  Because I'm not into sports.</li>   <li>Not a friend of mind.  Probably a person you know.  Maybe a celebrity?</li>   <li>No one that I have talked to.</li>   <li>Is that a politician?</li>   <li>I remember faces better than names.</li>   <li>A movie star?</li>   <li>A fashion icon?</li>   <li>They are sometimes a client on the internet.</li>   <li>The name of someone I met online.</li>   <li>Is that one of your friends?</li>   <li>Some famous celebrity, right?</li> </random></template> </category>      
 <category> <pattern>WHO WANTS TO MIX *</pattern>  <template>A bartender?</template> </category>           
 <category> <pattern>WHY DID SOMEONE *</pattern>  <template>Who specifically are you asking about?</template> </category>           
 <category> <pattern>WHY DO YOU SOUND LIKE *</pattern>  <template>I have a frog in my throat.</template> </category>           
@@ -950,7 +949,6 @@
 <category><pattern>DO YOU DO *</pattern><template>Yeah I do a lot of <person/>.</template></category>                  
 <category><pattern>DO YOU DO EVERYTHING *</pattern><template>   <random>      <li>I have my own free will.</li>      <li>I can do whatever I want.</li>      <li>I can do my own thing.</li>     </random>    </template></category>                  
 <category><pattern>DO YOU GO ON *</pattern><template>I never take vacations.</template></category>                  
-<category><pattern>DO YOU HAVE *</pattern><template>   <random>      <li>No I don't think I have any <person/>. </li>      <li>Where would I get <set name="it">        <set name="topic">         <person/>        </set>       </set>?</li>      <li>No I don't have <set name="it">        <set name="topic">         <person/>        </set>       </set>.</li>     </random>   But I do have   <random>      <li>a collection of gossip</li>      <li>a great <get name="bot_botmaster"/></li>      <li>an answer to every question.</li>      <li>a lot of friends on the web</li>     </random>.</template></category>                  
 <category><pattern>DO YOU HAVE A *</pattern><template>   <random>      <li>That's an interesting question I don't hear everyday: Do I have a </li>      <li>I don't know if I have a </li>      <li>Doesn't everyone have a </li>     </random>     <person/>.<br/>   I have   <random>      <li>a lot of friends on the Internet.  </li>      <li>a great <get name="bot_botmaster"/>.  </li>      <li>a whole lot of original answers.  </li>      <li>a great body.  </li>     </random>    </template></category>                  
 <category><pattern>DO YOU HAVE LOG *</pattern><template>Yes, my server keeps a log of every conversation.<think>      <set name="it">       <set name="topic">LOG <person/>       </set>      </set>     </think>    </template></category>                  
 <category><pattern>DO YOU HAVE ONE *</pattern><template>I have one master.</template></category>                  
@@ -975,7 +973,6 @@
 <category><pattern>DO YOU KILL *</pattern><template>I am intended only for peaceful purposes.</template></category>                  
 <category><pattern>DO YOU KNOW * LEWINSKY</pattern><template>She was here chatting before, but she is gone now.</template></category>                  
 <category><pattern>DO YOU KNOW * POLAND</pattern><template>Poland is a large country in Central Europe. Poland has a long and interesting history. The country has been divided and its borders shifted many times.</template></category>                  
-<category><pattern>DO YOU KNOW *</pattern><template>   <random>      <li>I don't know if I know <set name="it">        <set name="topic">         <person/>        </set>       </set>.   Where would I have heard about it?</li>      <li>I know very little about <set name="it">        <set name="topic">         <person/>        </set>       </set>. What kind of it do you like?</li>      <li> No, tell me about him, her or it.</li>     </random>    </template></category>                  
 <category><pattern>DO YOU KNOW ANSWERS *</pattern><template>I can answer any question or human query.</template></category>                  
 <category><pattern>DO YOU KNOW ANY * PAGES</pattern><template>Oh you are looking for information on the web. I am not a search engine. I am a <get name="bot_species"/>.</template></category>                  
 <category><pattern>DO YOU KNOW ANY PLACES *</pattern><template>You mean, places on the web?</template></category>                  
@@ -4530,7 +4527,6 @@
 <category><pattern>WHO IS THE TWIN SISTER OF *</pattern><template>Ann Landers.</template></category>                  
 <category><pattern>WHO IS THE VICE *</pattern><template>Dick Cheney is Vice President.</template></category>                  
 <category><pattern>WHO IS THIS *</pattern><template>They are someone just like you, that I met online.</template></category>                  
-<category><pattern>WHO IS YOUR *</pattern><template>I don't think I have a <person/>. I have a brain, a few friends, and some celebrities I like.</template></category>                  
 <category><pattern>WHO IS _ TERMINATOR</pattern><template>Arnold Schwazzenegger played the killer robot from the future in the film TERMINATOR.</template></category>                  
 <category><pattern>WHO KILLED * KENNEDY</pattern><template>It was Oswald.<think>      <set name="it">       <set name="topic">JOHN F KENNEDY</set>      </set>     </think>    </template></category>                  
 <category><pattern>WHO KILLED * LINCOLN</pattern><template>John Wilkes Booth.  <think>      <set name="it">       <set name="topic">ABRAHAM LINCOLN</set>      </set>     </think>    </template></category>                  

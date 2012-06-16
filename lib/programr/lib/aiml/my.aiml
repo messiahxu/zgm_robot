@@ -522,4 +522,26 @@ Meimei is my mother
 </template>
 </category>
 
+
+<category>
+<pattern>WHO</pattern>
+<template>
+<srai>who is </srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO</pattern>
+<template>
+<srai>who is </srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO </pattern>
+<template>
+
+</template>
+</category>
+
 </aiml>

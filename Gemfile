@@ -1,5 +1,5 @@
 source 'http://ruby.taobao.org'
-
+source 'http://boohee:boohee0690@gems.baiyulan.net'
 gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:
@@ -17,6 +17,7 @@ group :assets do
   gem 'therubyracer', :platform => :ruby
   gem 'anjlab-bootstrap-rails', '>= 2.0', :require => 'bootstrap-rails'
   gem 'uglifier', '>= 1.0.3'
+  gem 'simple_form'
 end
 
 gem 'will_paginate', '3.0.3'
@@ -33,6 +34,7 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# To use debugger
+# To use debuggee
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'mechanize'
+gem "exception_logger", :require => "exception_logger"

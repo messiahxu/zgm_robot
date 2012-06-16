@@ -11,6 +11,7 @@ ZgmRobot::Application.routes.draw do
     get '/robots/wikis' => 'robots#wikis'
     get '/robots/delete_wiki/:id' => 'robots#delete_wiki'
     get '/robots/clear_wikis' => 'robots#clear_wikis'
+    resources :wikis
   end
   get "/admin/login"
   post "/admin/login" => 'admin#authenticate'
@@ -20,6 +21,8 @@ ZgmRobot::Application.routes.draw do
 
   match '/robots/index' => 'robots#index'
   match '/robots/chat' => 'robots#chat'
+
+  mount ExceptionLogger::Engine => "/exception_logger"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

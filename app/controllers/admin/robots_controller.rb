@@ -33,7 +33,7 @@ class Admin::RobotsController < ApplicationController
   end
 
   def learn_words
-    unless params[:pattern].blank? || params[:template].blank?
+    unless params[:pattern].blank?
       Robot.learn params[:pattern],params[:template]
       Robot.dump
       flash[:success] = 'learn success.'
