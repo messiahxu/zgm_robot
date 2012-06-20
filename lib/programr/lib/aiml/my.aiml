@@ -586,4 +586,18 @@ nine
 </template>
 </category>
 
+<category>
+<pattern>I LOST *</pattern>
+<template>
+Sorry to hear that!
+</template>
+</category>
+
+<category>
+<pattern>I LOST MY *</pattern>
+<template>
+Sorry to hear that!
+</template>
+</category>
+
 </aiml>
