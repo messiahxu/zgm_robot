@@ -8,6 +8,9 @@ class RobotsController < ApplicationController
   def chat
     @receive = params[:receive].gsub(/\s*\?\s*$/,'')
     change_session_or_not
+    if session[:user].blank?
+      session[:user]='123456789'
+    end
     $last_user = session[:user]
     ProgramR::History.saving "lib/programr/lib/session/#{session[:user]}" 
     begin
@@ -34,6 +37,5 @@ class RobotsController < ApplicationController
         ProgramR::History.loading "lib/programr/lib/session/#{session[:user]}"
       end
     end
-
   end
 end
