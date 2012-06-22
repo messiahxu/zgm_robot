@@ -2,7 +2,11 @@ class Admin::RobotsController < ApplicationController
   before_filter :logined?
 
   def index
-    @history = Robot.order('created_at DESC').paginate(:page => params[:page], :per_page => 20)
+    unless params[:status]
+      @history = Robot.order('created_at DESC').paginate(:page => params[:page], :per_page => 20)
+    else
+      @history = Robot.order('created_at DESC').where(:status=>params[:status]).paginate(:page => params[:page], :per_page => 20)
+    end
   end
 
   def wikis
@@ -22,14 +26,27 @@ class Admin::RobotsController < ApplicationController
     Wiki.delete_all
     redirect_to :back
   end
+
   def clear 
     flash[:success] = 'clear success'
     Robot.delete_all
     redirect_to :back
   end
+  
+  def edit
+    @robot = Robot.find(params[:id])
+  end
 
   def learn
     
+  end
+
+  def update
+    @robots = Robot.find_all_by_receive(params[:pattern])
+    @robots.each do |r|
+      r.update_attributes(:receive=>params[:pattern], :reply=>params[:template], :status=>1)
+    end
+    learn_words
   end
 
   def learn_words
@@ -44,11 +61,12 @@ class Admin::RobotsController < ApplicationController
   end
 
   def learn_aiml
+    t = Time.now
     file = params[:aiml]
     unless file.blank?
       begin
-        flash[:success] = 'learn success'
         $robot.parser.parse file.read
+        flash[:success] = 'learn success ' + ((Time.now-t).round 2).to_s + ' s'
       rescue => err
         err
       end
@@ -59,11 +77,12 @@ class Admin::RobotsController < ApplicationController
   end
 
   def refresh
+    t = Time.now
     Robot.dump
     File.open('./lib/programr/lib/cache/init.cache','r') do |f|
       cache = Marshal.load(f.read)
       $robot.graph_master.merge cache if cache
-      flash[:success] = 'cache refresh success'
+      flash[:success] = 'cache refresh success, use ' + ((Time.now-t).round 2).to_s + ' s'
       redirect_to :back
     end
   end

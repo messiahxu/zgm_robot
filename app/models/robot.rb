@@ -1,5 +1,5 @@
 class Robot < ActiveRecord::Base
-  attr_accessible :receive, :reply, :username
+  attr_accessible :receive, :reply, :username, :status
 
   NullReply = 'You gotta say something.'
   ChineseReply = 'Sorry I can\'t speak Chinese.'
@@ -30,33 +30,29 @@ class Robot < ActiveRecord::Base
     end
 
     def reply receive
+      status = 0
       if receive.blank?
         reply = NullReply
       elsif receive =~ /[\u4e00-\u9fa5]/
         reply = ChineseReply
-      elsif Crawler.is_wiki_question?(receive).present?
-        puts '====is wiki question!========='
-        puts "to robot:"
+      else
         reply = $robot.get_reaction receive
-        puts "from robot:" + reply.to_s
-        if reply.blank?
+        if reply.blank? && Crawler.is_wiki_question?(receive).present?
           reply = get_reply_from_wiki receive
         end
         if reply.blank?
-          puts "to last:"
           reply = $robot_last.get_reaction receive
-          puts "from last: " + reply
-        end
-      else
-        puts "to robot:"
-        reply = $robot.get_reaction receive
-        puts "from robot:" + reply.to_s
-        if reply.blank?
-          puts "to last:"
-          reply = $robot_last.get_reaction receive
-          puts "from last: " + reply
+        else
+          status = 1
         end
       end
+      Robot.create({
+        :username=>ProgramR::Environment.get_readOnlyTags['name'], 
+        :receive=>receive,
+        :reply=>reply[0..100],
+        :status => status
+      })
+      puts "receive: #{receive}, reply: #{reply}, :status: #{status}"
       return reply
     end
 

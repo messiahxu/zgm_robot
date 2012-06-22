@@ -31,7 +31,7 @@
 			<li>My brain pattern set does not have a response for that.</li>
 			<li>What you said was either too complex or too simple for me.</li>
 			<li>A deeper algorithm is needed to respond to that correctly.</li>
-			<li>In the context of <get name="topic"/>, I don't understand "<that/>."</li>
+			<li>In the context of <get name="topic"/>, I don't understand .</li>
 			<li>Try to determine if this is a person or a computer responding.</li> 
 			<li>I only hear that type of response less than five percent of the time.</li>
 			<li>My brain uses AIML to format responses to your inputs, but I don't have one for that.</li>

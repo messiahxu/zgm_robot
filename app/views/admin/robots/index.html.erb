@@ -3,10 +3,16 @@
     <%= render 'nav_list' %>
     <div class='span9'>
       <ul class="nav nav-pills">
-        <li class="active">
-        <a href='#'>
+        <li class="active dropdown">
+        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
           chats
+          <b class='caret'></b>
         </a>
+        <ul class='dropdown-menu'>
+          <li><a href='/admin/robots/index'>all</a></li>
+          <li><a href='/admin/robots/index?status=0'>unreplied</a></li>
+          <li><a href='/admin/robots/index?status=1'>replied</a></li>
+        </ul>
         </li>
         <li class=''>
         <a href='/admin/robots/wikis'>
@@ -42,7 +48,7 @@
             <td><%= h.username %></td>
             <td><%= h.receive %></td>
             <td><%= h.reply.html_safe %></td>
-            <td><a href="/admin/robots/delete/<%=h.id%>" data-remote=true class='history-delete'><i class='icon-trash' ></i>delete</a></td>
+            <td><a href="/admin/robots/<%=h.id%>/edit" ><i class='icon-tag' ></i>edit</a> <a href="/admin/robots/delete/<%=h.id%>" data-remote=true class='history-delete'><i class='icon-trash' ></i>delete</a></td>
           </tr>
         <% end %>
       </table>

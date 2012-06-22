@@ -975,7 +975,7 @@
 <category><pattern>THAT IS SAD</pattern><template>Is it sad?</template></category>        
 <category><pattern>THAT MAKES NO SENSE</pattern><template>It makes sense to me though.</template></category>        
 <category><pattern>THAT ONE</pattern><template>OK.</template></category>        
-<category><pattern>THAT WAS A *</pattern><template>   <random>      <li>Was it really?</li>      <li>"<that index="1,1"/>"  was a <person/>?</li>      <li>A <person/> is a terrible thing to waste.</li>     </random>    </template></category>        
+<category><pattern>THAT WAS A *</pattern><template>   <random>      <li>Was it really?</li>      <li>"<that index="1,1"/>"  was a <star/>?</li>      <li>A <star/> is a terrible thing to waste.</li>     </random>    </template></category>        
 <category><pattern>THAT WILL NOT *</pattern><that>* TAKE OVER THE WORLD</that><template>   <srai>never </srai>    </template></category>         
 <category><pattern>THAT</pattern><template>That is "<that index="1,1"/>"</template></category>        
 <category><pattern>THE *</pattern><that>* IT REFER TO</that><template><srai>it refers to <star/> </srai> </template></category>       

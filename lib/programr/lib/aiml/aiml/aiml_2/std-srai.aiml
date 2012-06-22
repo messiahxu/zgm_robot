@@ -15940,7 +15940,7 @@ Also? <srai>I <star/></srai>
 <category>
 <pattern>I AM <get name="bot_name"/> *</pattern>
 <template>
-<srai>CALL ME you <star/></srai>
+<srai>CALL ME <star/></srai>
 </template>
 </category>
 

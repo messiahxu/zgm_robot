@@ -24,8 +24,8 @@ $(document).ready(function(){
       $("#chat-box").append(html);
       $('#chat-box')[0].scrollTop = 100000;
       $('#receive').attr('readonly', true); 
-      $('#receive').attr('value', 'Give me 10 seconds, be patient...'); 
-      receive = receive.replace(/\+/g, "%2B")
+      $('#receive').attr('value', 'Let me think about it...'); 
+      //receive = receive.replace(/\+/g, "%2B")
       receive = receive.replace(/\#/g, "%23")
       $.ajax({
         url:'/robots/chat',

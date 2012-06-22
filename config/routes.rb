@@ -3,6 +3,7 @@ ZgmRobot::Application.routes.draw do
     get '/' => 'robots#index'
     get '/robots/index'
     get '/robots/delete/:id' => 'robots#delete'
+    get '/robots/:id/edit' => 'robots#edit'
     get '/robots/learn'
     post '/robots/learn_aiml' => 'robots#learn_aiml'
     post '/robots/learn_words' => 'robots#learn_words'
@@ -12,6 +13,7 @@ ZgmRobot::Application.routes.draw do
     get '/robots/delete_wiki/:id' => 'robots#delete_wiki'
     get '/robots/clear_wikis' => 'robots#clear_wikis'
     resources :wikis
+    resources :robots
   end
   get "/admin/login"
   post "/admin/login" => 'admin#authenticate'

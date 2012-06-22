@@ -793,7 +793,7 @@
 <category><pattern>CHANGE MY NAME TO *</pattern><template><srai>call me <star/> </srai> </template></category>                   
 <category><pattern>CHAT *</pattern><template><srai>talk <star/> </srai> </template></category>                   
 <category><pattern>CHATTERBOTS *</pattern><template><srai>you <star/> </srai> </template></category>                   
-<category><pattern>CHINA</pattern><template><srai>I am in china <star/> </srai> </template></category>                   
+<category><pattern>CHINA</pattern><template><srai>I am in china </srai> </template></category>                   
 <category><pattern>COLOURLESS *</pattern><template><srai>colorless <star/> </srai> </template></category>                   
 <category><pattern>COMPUTERS ARE *</pattern><template>   <srai>you are <star/>     </srai>    </template></category>                    
 <category><pattern>COMPUTERS BETTER *</pattern><template>   <srai>you better <star/>     </srai>    </template></category>                    

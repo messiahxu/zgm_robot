@@ -1,0 +1,34 @@
+<style>
+  input{
+    width:500px;
+  }
+  textarea{
+    width:500px;
+    height:300px;
+  }
+  .well{
+    width:1050px;
+  }
+</style>
+<%= simple_form_for @robot, :url=>admin_robot_path(@robot), :method=>'put', :html=>{:class=>'form-horizontal well'} do |f| %>
+  <div style='margin-left:90px;'>
+    <h2>Edit Reply</h2>
+  </div>
+  <br/>
+  <div class='control-group'>
+    <label class='control-label'>Pattern:</label>
+    <div class='controls'>
+      <input type='text' name='pattern' class='input-xlarge' value='<%=@robot.receive%>'>
+    </div>
+  </div>
+  <div class='control-group'>
+    <label class='control-label'>Template:</label>
+    <div class='controls'>
+      <input type='text' name='template' class='input-xlarge' value='<%=@robot.reply%>'>
+    </div>
+  </div>
+
+  <div class='form-actions'>
+    <%= f.submit :submit, :class=>'btn-primary' %>
+  </div>
+<% end %>

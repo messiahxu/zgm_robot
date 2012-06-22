@@ -2,11 +2,13 @@ class RobotsController < ApplicationController
   NullReply = 'You gotta say something.'
   ChineseReply = 'Sorry I can\'t speak Chinese.'
 
+  before_filter :count
+
   def index
   end
 
   def chat
-    @receive = params[:receive].gsub(/\s*\?\s*$/,'')
+    @receive = params[:receive].gsub(/\s*[.?!]\s*$/,'')
     change_session_or_not
     if session[:user].blank?
       session[:user]='123456789'
@@ -19,11 +21,6 @@ class RobotsController < ApplicationController
       p err.to_s
       @reply = 'Server is busy now.'
     end
-    Robot.create({
-      :username=>ProgramR::Environment.get_readOnlyTags['name'], 
-      :receive=>@receive,
-      :reply=>@reply[0..100]
-   })
   end
 
 

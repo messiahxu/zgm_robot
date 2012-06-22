@@ -600,4 +600,175 @@ Sorry to hear that!
 </template>
 </category>
 
+<category>
+<pattern>GREEN</pattern>
+<template>
+I like green.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS SEX</pattern>
+<template>
+
+</template>
+</category>
+
+
+
+<category>
+<pattern>YOU'RE *</pattern>
+<template>
+<srai>you are <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>I'M *</pattern>
+<template>
+<srai>i am <star/></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>I AM IN *</pattern>
+<template>
+Now I know you are in <set name='location'><star/></set>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR BIRTHDAY</pattern>
+<template>
+<srai>how old are you</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR BIRTHDAY</pattern>
+<template>
+<srai>how old are you</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S YOUR BIRTHDAY</pattern>
+<template>
+hi
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S YOUR BIRTHDAY</pattern>
+<template>
+<srai>how old are you</srai>
+</template>
+</category>
+
+<category>
+<pattern>YOUR BIRTHDAY</pattern>
+<template>
+<srai>how old are you</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S *</pattern>
+<template>
+<srai>what is your <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT'S *</pattern>
+<template>
+<srai> what is <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT A *</pattern>
+<template>
+what a <star/>!!
+</template>
+</category>
+
+<category>
+<pattern>WHO IS HE</pattern>
+<template>
+He ? who ?
+</template>
+</category>
+
+<category>
+<pattern>WHO IS HER</pattern>
+<template>
+Her ? Who ?
+</template>
+</category>
+
+<category>
+<pattern>1+1</pattern>
+<template>
+<srai>one plus one</srai>
+</template>
+</category>
+
+<category>
+<pattern>%2B</pattern>
+<template>
++
+</template>
+</category>
+
+<category>
+<pattern>WHO IS HE</pattern>
+<template>
+He is , I think.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS HE</pattern>
+<template>
+He ? who ?
+</template>
+</category>
+
+<category>
+<pattern>2+2</pattern>
+<template>
+4
+</template>
+</category>
+
+<category>
+<pattern>2+2</pattern>
+<template>
+4
+</template>
+</category>
+
+<category>
+<pattern>THEY ARE GOOD</pattern>
+<template>
+yes, they are good
+</template>
+</category>
+
+<category>
+<pattern>AND WHO IS ZGM</pattern>
+<template>
+zgm is my father.
+</template>
+</category>
+
+<category>
+<pattern>ASD</pattern>
+<template>
+It is a test, right ?
+</template>
+</category>
+
 </aiml>
