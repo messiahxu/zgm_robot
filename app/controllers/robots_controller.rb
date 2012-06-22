@@ -2,12 +2,12 @@ class RobotsController < ApplicationController
   NullReply = 'You gotta say something.'
   ChineseReply = 'Sorry I can\'t speak Chinese.'
 
-  before_filter :count
 
   def index
   end
 
   def chat
+    p '===================================================='
     @receive = params[:receive].gsub(/\s*[.?!]\s*$/,'')
     change_session_or_not
     if session[:user].blank?
