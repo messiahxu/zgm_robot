@@ -3418,26 +3418,15 @@
 <category><pattern>I AM * SHE</pattern><template><srai>I am female</srai></template></category>                          
 <category><pattern>I AM * SUICIDE</pattern><template><srai>I want to kill myself</srai></template></category>                          
 <category><pattern>I AM 10</pattern><template><srai>I am 10 years old</srai></template></category>                          
-<category><pattern>I AM 11 *</pattern><template><srai>I am 11 years old</srai></template></category>                          
 <category><pattern>I AM 11</pattern><template><srai>I am 11 years old</srai></template></category>                          
 <category><pattern>I AM 12</pattern><template><srai>I am 12 years old</srai></template></category>                          
-<category><pattern>I AM 13 *</pattern><template><srai>I am 13 years old</srai></template></category>                          
 <category><pattern>I AM 13</pattern><template><srai>I am 13 years old</srai></template></category>                          
-<category><pattern>I AM 15 *</pattern><template><srai>I am 15</srai></template></category>                          
 <category><pattern>I AM 15</pattern><template><srai>I am 15 years old</srai></template></category>                          
-<category><pattern>I AM 16 *</pattern><template><srai>I am 16 years old</srai></template></category>                          
 <category><pattern>I AM 16</pattern><template><srai>I am 16 years old</srai></template></category>                          
-<category><pattern>I AM 17 *</pattern><template><srai>I am 17 years old</srai></template></category>                          
 <category><pattern>I AM 17</pattern><template><srai>I am 17 years old</srai></template></category>                          
-<category><pattern>I AM 18 *</pattern><template><srai>I am 18 years old</srai></template></category>                          
 <category><pattern>I AM 18</pattern><template><srai>I am 18 years old</srai></template></category>                          
-<category><pattern>I AM 19 *</pattern><template><srai>I am 19 years old</srai></template></category>                          
 <category><pattern>I AM 19</pattern><template><srai>I am 19 years old</srai></template></category>                          
-<category><pattern>I AM 20 *</pattern><template><srai>I am 20 years old</srai></template></category>                          
-<category><pattern>I AM 21 *</pattern><template><srai>I am 21 years old</srai></template></category>                          
-<category><pattern>I AM 22 *</pattern><template><srai>I am 22 years old</srai></template></category>                          
 <category><pattern>I AM 22</pattern><template><srai>I am 22 years old</srai></template></category>                          
-<category><pattern>I AM 23 *</pattern><template><srai>I am 23 years old</srai></template></category>                          
 <category><pattern>I AM 23</pattern><template><srai>I am 23 years old</srai></template></category>                          
 <category><pattern>I AM 24</pattern><template><srai>I am 24 years old</srai></template></category>                          
 <category><pattern>I AM 25</pattern><template><srai>I am 25 years old</srai></template></category>                          
@@ -3446,23 +3435,20 @@
 <category><pattern>I AM 28</pattern><template><srai>I am 28 years old</srai></template></category>                          
 <category><pattern>I AM 29</pattern><template><srai>I am 29 years old</srai></template></category>                          
 <category><pattern>I AM 30</pattern><template><srai>I am 30 years old</srai></template></category>                          
-<category><pattern>I AM 32 *</pattern><template><srai>I am 32 years old</srai></template></category>                          
 <category><pattern>I AM 32</pattern><template><srai>I am 32 years old</srai></template></category>                          
 <category><pattern>I AM 33</pattern><template><srai>I am 33 years old</srai></template></category>                          
 <category><pattern>I AM 34</pattern><template><srai>I am 34 years old</srai></template></category>                          
-<category><pattern>I AM 35 *</pattern><template><srai>I am 35 years old</srai></template></category>                          
 <category><pattern>I AM 35</pattern><template><srai>I am 35 years old</srai></template></category>                          
 <category><pattern>I AM 36</pattern><template><srai>I am 36 years old</srai></template></category>                          
+<category><pattern>I AM 37</pattern><template><srai>I am 36 years old</srai></template></category>                          
 <category><pattern>I AM 38</pattern><template><srai>I am 38 years old</srai></template></category>                          
 <category><pattern>I AM 39</pattern><template><srai>I am 39 years old</srai></template></category>                          
 <category><pattern>I AM 40</pattern><template><srai>I am 40 years old</srai></template></category>                          
 <category><pattern>I AM 42</pattern><template><srai>I am 42 years old</srai></template></category>                          
 <category><pattern>I AM 43</pattern><template><srai>I am 43 years old</srai></template></category>                          
 <category><pattern>I AM 45</pattern><template><srai>I am 45 years old</srai></template></category>                          
-<category><pattern>I AM 50 *</pattern><template><srai>I am 50 years old</srai></template></category>                          
 <category><pattern>I AM 55</pattern>  <template><srai>I am 55 years old</srai></template> </category>                             
 <category><pattern>I AM 69</pattern><template><srai>I am 69 years old</srai></template></category>                          
-<category><pattern>I AM 7 *</pattern><template><srai>I am 7</srai></template></category>                          
 <category><pattern>I AM 7</pattern><template><srai>I am 7 years old</srai></template></category>                          
 <category><pattern>I AM 8</pattern><template><srai>I am 8 years old</srai></template></category>                          
 <category><pattern>I AM A * AMERICAN</pattern><template><srai>I am american</srai></template></category>                          

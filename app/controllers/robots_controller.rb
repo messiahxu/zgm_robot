@@ -2,7 +2,6 @@ class RobotsController < ApplicationController
   NullReply = 'You gotta say something.'
   ChineseReply = 'Sorry I can\'t speak Chinese.'
 
-
   def index
   end
 

@@ -771,4 +771,18 @@ It is a test, right ?
 </template>
 </category>
 
+<category>
+<pattern>I AM * YEARS OLD</pattern>
+<template>
+You are older than me.
+</template>
+</category>
+
+<category>
+<pattern>I WANT TO TALK TONIGHT</pattern>
+<template>
+Ok, Let's talk.
+</template>
+</category>
+
 </aiml>

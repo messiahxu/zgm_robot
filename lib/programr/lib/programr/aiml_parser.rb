@@ -8,6 +8,7 @@ module  ProgramR
         def initialize(learner); @learner = learner end
 
         def parse(aiml)
+          begin
             @parser = REXML::Parsers::SAX2Parser.new(aiml)
             category         = nil
             openLabels       = []
@@ -263,6 +264,10 @@ module  ProgramR
             ### end topic
 
             @parser.parse
+          rescue=>err
+            p err
+            p aiml
+          end
         end
     end #Aiml@parser
 end

@@ -49,7 +49,7 @@ class Robot < ActiveRecord::Base
       Robot.create({
         :username=>ProgramR::Environment.get_readOnlyTags['name'], 
         :receive=>receive,
-        :reply=>reply[0..100],
+        :reply=>reply,
         :status => status
       })
       puts "receive: #{receive}, reply: #{reply}, :status: #{status}"
