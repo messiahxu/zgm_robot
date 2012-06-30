@@ -4,10 +4,7 @@ class ApplicationController < ActionController::Base
   rescue_from Exception, :with => :log_exception_handler
   before_filter :count
   def count
-    if session[:count].blank?
-      $user_count += 1
-      session[:count]=true
-    end
+    $users = ActiveRecord::Base.connection.execute('select * from sessions')
   end
   def logined?
     if session[:admin].blank?
