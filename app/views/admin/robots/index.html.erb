@@ -47,7 +47,7 @@
             <td><%= h.created_at.strftime "%Y-%m-%d %H:%M:%S"%></td>
             <td><%= h.username %></td>
             <td><%= h.receive %></td>
-            <td><%= h.reply.html_safe %></td>
+            <td><%= h.reply[0..200].html_safe %></td>
             <td><a href="/admin/robots/<%=h.id%>/edit" ><i class='icon-tag' ></i>edit</a> <a href="/admin/robots/delete/<%=h.id%>" data-remote=true class='history-delete'><i class='icon-trash' ></i>delete</a></td>
           </tr>
         <% end %>

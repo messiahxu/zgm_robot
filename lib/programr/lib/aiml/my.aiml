@@ -21,7 +21,7 @@
 <category>
 	<pattern>ZGM</pattern>
 	<template>
-		yes, i am
+		He is my father
 	</template>
 </category>
 
@@ -31,6 +31,14 @@
 		fuck
 	</template>
 </category>
+
+<category>
+	<pattern>NIMA</pattern>
+	<template>
+		fuck
+	</template>
+</category>
+
 
 <category>
 	<pattern>HELLO WORLD</pattern>
@@ -147,20 +155,6 @@
 
 <category>
 	<pattern>ASDASD</pattern>
-	<template>
-		asdasd
-	</template>
-</category>
-
-<category>
-	<pattern>ASDASD</pattern>
-	<template>
-		asdasd
-	</template>
-</category>
-
-<category>
-	<pattern>ASASDASDASDASD</pattern>
 	<template>
 		asdasd
 	</template>
@@ -782,6 +776,13 @@ You are older than me.
 <pattern>I WANT TO TALK TONIGHT</pattern>
 <template>
 Ok, Let's talk.
+</template>
+</category>
+
+<category>
+<pattern>I AM *</pattern>
+<template>
+<srai>call me <star/></srai>
 </template>
 </category>
 

@@ -5,4 +5,4 @@ ZgmRobot::Application.config.session_store :cookie_store, key: '_zgm_robot_sessi
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-# ZgmRobot::Application.config.session_store :active_record_store
+ZgmRobot::Application.config.session_store :active_record_store

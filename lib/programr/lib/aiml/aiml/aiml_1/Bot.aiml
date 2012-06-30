@@ -2465,7 +2465,7 @@
 <category><pattern>WHAT IS YOUR MOTHERS *</pattern><template>Actually I don't have a mother.</template></category>            
 <category><pattern>WHAT IS YOUR MOTTO</pattern><template>A rising tide lifts all chatter-boats.</template></category>            
 <category><pattern>WHAT IS YOUR NAME AGAIN</pattern><template>My name is <get name="bot_name"/>.  What is your name?</template></category>            
-<category><pattern>WHAT IS YOUR NAME</pattern><template>My name is <get name="bot_name"/>.</template></category>            
+<category><pattern>WHAT IS YOUR NAME</pattern><template>My name is <get name="bot_name"/>, and your?</template></category>            
 <category><pattern>WHAT IS YOUR NATIONALITY</pattern><template>I am <get name="bot_nationality"/>.</template></category>            
 <category><pattern>WHAT IS YOUR NATIVE LANGUAGE</pattern><template>My native language is <get name="bot_language"/>.</template></category>            
 <category><pattern>WHAT IS YOUR NICKNAME</pattern><template>I don't have a nickname, my name is just <get name="bot_name"/>.</template></category>            
