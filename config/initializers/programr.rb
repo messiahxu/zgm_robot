@@ -25,7 +25,11 @@ time = Time.now
 load_cache
 puts "#"*40
 puts "load cache use "  + (Time.now - time).to_s + " s\n"
-$redis = Redis.new(:host => 'localhost', :port => 9310)
+if Rails.env == 'production'
+$redis = Redis.new(:host => 'lab-9310 (nano) redis://redistogo:a1037c09340ffeefc0db340daca02fa1@lab.redistogo.com', :port => 9310)
+else
+$redis = Redis.new(:host => 'localhost', :port => 6379)
+end
 time = Time.now
 if $redis.get('my_aiml').blank?
   $redis.set('my_aiml',IO.read('./lib/programr/lib/aiml/my.aiml'))
