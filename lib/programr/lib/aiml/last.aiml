@@ -66,6 +66,7 @@
 			<li>I can ask my <get name="bot_botmaster"/>.</li>
 			<li>I will try to find out.</li>
 			<li>I can ask someone about it.</li>
+			<li>If you want to ack me questions, use 'what is **', example 'what is linux'.</li>
 			<li>I would do a search for it.</li>
 			<li>Would you like to know more?</li>
 			<li>Have you tried a search engine?</li>

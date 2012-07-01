@@ -1,7 +1,7 @@
 require 'programr/lib/programr/facade'
 $robot = ProgramR::Facade.new
 $robot_last = ProgramR::Facade.new
-#$robot.learn ['lib/programr/lib/aiml/aiml']
+$robot.learn ['lib/programr/lib/aiml/aiml']
 #$robot.learn ['lib/programr/lib/aiml/my.aiml']
 $robot_last.learn ['lib/programr/lib/aiml/last.aiml']
 $users = []
@@ -22,7 +22,7 @@ rescue=>err
 end
 
 time = Time.now
-load_cache
+#load_cache
 puts "#"*40
 puts "load cache use "  + (Time.now - time).to_s + " s\n"
 if Rails.env == 'production'

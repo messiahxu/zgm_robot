@@ -79,6 +79,8 @@ class Robot < ActiveRecord::Base
 
     def turn receive
       receive.gsub! /what\'s/, "what is"
+      receive.gsub! /whats/, "what is"
+      receive.gsub! /whos/, "who is"
       receive.gsub! /who\'s/, "who is"
       receive.gsub! /that\'s/, "that is"
       receive.gsub! /this\'s/, "this is"
@@ -90,7 +92,11 @@ class Robot < ActiveRecord::Base
       receive.gsub! /she\'s/, "she is"
       receive.gsub! /he\'s/, "he is"
       receive.gsub! /don\'t/, "do not"
+      receive.gsub! /dont/, "do not"
+      receive.gsub! /didn\'t/, "did not"
+      receive.gsub! /didnt/, "did not"
       receive.gsub! /doesn\'t/, "does not"
+      receive.gsub! /doesnt/, "does not"
       receive.gsub! /aren\'t/, "are not"
       receive.gsub! /isn\'t/, "is not"
       receive.gsub! /\s+u\s+/, " you "
@@ -98,6 +104,9 @@ class Robot < ActiveRecord::Base
       receive.gsub! /\s+ur\s+/, " your "
       receive.gsub! /\s+u$/, " you "
       receive.gsub! /\s+r$/, " are "
+      receive.gsub! /\s+cus\s+/, " because "
+      receive.gsub! /haven\'t/, " have not "
+      receive.gsub! /can\'t/, " can not "
     end
 
   end
