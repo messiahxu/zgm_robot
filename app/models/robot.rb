@@ -44,6 +44,7 @@ class Robot < ActiveRecord::Base
     end
 
     def reply receive
+      turn receive
       status = 0
       if receive.blank?
         reply = NullReply
@@ -74,6 +75,16 @@ class Robot < ActiveRecord::Base
       wiki_word= Crawler.get_wiki_word(receive)
 
       reply = Crawler.find_in_wiki wiki_word
+    end
+
+    def turn receive
+      receive.gsub! /what\'s/, "what is"
+      receive.gsub! /who\'s/, "who is"
+      receive.gsub! /\s+u\s+/, " you "
+      receive.gsub! /\s+r\s+/, " are "
+      receive.gsub! /\s+ur\s+/, " your "
+      receive.gsub! /\s+u$/, " you "
+      receive.gsub! /\s+r$/, " are "
     end
 
   end
