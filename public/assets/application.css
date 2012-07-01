@@ -47,7 +47,7 @@
   color:blue;
 }
 /*
- * Bootstrap v2.0.3
+ * Bootstrap v2.0.4
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -116,6 +116,9 @@ img {
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic; }
+
+#map_canvas img {
+  max-width: none; }
 
 button,
 input,
@@ -341,10 +344,7 @@ a:hover {
     clear: both; }
 
 p {
-  margin: 0 0 9px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  line-height: 18px; }
+  margin: 0 0 9px; }
   p small {
     font-size: 11px;
     color: #999999; }
@@ -473,7 +473,7 @@ em {
 
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #ddd; }
+  border-bottom: 1px dotted #999999; }
 
 abbr.initialism {
   font-size: 90%;
@@ -583,7 +583,7 @@ legend {
   line-height: 36px;
   color: #333333;
   border: 0;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #e5e5e5; }
   legend small {
     font-size: 13.5px;
     color: #999999; }
@@ -605,70 +605,109 @@ textarea {
 
 label {
   display: block;
-  margin-bottom: 5px;
-  color: #333333; }
+  margin-bottom: 5px; }
 
-input,
-textarea,
 select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
 .uneditable-input {
   display: inline-block;
-  width: 210px;
   height: 18px;
   padding: 4px;
   margin-bottom: 9px;
   font-size: 13px;
   line-height: 18px;
-  color: #555555;
+  color: #555555; }
+
+input,
+textarea {
+  width: 210px; }
+
+textarea {
+  height: auto; }
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
   background-color: white;
   border: 1px solid #cccccc;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s; }
+  textarea:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="week"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="color"]:focus,
+  .uneditable-input:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+    /* IE6-9 */
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6); }
 
-.uneditable-textarea {
-  width: auto;
-  height: auto; }
-
-label input,
-label textarea,
-label select {
-  display: block; }
-
-input[type="image"],
-input[type="checkbox"],
-input[type="radio"] {
-  width: auto;
-  height: auto;
-  padding: 0;
+input[type="radio"],
+input[type="checkbox"] {
   margin: 3px 0;
   *margin-top: 0;
   /* IE7 */
   line-height: normal;
-  cursor: pointer;
-  border: 0 \9;
-  /* IE9 and down */
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0; }
+  cursor: pointer; }
 
-input[type="image"] {
-  border: 0; }
-
-input[type="file"] {
-  width: auto;
-  padding: initial;
-  line-height: initial;
-  background-color: white;
-  background-color: initial;
-  border: initial;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none; }
-
-input[type="button"],
+input[type="submit"],
 input[type="reset"],
-input[type="submit"] {
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto; }
+
+.uneditable-textarea {
   width: auto;
   height: auto; }
 
@@ -680,27 +719,21 @@ input[type="file"] {
   /* For IE7, add top margin to align select with labels */
   line-height: 28px; }
 
-input[type="file"] {
-  line-height: 18px \9; }
-
 select {
   width: 220px;
-  background-color: white; }
+  border: 1px solid #bbb; }
 
 select[multiple],
 select[size] {
   height: auto; }
 
-input[type="image"] {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none; }
-
-textarea {
-  height: auto; }
-
-input[type="hidden"] {
-  display: none; }
+select:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; }
 
 .radio,
 .checkbox {
@@ -726,38 +759,6 @@ input[type="hidden"] {
 .radio.inline + .radio.inline,
 .checkbox.inline + .checkbox.inline {
   margin-left: 10px; }
-
-input,
-textarea {
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-  transition: border linear 0.2s, box-shadow linear 0.2s; }
-
-input:focus,
-textarea:focus {
-  border-color: rgba(82, 168, 236, 0.8);
-  outline: 0;
-  outline: thin dotted \9;
-  /* IE6-9 */
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6); }
-
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus,
-select:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none; }
 
 .input-mini {
   width: 60px; }
@@ -787,6 +788,14 @@ textarea[class*="span"],
 .row-fluid .uneditable-input[class*="span"] {
   float: none;
   margin-left: 0; }
+
+.input-append input[class*="span"],
+.input-append .uneditable-input[class*="span"],
+.input-prepend input[class*="span"],
+.input-prepend .uneditable-input[class*="span"],
+.row-fluid .input-prepend [class*="span"],
+.row-fluid .input-append [class*="span"] {
+  display: inline-block; }
 
 input,
 textarea,
@@ -849,11 +858,15 @@ input[type="checkbox"][readonly] {
 .control-group.warning .help-block,
 .control-group.warning .help-inline {
   color: #c09853; }
+.control-group.warning .checkbox,
+.control-group.warning .radio,
 .control-group.warning input,
 .control-group.warning select,
 .control-group.warning textarea {
   color: #c09853;
   border-color: #c09853; }
+  .control-group.warning .checkbox:focus,
+  .control-group.warning .radio:focus,
   .control-group.warning input:focus,
   .control-group.warning select:focus,
   .control-group.warning textarea:focus {
@@ -869,10 +882,10 @@ input[type="checkbox"][readonly] {
 
 .control-group.error > label, .control-group.error .help-block, .control-group.error .help-inline {
   color: #b94a48; }
-.control-group.error input, .control-group.error select, .control-group.error textarea {
+.control-group.error .checkbox, .control-group.error .radio, .control-group.error input, .control-group.error select, .control-group.error textarea {
   color: #b94a48;
   border-color: #b94a48; }
-  .control-group.error input:focus, .control-group.error select:focus, .control-group.error textarea:focus {
+  .control-group.error .checkbox:focus, .control-group.error .radio:focus, .control-group.error input:focus, .control-group.error select:focus, .control-group.error textarea:focus {
     border-color: #953b39;
     -webkit-box-shadow: 0 0 6px #d59392;
     -moz-box-shadow: 0 0 6px #d59392;
@@ -884,10 +897,10 @@ input[type="checkbox"][readonly] {
 
 .control-group.success > label, .control-group.success .help-block, .control-group.success .help-inline {
   color: #468847; }
-.control-group.success input, .control-group.success select, .control-group.success textarea {
+.control-group.success .checkbox, .control-group.success .radio, .control-group.success input, .control-group.success select, .control-group.success textarea {
   color: #468847;
   border-color: #468847; }
-  .control-group.success input:focus, .control-group.success select:focus, .control-group.success textarea:focus {
+  .control-group.success .checkbox:focus, .control-group.success .radio:focus, .control-group.success input:focus, .control-group.success select:focus, .control-group.success textarea:focus {
     border-color: #356635;
     -webkit-box-shadow: 0 0 6px #7aba7b;
     -moz-box-shadow: 0 0 6px #7aba7b;
@@ -915,7 +928,7 @@ select:focus:required:invalid {
   margin-top: 18px;
   margin-bottom: 18px;
   background-color: #f5f5f5;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #e5e5e5;
   *zoom: 1; }
   .form-actions:before, .form-actions:after {
     display: table;
@@ -934,6 +947,9 @@ select:focus:required:invalid {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025); }
 
 :-moz-placeholder {
+  color: #999999; }
+
+:-ms-input-placeholder {
   color: #999999; }
 
 ::-webkit-input-placeholder {
@@ -1860,10 +1876,10 @@ table .span24 {
 
 .open {
   *z-index: 1000; }
-  .open .dropdown-menu {
+  .open > .dropdown-menu {
     display: block; }
 
-.pull-right .dropdown-menu {
+.pull-right > .dropdown-menu {
   right: 0;
   left: auto; }
 
@@ -1915,15 +1931,13 @@ table .span24 {
 
 .fade {
   opacity: 0;
-  filter: alpha(opacity=0);
   -webkit-transition: opacity 0.15s linear;
   -moz-transition: opacity 0.15s linear;
   -ms-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear; }
   .fade.in {
-    opacity: 1;
-    filter: alpha(opacity=100); }
+    opacity: 1; }
 
 .collapse {
   position: relative;
@@ -2852,6 +2866,8 @@ input[type="submit"].btn {
     -o-transition: none;
     transition: none; }
     .navbar-search .search-query:-moz-placeholder {
+      color: #cccccc; }
+    .navbar-search .search-query:-ms-input-placeholder {
       color: #cccccc; }
     .navbar-search .search-query::-webkit-input-placeholder {
       color: #cccccc; }
@@ -3888,7 +3904,7 @@ a.label:hover, a.badge:hover {
 .invisible {
   visibility: hidden; }
 /*
- * Bootstrap Responsive v2.0.3
+ * Bootstrap Responsive v2.0.4
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -4434,11 +4450,18 @@ a.label:hover, a.badge:hover {
   body {
     padding-top: 0; }
 
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    position: static; }
+
   .navbar-fixed-top {
-    position: static;
     margin-bottom: 18px; }
 
-  .navbar-fixed-top .navbar-inner {
+  .navbar-fixed-bottom {
+    margin-top: 18px; }
+
+  .navbar-fixed-top .navbar-inner,
+  .navbar-fixed-bottom .navbar-inner {
     padding: 5px; }
 
   .navbar .container {

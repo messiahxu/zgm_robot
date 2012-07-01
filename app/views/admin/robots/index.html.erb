@@ -39,7 +39,7 @@
           <th>name</th>
           <th style='width:230px;'>receive</th>
           <th style='width:230px;'>reply</th>
-          <th style='width:50px;'>edit</th>
+          <th style='width:55px;'>action</th>
         </tr>
         <% @history.each do |h| %>
           <tr>
@@ -47,8 +47,8 @@
             <td><%= h.created_at.strftime "%Y-%m-%d %H:%M:%S"%></td>
             <td><%= h.username %></td>
             <td><%= h.receive %></td>
-            <td><%= h.reply[0..200].html_safe %></td>
-            <td><a href="/admin/robots/<%=h.id%>/edit" ><i class='icon-tag' ></i>edit</a> <a href="/admin/robots/delete/<%=h.id%>" data-remote=true class='history-delete'><i class='icon-trash' ></i>delete</a></td>
+            <td><%= h.reply[0..200].html_safe %><%='...' if h.reply.length > 200 %></td>
+            <td><a href="/admin/robots/<%=h.id%>/edit" ><i class='icon-tag' ></i>edit</a><br/> <a href="/admin/robots/delete/<%=h.id%>" data-remote=true class='history-delete'><i class='icon-trash' ></i>delete</a></td>
           </tr>
         <% end %>
       </table>

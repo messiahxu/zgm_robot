@@ -52,7 +52,7 @@ class Admin::RobotsController < ApplicationController
   def learn_words
     unless params[:pattern].blank?
       Robot.learn params[:pattern],params[:template]
-      Robot.dump
+      #Robot.dump
       flash[:success] = 'learn success.'
     else
       flash[:error] = 'pattern or templay can\'t be empty.'

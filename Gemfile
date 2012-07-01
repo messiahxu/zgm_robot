@@ -40,3 +40,4 @@ gem 'unicorn'
 gem 'mechanize'
 gem "exception_logger", :require => "exception_logger", :git => "git://github.com/zhouguangming/exception_logger"
 gem 'heroku'
+gem 'redis', '2.1.1'

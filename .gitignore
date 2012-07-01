@@ -13,5 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-tags
-.rvmrc
+/tags
+/.rvmrc
+/lib/programr/lib/aiml/aiml
+

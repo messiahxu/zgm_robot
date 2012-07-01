@@ -117,6 +117,7 @@ GEM
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
+    redis (2.1.1)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rubyzip (0.9.9)
@@ -170,6 +171,7 @@ DEPENDENCIES
   mysql2
   pg
   rails (= 3.2.3)
+  redis (= 2.1.1)
   simple_form
   taps
   therubyracer
