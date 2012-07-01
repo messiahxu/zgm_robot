@@ -25,7 +25,7 @@ time = Time.now
 load_cache
 puts "#"*40
 puts "load cache use "  + (Time.now - time).to_s + " s\n"
-$redis = Redis.new(:host => 'localhost', :port => 6379)
+$redis = Redis.new(:host => 'localhost', :port => 9310)
 time = Time.now
 if $redis.get('my_aiml').blank?
   $redis.set('my_aiml',IO.read('./lib/programr/lib/aiml/my.aiml'))
