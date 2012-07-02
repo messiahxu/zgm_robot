@@ -84,111 +84,6 @@
 </category>
 
 <category>
-	<pattern>CHENMEIMEI</pattern>
-	<template>
-		hi
-	</template>
-</category>
-
-<category>
-	<pattern>MINGMING</pattern>
-	<template>
-		is me
-	</template>
-</category>
-
-<category>
-	<pattern>GUANGGUANG</pattern>
-	<template>
-		guanguang
-	</template>
-</category>
-
-<category>
-	<pattern>GUANGGUANG</pattern>
-	<template>
-		guanguang
-	</template>
-</category>
-
-<category>
-	<pattern>XIAOMEIMEI</pattern>
-	<template>
-		xiaomihu
-	</template>
-</category>
-
-<category>
-	<pattern>GUANGGUANG</pattern>
-	<template>
-		mingming
-	</template>
-</category>
-
-<category>
-	<pattern>GUANGGUANG</pattern>
-	<template>
-		mingming
-	</template>
-</category>
-
-<category>
-	<pattern>GUANGGUANG</pattern>
-	<template>
-		mingming
-	</template>
-</category>
-
-<category>
-	<pattern>XIAOMEIMEI</pattern>
-	<template>
-		haha
-	</template>
-</category>
-
-<category>
-	<pattern>ASDASD</pattern>
-	<template>
-		asdasd
-	</template>
-</category>
-
-<category>
-	<pattern>ASDASD</pattern>
-	<template>
-		asdasd
-	</template>
-</category>
-
-<category>
-	<pattern>ASDA</pattern>
-	<template>
-		asd
-	</template>
-</category>
-
-<category>
-	<pattern>ASD</pattern>
-	<template>
-		asdasd
-	</template>
-</category>
-
-<category>
-	<pattern>GUANGGUANG</pattern>
-	<template>
-		guangguang
-	</template>
-</category>
-
-<category>
-	<pattern>HELLO</pattern>
-	<template>
-		hi
-	</template>
-</category>
-
-<category>
 	<pattern>HAHA *</pattern>
 	<template>
 		<srai>haha</srai>
@@ -706,13 +601,6 @@ Her ? Who ?
 <pattern>1+1</pattern>
 <template>
 <srai>one plus one</srai>
-</template>
-</category>
-
-<category>
-<pattern>%2B</pattern>
-<template>
-+
 </template>
 </category>
 
