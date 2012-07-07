@@ -18,6 +18,7 @@
             <ul class='nav pull-right'>
               <% if session[:admin].blank? %>
                 <li><a href='/admin/login'><i class='icon-user icon-white'></i>&nbsp;sign in</a></li>
+                <li><a href='#' id='show-email-alert-button'><i class='icon-envelope icon-white'></i>&nbsp;email</a></li>
               <% else %>
                 <div class="btn-group">
                   <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -39,6 +40,10 @@
     <div class='container'>
       <div style='padding:20px;width:1100px;'>
         <%=raw show_flash %>
+        <div class="alert alert-info" id='show-email-alert-div' style='display:none;'>
+          <a class="close" href="#">×</a>
+          <span style='font-size:14px;'>echo emhvdWd1YW5nbWluZzE5ODlAZ21haWwuY29tCg== | base64 -d</span>
+        </div>
       </div>
       <%= yield %>
     </div>

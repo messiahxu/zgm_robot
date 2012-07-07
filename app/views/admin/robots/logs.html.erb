@@ -1,0 +1,27 @@
+<div class='container-fluid'>
+  <div class='row-fluid'>
+    <%= render 'nav_list' %>
+    <div style='text-align:center;height:40px;'>
+      <%= will_paginate @logs, :class=>''%>
+    </div>
+    <br/>
+    <br/>
+    <table class='table' style='width:96%;'>
+      <tr>
+        <th width='50px'>id</th>
+        <th style='width:230px;'>time</th>
+        <th style=''>logs</th>
+      </tr>
+      <% @logs.each do |l| %>
+        <tr>
+          <td><%= l.id %></td>
+          <td><%= l.created_at.strftime "%Y-%m-%d %H:%M:%S"%></td>
+          <td><%= l.log%></td>
+        </tr>
+      <% end %>
+    </table>
+    <div style='text-align:center;height:40px;'>
+      <%= will_paginate @logs, :class=>''%>
+    </div>
+  </div>
+</div>

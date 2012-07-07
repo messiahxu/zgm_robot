@@ -58,10 +58,13 @@ class Crawler
             end
             if content =~ /may refer to/
               content = 'Do you mean :<br/> <br/>'
-              div.search('ul').first.search('li').each_with_index do |v, i|
-              content += (i+1).to_s + '.' + '&nbsp; &nbsp;' + '<b>' + v.search('a').text + '</b>'
-              v.search('a').remove
-              content += v.text + '</br>'
+              a = 0
+              div.search('ul').each do |ul|
+              ul.search('li').each do |v|
+                content += (a = a+1).to_s + '.' + '&nbsp; &nbsp;' + '<b>' + v.search('a').text + '</b>'
+                v.search('a').remove
+                content += v.text + '</br>'
+              end
               end
             return content.gsub(/\[\d+\]/,'') 
             else

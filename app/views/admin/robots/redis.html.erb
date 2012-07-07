@@ -1,0 +1,23 @@
+<style>
+  textarea{
+    width:600px;
+    height:700px;
+  }
+  .well{
+    width:1050px;
+  }
+</style>
+<%= form_tag '/admin/robots/update_redis', :method=>'post', :class=>'form-horizontal well' do %>
+  <div style='margin-left:90px;'>
+    <h2>Edit Redis<span style='color:red;font-size:12px;'>(Dangerous)</span></h2>
+  </div>
+  <br/>
+  <div class='control-group'>
+    <div class='controls'>
+      <textarea name='redis'> <%= @redis %></textarea>
+    </div>
+  </div>
+  <div class='form-actions'>
+    <input type='submit' class='btn btn-primary' value='submit'/>
+  </div>
+<% end %>

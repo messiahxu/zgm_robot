@@ -1,62 +1,60 @@
 <div class='container-fluid'>
   <div class='row-fluid'>
     <%= render 'nav_list' %>
-    <div class='span9'>
-      <ul class="nav nav-pills">
-        <li class="active dropdown">
-        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-          chats
-          <b class='caret'></b>
-        </a>
-        <ul class='dropdown-menu'>
-          <li><a href='/admin/robots/index'>all</a></li>
-          <li><a href='/admin/robots/index?status=0'>unreplied</a></li>
-          <li><a href='/admin/robots/index?status=1'>replied</a></li>
-        </ul>
-        </li>
-        <li class=''>
-        <a href='/admin/robots/wikis'>
-          wikis
-        </a>
-        </li>
+    <ul class="nav nav-pills">
+      <li class="active dropdown">
+      <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+        chats
+        <b class='caret'></b>
+      </a>
+      <ul class='dropdown-menu'>
+        <li><a href='/admin/robots/index'>all</a></li>
+        <li><a href='/admin/robots/index?status=0'>unreplied</a></li>
+        <li><a href='/admin/robots/index?status=1'>replied</a></li>
       </ul>
-      <div style='text-align:center;height:40px;'>
-        <%= will_paginate @history, :class=>''%>
-      </div>
-      <div style='width:96%'>
-        <a href='/admin/robots/clear' style='float:right;color:red;' data-confirm='are you sure?'>
-          <i class='icon-trash'>
-          </i>
-          clear&nbsp;&nbsp;&nbsp;&nbsp;
-        </a>
-      </div>
-      <br/>
-      <br/>
-      <table class='table' style='width:96%;'>
+      </li>
+      <li class=''>
+      <a href='/admin/robots/wikis'>
+        wikis
+      </a>
+      </li>
+    </ul>
+    <div style='text-align:center;height:40px;'>
+      <%= will_paginate @history, :class=>''%>
+    </div>
+    <div style='width:96%'>
+      <a href='/admin/robots/clear' style='float:right;color:red;' data-confirm='are you sure?'>
+        <i class='icon-trash'>
+        </i>
+        clear&nbsp;&nbsp;&nbsp;&nbsp;
+      </a>
+    </div>
+    <br/>
+    <br/>
+    <table class='table' style='width:96%;'>
+      <tr>
+        <th>id</th>
+        <th style='width:130px;'>time</th>
+        <th>name</th>
+        <th style='width:230px;'>receive</th>
+        <th style='width:230px;'>reply</th>
+        <th style='width:55px;'>status</th>
+        <th style='width:55px;'>action</th>
+      </tr>
+      <% @history.each do |h| %>
         <tr>
-          <th>id</th>
-          <th style='width:130px;'>time</th>
-          <th>name</th>
-          <th style='width:230px;'>receive</th>
-          <th style='width:230px;'>reply</th>
-          <th style='width:55px;'>status</th>
-          <th style='width:55px;'>action</th>
+          <td><%= h.id %></td>
+          <td><%= h.created_at.strftime "%Y-%m-%d %H:%M:%S"%></td>
+          <td><%= h.username %></td>
+          <td><%= h.receive %></td>
+          <td><%= h.reply[0..200].html_safe %><%='...' if h.reply.length > 200 %></td>
+          <td><%= h.status%></td>
+          <td><a href="/admin/robots/<%=h.id%>/edit" ><i class='icon-tag' ></i>edit</a><br/> <a href="/admin/robots/delete/<%=h.id%>" data-remote=true class='history-delete'><i class='icon-trash' ></i>delete</a></td>
         </tr>
-        <% @history.each do |h| %>
-          <tr>
-            <td><%= h.id %></td>
-            <td><%= h.created_at.strftime "%Y-%m-%d %H:%M:%S"%></td>
-            <td><%= h.username %></td>
-            <td><%= h.receive %></td>
-            <td><%= h.reply[0..200].html_safe %><%='...' if h.reply.length > 200 %></td>
-            <td><%= h.status%></td>
-            <td><a href="/admin/robots/<%=h.id%>/edit" ><i class='icon-tag' ></i>edit</a><br/> <a href="/admin/robots/delete/<%=h.id%>" data-remote=true class='history-delete'><i class='icon-trash' ></i>delete</a></td>
-          </tr>
-        <% end %>
-      </table>
-      <div style='text-align:center;height:40px;'>
-        <%= will_paginate @history, :class=>''%>
-      </div>
+      <% end %>
+    </table>
+    <div style='text-align:center;height:40px;'>
+      <%= will_paginate @history, :class=>''%>
     </div>
   </div>
 </div>

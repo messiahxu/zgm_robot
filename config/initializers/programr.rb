@@ -24,7 +24,8 @@ end
 time = Time.now
 load_cache
 puts "#"*40
-puts "load cache use "  + (Time.now - time).to_s + " s\n"
+cache_log = "load cache use "  + (Time.now - time).round(2).to_s + "s.  "
+puts cache_log
 if Rails.env == 'production'
 $redis = Redis.new(:host => 'lab.redistogo.com', :port => 9310, :password => 'a1037c09340ffeefc0db340daca02fa1' )
 else
@@ -35,5 +36,7 @@ if $redis.get('my_aiml').blank?
   $redis.set('my_aiml',IO.read('./lib/programr/lib/aiml/my.aiml'))
 end
 $robot.parser.parse $redis.get('my_aiml')
-puts "redis use " + (Time.now - time).to_s + " s\n"
+redis_log = "redis use " + (Time.now - time).round(2).to_s + "s. "
+puts redis_log
 puts "#"*40
+Logs.new(:log => cache_log + redis_log).save

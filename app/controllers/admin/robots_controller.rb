@@ -27,18 +27,18 @@ class Admin::RobotsController < ApplicationController
     redirect_to :back
   end
 
-  def clear 
+  def clear
     flash[:success] = 'clear success'
     Robot.delete_all
     redirect_to :back
   end
-  
+
   def edit
     @robot = Robot.find(params[:id])
   end
 
   def learn
-    
+
   end
 
   def update
@@ -52,7 +52,6 @@ class Admin::RobotsController < ApplicationController
   def learn_words
     unless params[:pattern].blank?
       Robot.learn params[:pattern],params[:template]
-      #Robot.dump
       flash[:success] = 'learn success.'
     else
       flash[:error] = 'pattern or templay can\'t be empty.'
@@ -87,4 +86,23 @@ class Admin::RobotsController < ApplicationController
     end
   end
 
+  def redis
+    @redis = $redis.get 'my_aiml'
+  end
+
+  def update_redis
+    time = Time.now
+    $robot.parser.parse params[:redis]
+    $redis.set 'my_aiml', params[:redis]
+    flash[:success] = 'update redis success' + ' use ' + ((Time.now-time).round 2).to_s + ' s'
+    redirect_to :back
+  end
+
+  def clear_redis
+    $redis.set('my_aiml',IO.read('./lib/programr/lib/aiml/my.aiml'))
+  end
+
+  def logs
+    @logs = Logs.order('created_at DESC').paginate(:page => params[:page], :per_page => 20)
+  end
 end

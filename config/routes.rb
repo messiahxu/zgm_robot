@@ -10,15 +10,19 @@ ZgmRobot::Application.routes.draw do
     get '/robots/refresh' => 'robots#refresh'
     get '/robots/clear' => 'robots#clear'
     get '/robots/wikis' => 'robots#wikis'
+    get '/robots/redis' => 'robots#redis'
+    post '/robots/update_redis' => 'robots#update_redis'
     get '/robots/delete_wiki/:id' => 'robots#delete_wiki'
     get '/robots/clear_wikis' => 'robots#clear_wikis'
+    get '/robots/clear_redis' => 'robots#clear_redis'
+    get '/robots/logs' => 'robots#logs'
     resources :wikis
     resources :robots
   end
   get "/admin/login"
   post "/admin/login" => 'admin#authenticate'
   get "/admin/logout"
-  get '/admin/setting' 
+  get '/admin/setting'
   post '/admin/change_password'
 
   match '/robots/index' => 'robots#index'
