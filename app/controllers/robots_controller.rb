@@ -17,7 +17,6 @@ class RobotsController < ApplicationController
     begin
       @reply = Robot.reply(@receive, ip).gsub(/\#.*$/, '')
     rescue=>err
-      p err.to_s
       @reply = 'Server is busy now.'
     end
     session[:history] = ProgramR::History.save_to_session

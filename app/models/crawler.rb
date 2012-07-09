@@ -63,10 +63,10 @@ class Crawler
               ul.search('li').each do |v|
                 content += (a = a+1).to_s + '.' + '&nbsp; &nbsp;' + '<b>' + v.search('a').text + '</b>'
                 v.search('a').remove
-                content += v.text + '</br>'
+                content +='&nbsp;&nbsp;' +  v.text + '</br>'
               end
               end
-            return content.gsub(/\[\d+\]/,'') 
+            return content.gsub(/\[\d+\]/,'')
             else
               content = ''
               infobox = div.search('p').first
@@ -74,14 +74,14 @@ class Crawler
                 if infobox.name == 'text'
                   content += "<br/> <br/> &nbsp; &nbsp;"
                 else
-                  content += infobox.text 
+                  content += infobox.text
                 end
               infobox = infobox.next
               end
               return content.gsub(/\[\d+\]/, '')
             end
           rescue=>err
-            p err.to_s 
+            p err.to_s
             if err.to_s =~ /404/
               return false
             end
