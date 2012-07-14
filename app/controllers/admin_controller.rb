@@ -13,7 +13,7 @@ class AdminController < ApplicationController
       redirect_to '/admin/login'
     else
       flash[:success] = 'welcome you.'
-      session[:admin] = username  
+      session[:admin] = username
       redirect_to '/admin/robots/index'
     end
   end
@@ -43,6 +43,4 @@ class AdminController < ApplicationController
     redirect_to '/'
   end
 
-  def setting
-  end
 end

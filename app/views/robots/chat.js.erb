@@ -2,17 +2,17 @@ var html = " <p class='time'><span style=''>robot</span>&nbsp;&nbsp;&nbsp;<%= Ti
 $('#chat-box').append(html);
 $('#chat-box')[0].scrollTop = 100000;
 $('#receive').attr('value','');
-$('#receive').removeAttr('readonly'); 
-  function modal_up(obj){
-    var body = $(obj).parent().html();
-    re = /\<a.*\<\/a\>/;
-    var body = body.replace(re,'');
-    var title = $(obj).parent().prev().prev().text();
-    $('#Modal h3').text(title);
-    $('.modal-body').html("&nbsp;&nbsp;"+body);
-    $('#Modal').modal('show');
-    $('.modal-body').find('span').show();
-  }
+$('#receive').removeAttr('readonly');
+function modal_up(obj){
+  var body = $(obj).parent().html();
+  re = /\<a.*\<\/a\>/;
+  var body = body.replace(re,'');
+  var title = $(obj).parent().prev().prev().text();
+  $('#Modal h3').text(title);
+  $('.modal-body').html("&nbsp;&nbsp;"+body);
+  $('#Modal').modal('show');
+  $('.modal-body').find('span').show();
+}
 
 
 

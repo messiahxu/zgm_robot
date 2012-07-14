@@ -8,17 +8,17 @@ class RobotsController < ApplicationController
   def chat
     p '===================================================='
     @receive = params[:receive].gsub(/\s*[.?!]*\s*$/,'')
-    ip = request.env["REMOTE_ADDR"]
     if session[:history]
       ProgramR::History.get_from_session session[:history]
     else
       ProgramR::History.init
     end
     begin
-      @reply = Robot.reply(@receive, ip).gsub(/\#.*$/, '')
+      @reply = Robot.reply(@receive).gsub(/\#.*$/, '')
     rescue=>err
       @reply = 'Server is busy now.'
     end
     session[:history] = ProgramR::History.save_to_session
+    p '===================================================='
   end
 end

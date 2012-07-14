@@ -18,6 +18,12 @@
         wikis
       </a>
       </li>
+      <li style='margin-left:40px;margin-top:3px;'>
+      <form class="form-search" action='/admin/robots/search'>
+        <input type="text" class="input-medium search-query" name='robot'>
+        <button type="submit" class="btn">Search</button>
+      </form>
+      </li>
     </ul>
     <div style='text-align:center;height:40px;'>
       <%= will_paginate @history, :class=>''%>

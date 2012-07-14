@@ -15,10 +15,19 @@
 //= require_tree .
 //= require bootstrap
 $(document).ready(function(){
-  var is_ok = true;
+  var is_ok = 1;
+  var start_time;
+  var stop_time;
+  var pause_count = 0
   $('#receive').keydown(function(event){
-    if(event.keyCode==13 && is_ok == true){
-      is_ok = false
+    if(event.keyCode==13 && is_ok == 1){
+      start_time = new Date();
+      if(start_time - stop_time <= 1000){
+        is_ok = 0;
+        pause(5000);
+        return;
+      }
+      is_ok = false;
       var now = new Date();
       now = now.format('yyyy-MM-dd hh:mm:ss');
       var receive = $('#receive').attr('value');
@@ -32,9 +41,10 @@ $(document).ready(function(){
         url:'/robots/chat',
         data:{receive:receive},
         success:function(){
-          is_ok = true;
+          is_ok = 1;
         }
       });
+      stop_time = new Date();
     }
   });
 
@@ -46,6 +56,25 @@ $(document).ready(function(){
     $('#show-email-alert-div').hide();
   });
 
+  function fuck(i){
+    if(i > 0){
+      $('#receive').attr('value', 'You speak too fast, wait ' + i + ' seconds...');
+    }
+    else{
+      $('#receive').attr('value', '');
+      is_ok = 1;
+    }
+  }
+
+  function pause(time){
+    for(var i=time/1000; i>=0; i--){
+      setTimeout(
+          fuck,time - i*1000, i
+          );
+    }
+  }
+
+  
   Date.prototype.format = function(format){
     var o = {
       "M+" : this.getMonth()+1,
@@ -64,4 +93,5 @@ $(document).ready(function(){
           ("00"+ o[k]).substr((""+ o[k]).length));
     return format;
   }
+
 });

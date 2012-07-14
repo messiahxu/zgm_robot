@@ -25,7 +25,7 @@ class Robot < ActiveRecord::Base
       $redis.set('my_aiml', $redis.get('my_aiml').gsub!('</aiml>', str))
     end
 
-    def reply receive, ip
+    def reply receive
       turn receive
       status = 0
       if receive.blank?
@@ -34,7 +34,7 @@ class Robot < ActiveRecord::Base
         reply = ChineseReply
       else
         reply = $robot.get_reaction receive
-        if reply.blank? #&& Crawler.is_wiki_question?(receive).present?
+        if reply.blank? 
           reply = get_reply_from_wiki receive
         end
         if reply.blank?
@@ -44,7 +44,7 @@ class Robot < ActiveRecord::Base
         end
       end
       Robot.create({
-        :username=>ProgramR::Environment.get_readOnlyTags['name'] + ": #{ip}",
+        :username=>ProgramR::Environment.get_readOnlyTags['name'],
         :receive=>receive,
         :reply=>reply,
         :status => status

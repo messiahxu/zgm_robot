@@ -1,21 +1,7 @@
 ZgmRobot::Application.routes.draw do
+  match ':controller(/:action(/:id))(.:format)', :controller => /admin\/[^\/]+/
   namespace :admin do
     get '/' => 'robots#index'
-    get '/robots/index'
-    get '/robots/delete/:id' => 'robots#delete'
-    get '/robots/:id/edit' => 'robots#edit'
-    get '/robots/learn'
-    post '/robots/learn_aiml' => 'robots#learn_aiml'
-    post '/robots/learn_words' => 'robots#learn_words'
-    get '/robots/refresh' => 'robots#refresh'
-    get '/robots/clear' => 'robots#clear'
-    get '/robots/wikis' => 'robots#wikis'
-    get '/robots/redis' => 'robots#redis'
-    post '/robots/update_redis' => 'robots#update_redis'
-    get '/robots/delete_wiki/:id' => 'robots#delete_wiki'
-    get '/robots/clear_wikis' => 'robots#clear_wikis'
-    get '/robots/clear_redis' => 'robots#clear_redis'
-    get '/robots/logs' => 'robots#logs'
     resources :wikis
     resources :robots
   end
@@ -27,6 +13,7 @@ ZgmRobot::Application.routes.draw do
 
   match '/robots/index' => 'robots#index'
   match '/robots/chat' => 'robots#chat'
+
 
   mount ExceptionLogger::Engine => "/exception_logger"
 
@@ -85,5 +72,4 @@ ZgmRobot::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
 end

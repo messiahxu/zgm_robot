@@ -105,4 +105,15 @@ class Admin::RobotsController < ApplicationController
   def logs
     @logs = Logs.order('created_at DESC').paginate(:page => params[:page], :per_page => 20)
   end
+
+  def search
+    if params[:robot]
+      @history = Robot.where("receive like '%#{params[:robot]}%'").order("created_at DESC").paginate(:page => params[:page], :per_page => 20)
+      render :index
+    else params[:wiki]
+      wiki = params[:wiki].camelize.gsub! /\s/, '_'
+      @wikis = Wiki.where("receive like '%#{wiki}%'").order("created_at DESC").paginate(:page => params[:page], :per_page => 20)
+      render :wikis
+    end
+  end
 end
