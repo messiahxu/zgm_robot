@@ -1,10 +1,10 @@
 ZgmRobot::Application.routes.draw do
-  match ':controller(/:action(/:id))(.:format)', :controller => /admin\/[^\/]+/
   namespace :admin do
     get '/' => 'robots#index'
     resources :wikis
-    resources :robots
+    resources :robots, :except=>:show
   end
+  match ':controller(/:action(/:id))(.:format)', :controller => /admin\/[^\/]+/
   get "/admin/login"
   post "/admin/login" => 'admin#authenticate'
   get "/admin/logout"

@@ -1,8 +1,7 @@
 require 'programr/lib/programr/facade'
 $robot = ProgramR::Facade.new
 $robot_last = ProgramR::Facade.new
-$robot.learn ['lib/programr/lib/aiml/aiml']
-$robot.learn ['lib/programr/lib/aiml/my.aiml']
+#$robot.learn ['lib/programr/lib/aiml/aiml']
 $robot_last.learn ['lib/programr/lib/aiml/last.aiml']
 $users = []
 def load_cache
