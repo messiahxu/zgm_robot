@@ -3,20 +3,19 @@ $robot = ProgramR::Facade.new
 $robot_last = ProgramR::Facade.new
 #$robot.learn ['lib/programr/lib/aiml/aiml']
 $robot_last.learn ['lib/programr/lib/aiml/last.aiml']
-$users = []
 def load_cache
   begin
-    File.open('./lib/programr/lib/cache/init.cache','r') do |f|
+    File.open('./lib/programr/lib/cache/init.cache', 'r') do |f|
       cache = Marshal.load(f.read)
       $robot.graph_master.merge cache if cache
     end
-  rescue=>err
+  rescue => err
     p err
   end
 end
 begin
   ActiveRecord::Base.connection.execute 'delete from sessions'
-rescue=>err
+rescue => err
   p err
 end
 
@@ -36,6 +35,4 @@ if $redis.get('my_aiml').blank?
 end
 $robot.parser.parse $redis.get('my_aiml')
 redis_log = "redis use " + (Time.now - time).round(2).to_s + "s. "
-puts redis_log
-puts "#"*40
 Logs.new(:log => cache_log + redis_log).save

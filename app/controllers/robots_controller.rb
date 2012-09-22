@@ -6,8 +6,7 @@ class RobotsController < ApplicationController
   end
 
   def chat
-    p '===================================================='
-    @receive = params[:receive].gsub(/\s*[.?!]*\s*$/,'')
+    @receive = params[:receive].gsub(/\s*[.?!]*\s*$/, '')
     if session[:history]
       ProgramR::History.get_from_session session[:history]
     else
@@ -15,10 +14,9 @@ class RobotsController < ApplicationController
     end
     begin
       @reply = Robot.reply(@receive).gsub(/\#.*$/, '')
-    rescue=>err
+    rescue => err
       @reply = 'Server is busy now.'
     end
     session[:history] = ProgramR::History.save_to_session
-    p '===================================================='
   end
 end

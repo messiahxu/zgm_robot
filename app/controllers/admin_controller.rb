@@ -8,7 +8,7 @@ class AdminController < ApplicationController
   def authenticate
     username = params[:username]
     password = params[:password]
-    if Admin.find_by_username(username).try(:authenticate,password).blank?
+    if Admin.find_by_username(username).try(:authenticate, password).blank?
       flash[:error] = 'wrong username or password.'
       redirect_to '/admin/login'
     else

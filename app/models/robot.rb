@@ -43,18 +43,16 @@ class Robot < ActiveRecord::Base
           status = 1
         end
       end
-      Robot.create({
-        :username=>ProgramR::Environment.get_readOnlyTags['name'],
-        :receive=>receive,
-        :reply=>reply,
-        :status => status
-      })
+      Robot.create(:username => ProgramR::Environment.get_readOnlyTags['name'],
+                   :receive=>receive,
+                   :reply=>reply,
+                   :status => status)
       puts "receive: #{receive}, reply: #{reply}, :status: #{status}"
       return reply
     end
 
     def get_reply_from_wiki receive
-      wiki_word= Crawler.get_wiki_word(receive)
+      wiki_word = Crawler.get_wiki_word(receive)
       reply = Crawler.find_in_wiki wiki_word
     end
 

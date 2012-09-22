@@ -3,14 +3,21 @@ class Admin::RobotsController < ApplicationController
 
   def index
     unless params[:status]
-      @history = Robot.order('created_at DESC').paginate(:page => params[:page], :per_page => 20)
+      @history = Robot.order('created_at DESC').
+                       paginate(:page => params[:page], 
+                                :per_page => 20)
     else
-      @history = Robot.order('created_at DESC').where(:status=>params[:status]).paginate(:page => params[:page], :per_page => 20)
+      @history = Robot.order('created_at DESC').
+                       where(:status => params[:status]).
+                       paginate(:page => params[:page], 
+                                :per_page => 20)
     end
   end
 
   def wikis
-    @wikis = Wiki.order('created_at DESC').paginate(:page => params[:page], :per_page => 20)
+    @wikis = Wiki.order('created_at DESC').
+                  paginate(:page => params[:page], 
+                           :per_page => 20)
   end
 
   def delete

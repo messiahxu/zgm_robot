@@ -6,7 +6,7 @@ class Crawler
       pre_word = pre_word.flatten.compact.join
       receive = receive.gsub(pre_word, '')
       receive[0] = receive[0].upcase
-      receive = receive.gsub(/\s+/,'_')
+      receive = receive.gsub(/\s+/, '_')
     end
 
     def find_in_wiki receive
@@ -17,7 +17,7 @@ class Crawler
             reply = find_in_wiki_func(receive)
           end
           if reply.present?
-            unless Wiki.create(:receive=>receive, :reply=>reply)
+            unless Wiki.create(:receive => receive, :reply => reply)
               p 'save error'
             end
           end
@@ -47,7 +47,6 @@ class Crawler
         div.search('div').remove.search('table').remove
         if div.search('p').first
           content = div.search('p').first.text
-          p content
         else
           return '404'
         end
@@ -75,7 +74,7 @@ class Crawler
           end
           return content.gsub(/\[\d+\]/, '')
         end
-      rescue=>err
+      rescue => err
         p err.to_s
         if err.to_s =~ /404/
           return false
