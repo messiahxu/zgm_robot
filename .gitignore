@@ -16,4 +16,5 @@
 /.rvmrc
 /dump.rdb
 /.git
-
+/.sass-cache
+/log
