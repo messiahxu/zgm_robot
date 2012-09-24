@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/zhouguangming/exception_logger
-  revision: 8c3a7295da04269a53793323df51eb80d13250b2
+  revision: 14eef3579a525f52eee5df90cf21c93d768a9dd1
   specs:
     exception_logger (0.0.1)
       rails (~> 3.2.1)

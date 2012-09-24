@@ -35,4 +35,8 @@ if $redis.get('my_aiml').blank?
 end
 $robot.parser.parse $redis.get('my_aiml')
 redis_log = "redis use " + (Time.now - time).round(2).to_s + "s. "
-Logs.new(:log => cache_log + redis_log).save
+begin
+  Logs.new(:log => cache_log + redis_log).save
+rescue => err
+  puts err
+end
