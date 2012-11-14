@@ -15,4 +15,15 @@ namespace :robot do
       end
     end
   end
+
+	desc 'clear histroy'
+	task :clear_histroy => :environment do
+		count = ENV["count"].to_i
+		if count.present? && count > 0
+			Robot.order("id").limit(count).delete_all
+		else
+			Robot.delete_all
+		end
+		puts "successfully delete #{count} history"
+	end
 end
