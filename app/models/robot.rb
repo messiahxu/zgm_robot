@@ -43,6 +43,9 @@ class Robot < ActiveRecord::Base
           status = 1
         end
       end
+      if Robot.count > 9995
+        Robot.delete_all
+      end
       Robot.create(:username => ProgramR::Environment.get_readOnlyTags['name'],
                    :receive=>receive,
                    :reply=>reply,
