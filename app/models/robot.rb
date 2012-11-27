@@ -27,12 +27,14 @@ class Robot < ActiveRecord::Base
 
     def reply receive
       turn receive
+      receive_chinese = nil
 
       if receive =~ /[\u4e00-\u9fa5]/
-        @receive_chinese = receive
-        need_transalation = true
+        receive_chinese = receive
         receive = ChineseReply.translate receive, :from => 'zh-chs', :to => 'en'
+        puts receive
       end
+
 
       status = 0
       if receive.blank?
@@ -52,9 +54,9 @@ class Robot < ActiveRecord::Base
         Robot.delete_all
       end
 
-      if @receive_chinese
+      if receive_chinese.present?
         reply = ChineseReply.translate reply, :from => 'en', :to => 'zh-chs'
-        receive = @receive_chinese
+        receive = receive_chinese
       end
 
       Robot.create(:username => ProgramR::Environment.get_readOnlyTags['name'],
