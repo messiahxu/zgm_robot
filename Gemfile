@@ -1,5 +1,4 @@
 source 'http://ruby.taobao.org'
-source 'http://boohee:boohee0690@gems.baiyulan.net'
 gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:

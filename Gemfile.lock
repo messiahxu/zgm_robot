@@ -8,7 +8,6 @@ GIT
 
 GEM
   remote: http://ruby.taobao.org/
-  remote: http://boohee:boohee0690@gems.baiyulan.net/
   specs:
     actionmailer (3.2.3)
       actionpack (= 3.2.3)
