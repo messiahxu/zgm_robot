@@ -2,7 +2,7 @@ class Robot < ActiveRecord::Base
   attr_accessible :receive, :reply, :username, :status
 
   NullReply = 'You gotta say something.'
-  ChineseReply = 'Sorry I can\'t speak Chinese.'
+  ChineseReply = BingTranslator.new('zhouguangming-demo-1', 'zn6IANEDWGWa7+VCvS5tBrlIGK21EU+OfU/4QgLyVQU=')
 
   class << self
     def dump
@@ -27,14 +27,19 @@ class Robot < ActiveRecord::Base
 
     def reply receive
       turn receive
+
+      if receive =~ /[\u4e00-\u9fa5]/
+        @receive_chinese = receive
+        need_transalation = true
+        receive = ChineseReply.translate receive, :from => 'zh-chs', :to => 'en'
+      end
+
       status = 0
       if receive.blank?
         reply = NullReply
-      elsif receive =~ /[\u4e00-\u9fa5]/
-        reply = ChineseReply
       else
         reply = $robot.get_reaction receive
-        if reply.blank? 
+        if reply.blank?
           reply = get_reply_from_wiki receive
         end
         if reply.blank?
@@ -46,12 +51,18 @@ class Robot < ActiveRecord::Base
       if Robot.count > 9995
         Robot.delete_all
       end
+
+      if @receive_chinese
+        reply = ChineseReply.translate reply, :from => 'en', :to => 'zh-chs'
+        receive = @receive_chinese
+      end
+
       Robot.create(:username => ProgramR::Environment.get_readOnlyTags['name'],
                    :receive=>receive,
                    :reply=>reply,
                    :status => status)
-      puts "receive: #{receive}, reply: #{reply}, :status: #{status}"
-      return reply
+
+      reply
     end
 
     def get_reply_from_wiki receive

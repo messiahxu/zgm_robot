@@ -1,5 +1,5 @@
 # MySQL.  Versions 4.1 and 5.0 are recommended.
-# 
+#
 # Install the MYSQL driver
 #   gem install mysql2
 #
@@ -14,8 +14,8 @@ development:
   reconnect: false
   database: zgm_robot
   pool: 5
-  username: root
-  password:
+  username: bhuser
+  password: '363099'
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and

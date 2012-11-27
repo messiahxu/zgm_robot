@@ -42,6 +42,9 @@ GEM
       sass
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
+    bing_translator (3.0.0)
+      json (~> 1.7.3)
+      nokogiri (~> 1.5.0)
     builder (3.0.0)
     domain_name (0.5.3)
       unf (~> 0.0.3)
@@ -163,6 +166,7 @@ PLATFORMS
 DEPENDENCIES
   anjlab-bootstrap-rails (>= 2.0)
   bcrypt-ruby (~> 3.0.0)
+  bing_translator
   exception_logger!
   heroku
   jquery-rails
